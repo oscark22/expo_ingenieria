@@ -10,10 +10,15 @@
 </template>
 
 <script>
-import { CardComp } from '@/components/CardComp.vue'
+import json from '@/exp.json'
+import CardComp from '@/components/CardComp.vue'
 
 export default {
-  props: ['cards'],
+  data () {
+    return {
+      cards: json
+    }
+  },
   components: {
     CardComp
   }

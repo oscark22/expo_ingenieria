@@ -19,7 +19,7 @@
             <router-link class="nav-link disabled" to="/" tabindex="-1" aria-disabled="true">Disabled</router-link>
           </li>
         </ul>
-        <button class="btn btn-outline-warning me-2" type="button">Registrarse</button>
+        <button class="btn btn-outline-warning me-2" type="button">Acceder</button>
       </div>
     </div>
   </nav>
@@ -27,12 +27,10 @@
 </template>
 
 <script>
-import { json } from '@/exp.json'
 
 export default {
   data () {
     return {
-      cards: json
     }
   }
 }
