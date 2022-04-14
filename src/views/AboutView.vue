@@ -4,7 +4,7 @@
     <CardComp
       :img_src="card.img_src"
       :title="card.title"
-      :description="card.description"
+      :description="card.body"
     />
   </div>
   <p1>Bye!</p1>

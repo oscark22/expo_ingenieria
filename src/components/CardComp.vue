@@ -1,10 +1,10 @@
 <template>
   <div class="card" style="width: 18rem;">
-  <img :src="img_src" class="card-img-top">
+    <img :src="img_src" class="card-img-top">
     <div class="card-body">
       <h5 class="card-title">{{ title }}</h5>
       <p class="card-text">{{ description }}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
     </div>
   </div>
 </template>
@@ -14,3 +14,14 @@ export default {
   props: ['img_src', 'title', 'description']
 }
 </script>
+
+<style scoped>
+  .card{
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  }
+  .card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+</style>
