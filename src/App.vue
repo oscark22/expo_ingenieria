@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid d-flex align-items-md-center">
       <a class="navbar-brand ms-2">
-        <img src="./assets/logo_cetys.png" width="52.5" height="42">
+        <img src="@/assets/logo_cetys.png" width="52.5" height="42">
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
@@ -25,3 +25,15 @@
   </nav>
   <router-view/>
 </template>
+
+<script>
+import { json } from '@/exp.json'
+
+export default {
+  data () {
+    return {
+      cards: json
+    }
+  }
+}
+</script>

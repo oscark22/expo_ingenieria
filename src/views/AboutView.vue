@@ -1,10 +1,21 @@
 <template>
-  <div class="card" style="width: 18rem;">
-  <img src="@/assets/logo_cetys.png" class="card-img-top">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+  <div v-for="card in cards" :key="card.id">
+    <CardComp
+      :img_src="card.img_src"
+      :title="card.title"
+      :description="card.description"
+    />
   </div>
+  <p1>Bye!</p1>
 </template>
+
+<script>
+import { CardComp } from '@/components/CardComp.vue'
+
+export default {
+  props: ['cards'],
+  components: {
+    CardComp
+  }
+}
+</script>
