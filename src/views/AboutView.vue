@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <div class="row row-cols-auto">
-      <div v-for="card in cards" :key="card.id">
+    <div class="row row-cols-auto row-cols-md-4 gy-4">
+      <template v-for="card in cards" :key="card.id">
         <div class="col">
           <p v-if="errorMsg">errorMsg</p>
           <CardComp
@@ -10,10 +10,9 @@
             :description="card.body"
           />
         </div>
-      </div>
+      </template>
     </div>
   </div>
-  <p1>Bye!</p1>
 </template>
 
 <script>
