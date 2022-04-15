@@ -1,10 +1,13 @@
 <template>
-  <div class="card">
-    <img :src="img_src" class="card-img-top">
+  <div class="card h-100">
+    <!-- <img :src="img_src" class="card-img-top"> -->
     <div class="card-body">
       <h5 class="card-title">{{ title }}</h5>
       <p class="card-text">{{ description }}</p>
       <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
     </div>
   </div>
 </template>
@@ -17,7 +20,7 @@ export default {
 
 <style scoped>
   .card{
-    width: 18rem;
+    width: 19rem;
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   }

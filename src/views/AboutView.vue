@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row row-cols-auto">
+    <div class="row row-cols-auto row-cols-md-4 gy-4">
       <div v-for="card in cards" :key="card.id">
         <div class="col">
           <p v-if="errorMsg">errorMsg</p>
