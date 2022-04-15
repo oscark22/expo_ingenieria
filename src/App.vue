@@ -20,27 +20,25 @@
           </li>
         </ul>
         <button class="btn btn-outline-warning me-2" type="button">Acceder</button>
-        <button class="btn btn-outline-warning me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar Sesión</button>
+        <button @click="iniciarsesion"  class="btn btn-outline-warning me-2" type="button">Iniciar sesión</button>
+
       </div>
     </div>
   </nav>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">Iniciar Sesión</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <div v-if="isvisible" class="formIniciarsesion">
+    <form>
+      <div id="labelIniciar">
+        <p>Iniciar sesión</p>
       </div>
-      <div class="offcanvas-body">
-        <form>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
-          </div>
-          <div class="form-group">
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-          </div>
-          <button type="submit" class="btn btn-primary btn btn-dark">Iniciar Sesión</button>
-        </form>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
       </div>
-    </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+      </div>
+      <button type="submit" class="btn btn-primary btn btn-dark">Iniciar Sesión</button>
+    </form>
+  </div>
   <router-view/>
 </template>
 
