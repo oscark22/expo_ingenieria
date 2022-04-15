@@ -1,11 +1,17 @@
 <template>
-  <div v-for="card in cards" :key="card.id">
-    <p v-if="errorMsg">errorMsg</p>
-    <CardComp
-      :img_src="card.img_src"
-      :title="card.title"
-      :description="card.body"
-    />
+  <div class="container">
+    <div class="row row-cols-auto">
+      <div v-for="card in cards" :key="card.id">
+        <div class="col">
+          <p v-if="errorMsg">errorMsg</p>
+          <CardComp
+            :img_src="card.img_src"
+            :title="card.title"
+            :description="card.body"
+          />
+        </div>
+      </div>
+    </div>
   </div>
   <p1>Bye!</p1>
 </template>

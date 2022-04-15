@@ -39,10 +39,6 @@
       <button type="submit" class="btn btn-primary btn btn-dark">Iniciar Sesión</button>
     </form>
   </div>
-
-  <div id="hola">
-    <h1>Buenos dias </h1>
-  </div>
   <router-view/>
 </template>
 
