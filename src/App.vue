@@ -24,20 +24,26 @@
       </div>
     </div>
   </nav>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">Iniciar Sesión</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header" id="iniciarsesionTop">
+        <h5 id="offcanvasRightLabel" class="text-white">Iniciar Sesión</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body">
+      <div class="offcanvas-body" id="iniciarsesion">
         <form>
           <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="bi  bi-person-fill"></i></div>
+            </div>
             <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
           </div>
-          <div class="form-group">
+          <div class="input-group" id="botonInicioSesion">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="bi bi-key-fill"></i></div>
+            </div>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
           </div>
-          <button type="submit" class="btn btn-primary btn btn-dark">Iniciar Sesión</button>
+          <button type="submit" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
         </form>
       </div>
     </div>
@@ -49,35 +55,27 @@
 export default {
   data () {
     return {
-      isvisible: false
     }
   },
   methods: {
-    iniciarsesion () {
-      this.isvisible = !this.isvisible
-    }
   }
 }
 </script>
 <style scoped>
-.formIniciarsesion{
-  position:relative;
-  margin: .5%;
-  float:right;
-  background-color: #FFC107;
-  padding:2vh;
-  display: flex;
-  border-radius: 10px;
-  font: bold;
-}
 .btn{
-  margin-top: 1vh;
+  margin-top: 3vh;
 }
-#labelIniciar {
-  text-align: center;
-  font: bold;
+#botonInicioSesion{
+   margin-top: 3vh;
 }
-.form-group{
-   margin-top: 1vh;
+#iniciarsesion{
+    margin-top: 5%;
+}
+#iniciarsesionTop{
+  margin-top: 5%;
+}
+.form-control:focus {
+  border-color: rgb(255, 226, 38);
+  box-shadow: 0 0 0 0.2rem rgba(255, 226, 38, 0.5);
 }
 </style>
