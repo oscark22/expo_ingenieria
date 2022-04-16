@@ -21,6 +21,10 @@
     </button>
   </div>
   <div class="container mt-5">
+    <div class="row p-4 align-items-center rounded border shadow-sm">
+    </div>
+  </div>
+  <div class="container mt-5">
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">

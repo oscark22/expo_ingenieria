@@ -24,20 +24,20 @@
       </div>
     </div>
   </nav>
-    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header" id="iniciarsesionTop">
-        <h5 id="offcanvasRightLabel" class="text-white">Iniciar Sesión</h5>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header bg-dark" id="iniciarsesionTop">
+        <h5 class="text-white fw-bold" id="offcanvasRightLabel">Iniciar Sesión</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body" id="iniciarsesion">
         <form>
-          <div class="input-group">
+          <div class="input-group mb-2">
             <div class="input-group-prepend">
-              <div class="input-group-text"><i class="bi  bi-person-fill"></i></div>
+              <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
             </div>
             <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
           </div>
-          <div class="input-group" id="botonInicioSesion">
+          <div class="input-group mb-3" id="botonInicioSesion">
             <div class="input-group-prepend">
               <div class="input-group-text"><i class="bi bi-key-fill"></i></div>
             </div>
@@ -60,21 +60,3 @@ export default {
   }
 }
 </script>
-<style scoped>
-.btn{
-  margin-top: 3vh;
-}
-#botonInicioSesion{
-   margin-top: 3vh;
-}
-#iniciarsesion{
-    margin-top: 5%;
-}
-#iniciarsesionTop{
-  margin-top: 5%;
-}
-.form-control:focus {
-  border-color: rgb(255, 226, 38);
-  box-shadow: 0 0 0 0.2rem rgba(255, 226, 38, 0.5);
-}
-</style>
