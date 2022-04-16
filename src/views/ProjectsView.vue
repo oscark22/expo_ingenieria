@@ -22,7 +22,7 @@
     </div>
   </div>
   <br>
-  <div class="container" :key="componentKey">
+  <div class="container">
     <div class="row row-cols-4 gy-4">
       <template v-for="card in cards" :key="card.id">
         <div class="col">
@@ -50,8 +50,7 @@ export default {
       urls: [
         'https://jsonplaceholder.typicode.com/posts',
         'https://jsonplaceholder.typicode.com/posts/1'
-      ],
-      componentKey: 0
+      ]
     }
   },
   components: {
@@ -68,7 +67,6 @@ export default {
           console.log(error)
           this.errorMsg = 'Error recuperando información.'
         })
-      console.log('fetching...')
     }
   },
   created () {
