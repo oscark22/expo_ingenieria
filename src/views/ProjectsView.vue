@@ -2,19 +2,19 @@
   <div class="container">
     <div class="text-center">
       <div class="btn-group" role="group" aria-label="Basic outlined example">
-        <button type="button" class="btn btn-primary">
+        <button @click="fetchData(urls[0])" type="button" class="btn btn-primary">
           <i class="bi bi-journal-bookmark-fill"></i>
           Académico
         </button>
-        <button type="button" class="btn btn-secondary">
+        <button @click="fetchData(urls[1])" type="button" class="btn btn-secondary">
           <i class="bi bi-cpu"></i>
           Software y multimedia
         </button>
-        <button type="button" class="btn btn-success">
+        <button @click="fetchData(urls[1])" type="button" class="btn btn-success">
           <i class="bi bi-box-seam"></i>
           Producto
         </button>
-        <button type="button" class="btn btn-danger">
+        <button @click="fetchData(urls[1])" type="button" class="btn btn-danger">
           <i class="bi bi-gear-wide-connected"></i>
           Proceso
           </button>
@@ -22,7 +22,7 @@
     </div>
   </div>
   <br>
-  <div class="container">
+  <div class="container" :key="componentKey">
     <div class="row row-cols-4 gy-4">
       <template v-for="card in cards" :key="card.id">
         <div class="col">
@@ -39,7 +39,6 @@
 </template>
 
 <script>
-// import json from '@/exp.json'
 import axios from 'axios'
 import CardComp from '@/components/CardComp.vue'
 
@@ -47,13 +46,32 @@ export default {
   data () {
     return {
       cards: [],
-      errorMsg: ''
+      errorMsg: '',
+      urls: [
+        'https://jsonplaceholder.typicode.com/posts',
+        'https://jsonplaceholder.typicode.com/posts/1'
+      ],
+      componentKey: 0
     }
   },
   components: {
     CardComp
   },
-  mounted () {
+  methods: {
+    fetchData (url) {
+      axios
+        .get(url)
+        .then(response => {
+          this.cards = response.data
+        })
+        .catch(error => {
+          console.log(error)
+          this.errorMsg = 'Error recuperando información.'
+        })
+      console.log('fetching...')
+    }
+  },
+  created () {
     axios
       .get('https://jsonplaceholder.typicode.com/posts')
       .then(response => {
