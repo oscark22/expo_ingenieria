@@ -1,5 +1,8 @@
 <template>
-  <div class="container mt-4">
+  <div class="d-flex justify-content-center mt-4">
+    <h2><b>Categorías de proyecto</b></h2>
+  </div>
+  <div class="container mt-2">
     <div class="text-center">
       <div class="btn-group" role="group" aria-label="Basic outlined example">
         <button @click="fetchData(urls[0])" type="button" class="btn btn-primary">
