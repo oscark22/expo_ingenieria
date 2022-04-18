@@ -13,10 +13,10 @@
             <router-link class="nav-link active" to="/projects">Proyectos</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active" to="/">Pricing</router-link>
+            <router-link class="nav-link active" to="/users">Users</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active" to="/" tabindex="-1" aria-disabled="true">😀</router-link>
+            <router-link class="nav-link active" to="/judges" tabindex="-1" aria-disabled="true">Judges</router-link>
           </li>
         </ul>
         <button class="btn btn-warning me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar Sesión</button>
@@ -25,7 +25,7 @@
   </nav>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header bg-dark" id="iniciarsesionTop">
-        <h4 class="text-white fw-light" id="offcanvasRightLabel">Iniciar Sesión</h4>
+        <h4 class="text-white fw-light" id="offcanvasRightLabel">Iniciar Sesión 😎</h4>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body" id="iniciarsesion">
