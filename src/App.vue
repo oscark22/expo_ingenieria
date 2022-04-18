@@ -1,35 +1,37 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid d-flex align-items-md-center">
+    <div class="container d-flex align-items-md-center">
       <a class="navbar-brand ms-2">
-        <img src="@/assets/logo_cetys.png" width="52.5" height="42" alt="logo">
+        <img src="@/assets/logo_cetys.png" class="img-fluid" width="52.5" height="42" alt="logo">
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" to="/">Inicio</router-link>
+            <router-link class="nav-link" aria-current="page" to="/">Inicio</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/projects">Proyectos</router-link>
+            <router-link class="nav-link active" to="/projects">Proyectos</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/">Pricing</router-link>
+            <router-link class="nav-link active" to="/">Pricing</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link disabled" to="/" tabindex="-1" aria-disabled="true">Disabled</router-link>
+            <router-link class="nav-link active" to="/" tabindex="-1" aria-disabled="true">😀</router-link>
           </li>
         </ul>
-        <button class="btn btn-outline-warning me-2" type="button">Acceder</button>
-        <button class="btn btn-outline-warning me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar Sesión</button>
+        <button class="btn btn-warning me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar Sesión</button>
       </div>
     </div>
   </nav>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header bg-dark" id="iniciarsesionTop">
-        <h5 class="text-white fw-bold" id="offcanvasRightLabel">Iniciar Sesión</h5>
+        <h4 class="text-white fw-light" id="offcanvasRightLabel">Iniciar Sesión</h4>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body" id="iniciarsesion">
+        <p class="lead text-muted">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
         <form>
           <div class="input-group mb-2">
             <div class="input-group-prepend">

@@ -2,7 +2,9 @@
   <div class="container text-center py-5 my-5">
     <div class="row">
       <div class="col col-md-6 mx-auto">
-        <h1 class=" display-5 fw-light">Proyectos</h1>
+        <h1 class="display-5 fw-light">
+          Proyectos
+        </h1>
         <p class="lead text-muted">
           Los proyectos se encuentran organizados según su clasificación. Elige de las categorías de proyecto disponibles.
         </p>

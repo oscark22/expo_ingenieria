@@ -4,7 +4,7 @@
     <div class="card-body">
       <h5 class="card-title">{{ title }}</h5>
       <p class="card-text">{{ description }}</p>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Más información</button>
+      <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#myModal">Más información</button>
     </div>
     <div class="card-footer">
       <small class="text-muted">Last updated 3 mins ago</small>
