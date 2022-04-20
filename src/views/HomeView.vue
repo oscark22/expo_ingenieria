@@ -1,7 +1,10 @@
 <template>
-  <div id="Logo" class="logo">
-    <img src="../assets/logo_cetys.png" alt="">
+  <div class="container-fluid" id="contenedor-1">
+    <div id="logo" align="center">
+    <img src="../assets/logo_cetys.png" alt id="logo-expo">
+    </div>
   </div>
+  <div id="contenedor-2">
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -23,6 +26,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  <div class="container">
   <div class="container mt-5">
     <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center rounded border shadow">
       <div class="col"> <!-- Do dynamic right-align -->
@@ -93,10 +97,19 @@
       </div>
     </div>
   </div>
+  </div>
+  </div>
 </template>
 
-<style scoped>
-  .logo{
-    width: 100%;
+<style>
+  #contenedor-1{
+  background-image: url(../assets/f.jpeg);
+  background-attachment: fixed;
+  }
+  #logo-expo{
+    margin-bottom: 5%;
+    padding-top: 2rem;
+    width: 30%;
+    height: 30%;
   }
 </style>
