@@ -23,7 +23,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="container mt-5 bg-gray text-white">
+  <div class="container mt-5">
     <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center rounded border shadow">
       <div class="col"> <!-- Do dynamic right-align -->
         <img src="@/assets/d.jpg" class="img-fluid" width="620" alt="logo">
@@ -38,7 +38,7 @@
       </div>
     </div>
   </div>
-    <div class="container mt-4 bg-gray text-white">
+    <div class="container mt-4">
     <div class="row p-4 gx-5 align-items-center rounded border shadow">
       <div class="col"> <!-- Do dynamic right-align -->
         <img src="@/assets/e.jpg" class="img-fluid" width="620" alt="logo">
