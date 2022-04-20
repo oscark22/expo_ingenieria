@@ -64,18 +64,5 @@ export default {
 </script>
 
 <style>
-  body{
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background-image: url(../src/assets/f.jpeg);
-  background-color: rgba(26, 26, 24, 0.697);
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-position: relative;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  }
+
 </style>
