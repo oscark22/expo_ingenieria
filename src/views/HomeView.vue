@@ -1,4 +1,7 @@
 <template>
+  <div id="Logo" class="logo">
+    <img src="../assets/logo_cetys.png" alt="">
+  </div>
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -20,7 +23,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="container mt-5">
+  <div class="container mt-5 bg-gray text-white">
     <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center rounded border shadow">
       <div class="col"> <!-- Do dynamic right-align -->
         <img src="@/assets/d.jpg" class="img-fluid" width="620" alt="logo">
@@ -35,7 +38,7 @@
       </div>
     </div>
   </div>
-    <div class="container mt-4">
+    <div class="container mt-4 bg-gray text-white">
     <div class="row p-4 gx-5 align-items-center rounded border shadow">
       <div class="col"> <!-- Do dynamic right-align -->
         <img src="@/assets/e.jpg" class="img-fluid" width="620" alt="logo">
@@ -91,3 +94,10 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+  .logo{
+    background-position: top;
+    background-size: 50%;
+  }
+</style>
