@@ -1,5 +1,5 @@
 <template>
-  <div id="contenedor-1">
+  <div class="container-fluid" id="contenedor-1">
     <div id="logo" align="center">
     <img src="../assets/logo_cetys.png" alt id="logo-expo">
     </div>
