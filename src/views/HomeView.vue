@@ -97,7 +97,6 @@
 
 <style scoped>
   .logo{
-    background-position: top;
-    background-size: 50%;
+    width: 100%;
   }
 </style>
