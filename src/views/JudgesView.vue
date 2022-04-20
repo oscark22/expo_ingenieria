@@ -1,5 +1,8 @@
 <template>
-  <p1>😅</p1>
+  <div class="container">
+  </div>
+  <div class="container">
+  </div>
 </template>
 
 <script>
