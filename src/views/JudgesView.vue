@@ -33,13 +33,21 @@
           <option value="3">Three</option>
         </select>
       </div>
+      <div class="row mt-5 mb-5">
+        <label for="gradeRange" class="form-label">Calificación del proyecto: {{ currGrade }}</label>
+        <input v-model="currGrade" type="range" class="form-range" min="1" max="5" step="1" id="gradeRange">
+      </div>
     </form>
   </div>
 </template>
 
 <script>
 export default {
-
+  data () {
+    return {
+      currGrade: 3
+    }
+  }
 }
 </script>
 
