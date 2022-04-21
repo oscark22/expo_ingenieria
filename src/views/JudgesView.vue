@@ -33,9 +33,20 @@
           <option value="3">Three</option>
         </select>
       </div>
-      <div class="row mt-5 mb-5">
-        <label for="gradeRange" class="form-label">Calificación del proyecto: {{ currGrade }}</label>
+      <div class="row mt-4">
+        <label for="gradeRange" class="form-label">Calificación otorgada: {{ currGrade }}</label>
         <input v-model="currGrade" type="range" class="form-range" min="1" max="5" step="1" id="gradeRange">
+      </div>
+      <div class="row mt-5">
+        <label for="projectComments" class="form-label">Comentarios adicionales</label>
+        <textarea class="form-control" id="projectComments" rows="3"></textarea>
+      </div>
+      <div class="row mt-3 mb-5">
+        <div class="col">
+          <button class="btn btn-primary" type="button">
+            Confirmar
+          </button>
+        </div>
       </div>
     </form>
   </div>
