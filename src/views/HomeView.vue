@@ -1,24 +1,10 @@
 <template>
-  <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="@/assets/a.jpg" class="dark-img d-block w-100" alt="a">
-      </div>
-      <div class="carousel-item">
-        <img src="@/assets/b.jpg" class="dark-img d-block w-100" alt="b">
-      </div>
-      <div class="carousel-item">
-        <img src="@/assets/c.jpg" class="dark-img d-block w-100" alt="c">
+  <div class="backround container-fluid py-5">
+    <div class="row align-items-center py-5">
+      <div class="col py-5">
+        <img src="../assets/logo_expo.png" class="img-fluid" width="500" id="logo-expo">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
   <div class="container mt-5">
     <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center rounded border shadow-lg">
@@ -93,12 +79,14 @@
 </template>
 
 <style scoped>
-  .carousel {
-    background: black;
-  }
+  .backround {
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(../assets/edificio.jpg);
 
-  .dark-img {
-    object-fit: cover;
-    opacity: 0.4;
+    background-attachment: fixed;
   }
 </style>
