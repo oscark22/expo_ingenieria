@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="container">
-    <form class="row g-4 needs-validation" novalidate>
+    <form class="row g-4 mb-5 needs-validation" novalidate>
       <div class="col-md-6">
         <select class="form-select" aria-label="selectCategory" required>
           <option selected disabled value="">Selecciona una categoría</option>

@@ -48,7 +48,9 @@
             </div>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
           </div>
-          <button type="submit" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
+          <button type="submit" class="btn btn-warning" id="botoniniciosesion">
+            Iniciar Sesión
+          </button>
         </form>
       </div>
     </div>
