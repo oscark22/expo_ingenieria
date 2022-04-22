@@ -1,22 +1,22 @@
 <template>
   <div class="backround container-fluid py-5">
-    <div class="row align-items-center py-5">
+    <div class="row py-5" align="center">
       <div class="col py-5">
-        <img src="../assets/logo_expo.png" class="img-fluid" width="500" id="logo-expo">
+        <img src="../assets/logo_expo.png" class="img-fluid" width="550" id="logo-expo">
       </div>
     </div>
   </div>
   <div class="container mt-5">
-    <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center rounded border shadow-lg">
+    <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center rounded border shadow">
       <div class="col"> <!-- Do dynamic right-align -->
-        <img src="@/assets/d.jpg" class="img-fluid" width="620" alt="logo">
+        <img src="@/assets/d.jpg" class="img-fluid" width="350" alt="logo">
       </div>
-      <div class="col col-lg-6">
+      <div class="col col-lg-8">
         <h2 class="fw-light">
           ¿Qué es la Expo Ingeniería?
         </h2>
         <p class="lead text-muted">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, nesciunt. Corporis facilis blanditiis modi ratione libero adipisci, ipsam id nostrum quidem aliquid at recusandae delectus eius! Quo voluptatum commodi vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor neque asperiores fugiat provident! Nam praesentium delectus maxime animi voluptate debitis. Omnis tempore, quis fuga itaque nam debitis quia vitae optio!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur vel dolores ut obcaecati dicta eius nobis architecto natus inventore non, officia impedit unde laborum cupiditate aut perferendis repellendus, molestias delectus.
         </p>
       </div>
     </div>
@@ -24,14 +24,14 @@
     <div class="container mt-4">
     <div class="row p-4 gx-5 align-items-center rounded border shadow">
       <div class="col"> <!-- Do dynamic right-align -->
-        <img src="@/assets/e.jpg" class="img-fluid" width="620" alt="logo">
+        <img src="@/assets/e.jpg" class="img-fluid" width="350" alt="logo">
       </div>
-      <div class="col col-lg-6">
+      <div class="col col-lg-8">
         <h2 class="fw-light">
           ¿Una pregunta random?
         </h2>
         <p class="lead text-muted">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, dolorum, cupiditate a magni soluta unde reiciendis dolore optio facilis animi fuga nisi asperiores exercitationem quasi enim minima voluptatem suscipit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas neque tempora laudantium inventore. Odit tempore corporis quasi porro. Nisi delectus exercitationem quia excepturi fugit ipsa unde voluptate culpa repellat.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum explicabo commodi incidunt officiis doloribus fugit, veniam voluptatem cupiditate, reprehenderit aliquid error optio perferendis dicta veritatis aperiam, ad fuga adipisci?
         </p>
       </div>
     </div>
