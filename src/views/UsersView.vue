@@ -15,6 +15,29 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <form class="row g-4 mb-5 needs-validation" novalidate>
+      <div class="col-md-12">
+        <label for="youtubeControl" class="form-label">Link de la sesión de google meet</label>
+        <input type="text" class="form-control" id="youtubeControl" placeholder="Link de meet." required>
+        <div class="invalid-feedback">
+          Asegúrate de insertar un link de youtube.
+        </div>
+      </div>
+      <div class="col-md-12">
+        <label for="meetControl" class="form-label">Link del video de youtube</label>
+        <input type="text" class="form-control" id="meetControl" placeholder="Link de youtube." required>
+        <div class="invalid-feedback">
+          Asegúrate de insertar un link de youtube.
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">
+          Confirmar
+        </button>
+      </div>
+    </form>
+  </div>
 </template>
 
 <script>

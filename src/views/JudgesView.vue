@@ -16,37 +16,40 @@
     </div>
   </div>
   <div class="container">
-    <form>
-      <div class="row">
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Selecciona una categoría</option>
+    <form class="row g-4 mb-5 needs-validation" novalidate>
+      <div class="col-md-6">
+        <select class="form-select" aria-label="selectCategory" required>
+          <option selected disabled value="">Selecciona una categoría</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
         </select>
+        <div class="invalid-feedback">
+          Porfavor selecciona una categoría.
+        </div>
       </div>
-      <div class="row mt-3">
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Elige un proyecto</option>
+      <div class="col-md-6">
+        <select class="form-select" aria-label="selectProyect" required>
+          <option selected disabled value="">Elige un proyecto</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
         </select>
+        <div class="invalid-feedback">
+          Porfavor elige un proyecto.
+        </div>
       </div>
-      <div class="row mt-4">
+      <div class="col-md-12">
         <label for="gradeRange" class="form-label">Calificación otorgada: {{ currGrade }}</label>
         <input v-model="currGrade" type="range" class="form-range" min="1" max="5" step="1" id="gradeRange">
       </div>
-      <div class="row mt-5">
-        <label for="projectComments" class="form-label">Comentarios adicionales</label>
-        <textarea class="form-control" id="projectComments" rows="3"></textarea>
+      <div class="col-md-12">
+        <textarea class="form-control" id="projectComments" placeholder="Escribe aquí tus comentarios (opcional)." rows="4" required></textarea>
       </div>
-      <div class="row mt-3 mb-5">
-        <div class="col">
-          <button class="btn btn-primary" type="button">
-            Confirmar
-          </button>
-        </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">
+          Confirmar
+        </button>
       </div>
     </form>
   </div>
