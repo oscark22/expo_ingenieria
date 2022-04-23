@@ -1,31 +1,28 @@
 <template>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container d-flex align-items-md-center">
-        <a class="navbar-brand ms-2">
-          <img src="@/assets/logo_cetys.png" class="img-fluid" width="52.5" height="42" alt="logo">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <router-link class="nav-link" aria-current="page" to="/">Inicio</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link active" to="/projects">Proyectos</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link active" to="/users">Users</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link active" to="/judges" tabindex="-1" aria-disabled="true">Judges</router-link>
-            </li>
-          </ul>
-          <button class="btn btn-warning me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar Sesión</button>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container d-flex align-items-md-center">
+      <a class="navbar-brand ms-2">
+        <img src="@/assets/logo_cetys.png" class="img-fluid" width="52.5" height="42" alt="logo">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <router-link class="nav-link" aria-current="page" to="/">Inicio</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link active" to="/projects">Proyectos</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link active" to="/users">Users</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link active" to="/judges" tabindex="-1" aria-disabled="true">Judges</router-link>
+          </li>
+        </ul>
+        <button class="btn btn-warning me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar Sesión</button>
       </div>
-    </nav>
-  </header>
-  <main>
+    </div>
+  </nav>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header bg-dark" id="iniciarsesionTop">
         <h4 class="text-white fw-light" id="offcanvasRightLabel">Iniciar Sesión 😎</h4>
@@ -48,13 +45,10 @@
             </div>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
           </div>
-          <button type="submit" class="btn btn-warning" id="botoniniciosesion">
-            Iniciar Sesión
-          </button>
+          <button type="submit" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
         </form>
       </div>
     </div>
-  </main>
   <router-view/>
 </template>
 
