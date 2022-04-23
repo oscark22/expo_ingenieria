@@ -101,15 +101,18 @@
   </div>
 </template>
 
-<style>
-  #contenedor-1{
-  background-image: url(../assets/f.jpeg);
-  background-attachment: fixed;
-  }
-  #logo-expo{
-    margin-bottom: 5%;
-    padding-top: 2rem;
-    width: 30%;
-    height: 30%;
+<style scoped>
+  .backround {
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(../assets/edificio.jpg);
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 </style>
