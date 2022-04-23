@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container d-flex align-items-md-center">
       <a class="navbar-brand ms-2">
         <img src="@/assets/logo_cetys.png" class="img-fluid" width="52.5" height="42" alt="logo">
