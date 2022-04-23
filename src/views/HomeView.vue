@@ -1,7 +1,9 @@
 <template>
-  <div class="container-fluid" id="contenedor-1">
-    <div id="logo" align="center">
-    <img src="../assets/logo_cetys.png" alt id="logo-expo">
+  <div class="backround container-fluid py-5">
+  <div class="row py-5" align="center">
+      <div class="col py-5">
+        <img src="../assets/logo_expo.png" class="img-fluid" width="550" id="logo-expo">
+      </div>
     </div>
   </div>
   <div id="contenedor-2">
