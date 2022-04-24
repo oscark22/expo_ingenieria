@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <header class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
     <div class="container d-flex align-items-md-center">
       <a class="navbar-brand ms-2">
         <img src="@/assets/logo_cetysn.png" class="img-fluid" width="50" alt="logo">
@@ -29,7 +29,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </header>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header bg-dark" id="iniciarsesionTop">
         <h4 class="text-white fw-light" id="offcanvasRightLabel">Iniciar Sesión 😎</h4>
