@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
     <div class="container d-flex align-items-md-center">
       <a class="navbar-brand ms-2">
         <img src="@/assets/logo_cetysn.png" class="img-fluid" width="50" alt="logo">
@@ -22,14 +22,14 @@
             <router-link class="nav-link active" to="/judges" tabindex="-1" aria-disabled="true">Judges</router-link>
           </li>
           <li>
-            <button class="btn btn-dark ms-3" type="button">
+            <button class="btn btn-dark ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
               Iniciar Sesión
             </button>
           </li>
         </ul>
       </div>
     </div>
-  </header>
+  </nav>
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header bg-dark" id="iniciarsesionTop">
       <h4 class="text-white fw-light" id="offcanvasRightLabel">Iniciar Sesión 😎</h4>
