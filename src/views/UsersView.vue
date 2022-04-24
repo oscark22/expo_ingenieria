@@ -3,10 +3,10 @@
     <div class="row">
       <div class="col">
         <h1 class="fw-light">
-          Evaluación de proyectos
+          Datos de Proyecto
         </h1>
         <p class="lead text-muted">
-          Este apartado está dedicado a la agregación de los links de la sala Meet de Google donde se presentará el proyecto, así como el enlace al video de dicho proyecto.
+          Este apartado está dedicado a la agregación de los links de la sala Meet de Google donde se presentará el proyecto, así como un enlace al video de dicho proyecto.
         </p>
       </div>
     </div>
