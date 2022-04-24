@@ -9,7 +9,7 @@
   <div id="contenedor-2">
   <div class="container">
   <div class="container mt-5">
-    <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center rounded border shadow">
+    <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center">
       <div class="col"> <!-- Do dynamic right-align -->
         <img src="@/assets/d.jpg" class="img-fluid" width="420" alt="logo">
       </div>
@@ -24,7 +24,7 @@
     </div>
   </div>
     <div class="container mt-4">
-    <div class="row p-4 gx-5 align-items-center rounded border shadow">
+    <div class="row p-4 gx-5 align-items-center">
       <div class="col"> <!-- Do dynamic right-align -->
         <img src="@/assets/e.jpg" class="img-fluid" width="420" alt="logo">
       </div>

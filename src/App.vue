@@ -1,11 +1,14 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container d-flex align-items-md-center">
       <a class="navbar-brand ms-2">
-        <img src="@/assets/logo_cetys.png" class="img-fluid" width="52.5" height="42" alt="logo">
+        <img src="@/assets/logo_cetysn.png" class="img-fluid" width="50" alt="logo">
       </a>
+      <!-- <a class="navbar-brand ms-2">
+        <img src="@/assets/logo_expo.png" class="img-fluid" width="80" alt="logo">
+      </a> -->
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <router-link class="nav-link" aria-current="page" to="/">Inicio</router-link>
           </li>
@@ -18,8 +21,12 @@
           <li class="nav-item">
             <router-link class="nav-link active" to="/judges" tabindex="-1" aria-disabled="true">Judges</router-link>
           </li>
+          <li>
+            <button class="btn btn-dark ms-3" type="button">
+              Iniciar Sesión
+            </button>
+          </li>
         </ul>
-        <button class="btn btn-warning me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Iniciar Sesión</button>
       </div>
     </div>
   </nav>
