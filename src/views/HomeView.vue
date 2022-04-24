@@ -10,7 +10,7 @@
   <div class="container mt-5">
     <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center">
       <div class="col"> <!-- Do dynamic right-align -->
-        <img src="@/assets/d.jpg" class="img-fluid" width="420" alt="logo">
+        <img src="@/assets/d.jpg" class="img-fluid" alt="logo">
       </div>
       <div class="col col-lg-6">
         <h2 class="fw-light">
@@ -25,7 +25,7 @@
     <div class="container mt-4">
     <div class="row p-4 gx-5 align-items-center">
       <div class="col"> <!-- Do dynamic right-align -->
-        <img src="@/assets/e.jpg" class="img-fluid" width="420" alt="logo">
+        <img src="@/assets/e.jpg" class="img-fluid" alt="logo">
       </div>
       <div class="col col-lg-6">
         <h2 class="fw-light">
