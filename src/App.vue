@@ -30,32 +30,32 @@
       </div>
     </div>
   </header>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header bg-dark" id="iniciarsesionTop">
-        <h4 class="text-white fw-light" id="offcanvasRightLabel">Iniciar Sesión 😎</h4>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body" id="iniciarsesion">
-        <p class="lead text-muted">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </p>
-        <form>
-          <div class="input-group mb-2">
-            <div class="input-group-prepend">
-              <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
-            </div>
-            <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
-          </div>
-          <div class="input-group mb-3" id="botonInicioSesion">
-            <div class="input-group-prepend">
-              <div class="input-group-text"><i class="bi bi-key-fill"></i></div>
-            </div>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-          </div>
-          <button type="submit" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
-        </form>
-      </div>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header bg-dark" id="iniciarsesionTop">
+      <h4 class="text-white fw-light" id="offcanvasRightLabel">Iniciar Sesión 😎</h4>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
+    <div class="offcanvas-body" id="iniciarsesion">
+      <p class="lead text-muted">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      </p>
+      <form>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+          </div>
+          <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3" id="botonInicioSesion">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="bi bi-key-fill"></i></div>
+          </div>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+        </div>
+        <button type="submit" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
+      </form>
+    </div>
+  </div>
   <router-view/>
 </template>
 
@@ -71,5 +71,4 @@ export default {
 </script>
 
 <style>
-
 </style>
