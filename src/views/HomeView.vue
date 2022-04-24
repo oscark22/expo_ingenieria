@@ -1,12 +1,11 @@
 <template>
-  <div class="backround container-fluid py-5">
+  <div class="backround container-fluid py-5" id="inicio">
     <div class="row py-5" align="center">
       <div class="col py-5">
         <img src="../assets/logo_expo.png" class="img-fluid" width="550" id="logo-expo">
       </div>
     </div>
   </div>
-  <div id="contenedor-2">
   <div class="container">
   <div class="container mt-5">
     <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center">
@@ -35,17 +34,25 @@
         <p class="lead text-muted">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, dolorum, cupiditate a magni soluta unde reiciendis dolore optio facilis animi fuga nisi asperiores exercitationem quasi enim minima voluptatem suscipit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas neque tempora laudantium inventore. Odit tempore corporis quasi porro.
         </p>
+      <div class="col-4 mx-auto">
+        <router-link class="btn btn-warning" to="/projects">Projectos</router-link>
+      </div>
       </div>
     </div>
   </div>
-  <div class="backround container-fluid my-5" id="lugar_logos">
-    <div class="row py-5" align="center">
-      <div class="col py-5">
-        <img src="../assets/a.jpg" class="img-thumbnail" alt="..." width="30%">
-        <img src="../assets/b.jpg" class="img-thumbnail" alt="..." width="30%">
-        <img src="../assets/c.jpg" class="img-thumbnail" alt="..." width="30%">
-        <img src="../assets/c.jpg" class="img-thumbnail" alt="..." width="30%">
-        <img src="../assets/logo_expo.png" class="img-thumbnail" alt="..." width="26%">
+  <div class="backround container-fluid py-5" id="lugar_logos">
+    <div class="row justify-content-center">
+      <div class="col-xs-6 col-sm-3 text-center">
+        <img src="../assets/logo_expo_anio.png" class="img-fluid" alt="...">
+      </div>
+      <div class="col-xs-6 col-sm-3 text-center">
+        <img src="../assets/logo_tyva.png" class="img-fluid" alt="...">
+      </div>
+      <div class="col-xs-6 col-sm-3 text-center">
+        <img src="../assets/logo_ceid.png" class="img-fluid" alt="...">
+      </div>
+      <div class="col-xs-6 col-sm-3 text-center">
+        <img src="../assets/logo_ciap.png" class="img-fluid" alt="...">
       </div>
     </div>
   </div>
@@ -90,14 +97,13 @@
     </div>
   </div>
   </div>
-  </div>
   <footer>
     <strong>Copyright @CETYS Lugar de Footer</strong>
   </footer>
 </template>
 
 <style scoped>
-  .backround {
+  #inicio{
     background:
       linear-gradient(
         rgba(0, 0, 0, 0.7),
@@ -109,5 +115,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+  #lugar_logos{
+    background:
+      linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url(../assets/e.jpg);
+
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
   }
 </style>

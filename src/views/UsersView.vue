@@ -6,11 +6,7 @@
           Evaluación de proyectos
         </h1>
         <p class="lead text-muted">
-          Este apartado está dedicado a la evaluación de todos los proyectos de la Expo Ingeniería. Todos los proyectos, independientemente de cuál sea su categoría, se encuentran aquí.
-        </p>
-        <br>
-        <p class="lead">
-          Para evaluar un proyecto, selecciona la categoría a la que pertenece; sólo aquellos que pertenezcan a esa categoría podrán ser elegidos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet expedita accusamus magnam? Expedita ea error sint dolores reiciendis ad, velit necessitatibus, suscipit fugit sapiente nulla! Commodi minus nihil dolores aspernatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni praesentium modi distinctio iusto eaque quis obcaecati pariatur ab vero incidunt illum, aliquam quaerat a ipsa reprehenderit est ipsam, soluta totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolor fuga velit facere omnis, accusantium quae perspiciatis reiciendis quasi illo molestiae assumenda quidem at iusto repellendus! Sequi porro aliquid dolor?
+          Este apartado está dedicado a la agregación de los links de la sala Meet de Google donde se presentará el proyecto, así como el enlace al video de dicho proyecto.
         </p>
       </div>
     </div>
@@ -18,17 +14,17 @@
   <div class="container">
     <form class="row g-4 mb-5 needs-validation" novalidate>
       <div class="col-md-12">
-        <label for="youtubeControl" class="form-label">Link de la sesión de google meet</label>
-        <input type="text" class="form-control" id="youtubeControl" placeholder="Link de meet." required>
+        <label for="youtubeControl" class="form-label">Link de la sesión de Google Meet</label>
+        <input type="text" class="form-control" id="youtubeControl" placeholder="Link de Meet." required>
         <div class="invalid-feedback">
-          Asegúrate de insertar un link de youtube.
+          Asegúrate de insertar un link de Google Meet.
         </div>
       </div>
       <div class="col-md-12">
-        <label for="meetControl" class="form-label">Link del video de youtube</label>
-        <input type="text" class="form-control" id="meetControl" placeholder="Link de youtube." required>
+        <label for="meetControl" class="form-label">Link del video de Youtube</label>
+        <input type="text" class="form-control" id="meetControl" placeholder="Link de Youtube." required>
         <div class="invalid-feedback">
-          Asegúrate de insertar un link de youtube.
+          Asegúrate de insertar un link de Youtube.
         </div>
       </div>
       <div class="col-12">
