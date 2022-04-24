@@ -35,7 +35,7 @@
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, dolorum, cupiditate a magni soluta unde reiciendis dolore optio facilis animi fuga nisi asperiores exercitationem quasi enim minima voluptatem suscipit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas neque tempora laudantium inventore. Odit tempore corporis quasi porro.
         </p>
       <div class="col-4 mx-auto">
-        <router-link class="btn btn-warning" to="/projects">Projectos</router-link>
+        <router-link class="btn btn-warning" to="/projects">Proyectos</router-link>
       </div>
       </div>
     </div>
@@ -98,7 +98,7 @@
   </div>
   </div>
   <footer>
-    <strong>Copyright @CETYS Lugar de Footer</strong>
+    Copyright @CETYS "Lugar de Footer"
   </footer>
 </template>
 
