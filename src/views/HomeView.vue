@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="container">
-  <div class="container mt-5">
+  <div class="container mt-5" id="contenedor-info">
     <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center">
       <div class="col"> <!-- Do dynamic right-align -->
         <img src="@/assets/d.jpg" class="img-fluid" alt="logo">
@@ -22,7 +22,7 @@
       </div>
     </div>
   </div>
-    <div class="container mt-4">
+    <div class="container mt-4" id="contenedor-info">
     <div class="row p-4 gx-5 align-items-center">
       <div class="col"> <!-- Do dynamic right-align -->
         <img src="@/assets/e.jpg" class="img-fluid" alt="logo">
@@ -42,31 +42,32 @@
   </div>
   <div class="backround container-fluid py-5" id="lugar_logos">
     <div class="row justify-content-center">
-      <div class="col-xs-6 col-sm-3 text-center">
+      <div class="col-sm-2 text-center" id="logos_footer">
         <img src="../assets/logo_expo_anio.png" class="img-fluid" alt="...">
       </div>
-      <div class="col-xs-6 col-sm-3 text-center">
+      <div class="col-sm-2 text-center" id="logos_footer">
         <img src="../assets/logo_tyva.png" class="img-fluid" alt="...">
       </div>
-      <div class="col-xs-6 col-sm-3 text-center">
+      <div class="col-sm-2 text-center" id="logos_footer">
         <img src="../assets/logo_ceid.png" class="img-fluid" alt="...">
       </div>
-      <div class="col-xs-6 col-sm-3 text-center">
+      <div class="col-sm-2 text-center" id="logos_footer">
         <img src="../assets/logo_ciap.png" class="img-fluid" alt="...">
       </div>
     </div>
   </div>
   <div class="container mt-5">
-    <div class="accordion" id="accordionExample">
+    <div class="accordion" id="preguntas">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             ¿Qué horario tendrá la Expo-ingeniería 2022?
           </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
           <div class="accordion-body">
             La Expo-ingeniería 2022 tendrá un <strong>modelo híbrido;</strong> el día lunes 16 de mayo, los proyectos serán exhibidos 100% presencial dentro del campus, con un horario de 9 a.m. hasta las 7 p.m.
+            Los días 17 y 18 de mayo, los proyectos serán mostrados en línea a través de un link de Google Meet al que se podrá acceder desde el proyecto ubicado en la página.
           </div>
         </div>
       </div>
@@ -97,9 +98,9 @@
     </div>
   </div>
   </div>
-  <footer>
-    Copyright @CETYS "Lugar de Footer"
-  </footer>
+  <div class="container">
+
+  </div>
 </template>
 
 <style scoped>
@@ -117,16 +118,16 @@
     background-size: cover;
   }
   #lugar_logos{
-    background:
-      linear-gradient(
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0.7)
-      ),
-      url(../assets/e.jpg);
-
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      margin-top: 4%;
+  }
+  #preguntas{
+    margin-bottom: 5%;
+  }
+  #contenedor-info{
+    border: 4px double rgba(207, 205, 62, 0.7);
+  }
+  #logos_footer{
+    margin-right: 55px;
+    margin-left: 50px;
   }
 </style>
