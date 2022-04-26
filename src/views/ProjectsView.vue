@@ -34,11 +34,9 @@
     <div class="row row-cols-4 gy-4">
       <template v-for="card in cards" :key="card.id">
         <div class="col">
-          <p v-if="errorMsg">errorMsg</p>
           <CardComp
-            :img_src="card.img_src"
-            :title="card.title"
-            :description="card.body"
+            :nombre_proyecto="card.nombre_proyecto"
+            :descripcion="card.descripcion"
           />
         </div>
       </template>
@@ -56,8 +54,8 @@ export default {
       cards: [],
       errorMsg: '',
       urls: [
-        'https://jsonplaceholder.typicode.com/posts',
-        'https://jsonplaceholder.typicode.com/posts/1'
+        'https://expoingenieria.com/rest_api_expo/tablas/proyecto.php',
+        'https://expoingenieria.com/rest_api_expo/tablas/proyecto.php?id=2'
       ]
     }
   },
@@ -65,28 +63,17 @@ export default {
     CardComp
   },
   methods: {
-    fetchData (url) {
-      axios
-        .get(url)
-        .then(response => {
-          this.cards = response.data
-        })
-        .catch(error => {
-          console.log(error)
-          this.errorMsg = 'Error recuperando información.'
-        })
+    async fetchData (url) {
+      try {
+        const response = await axios.get(url)
+        this.cards = response.data
+      } catch (error) {
+        console.error(error)
+      }
     }
   },
   created () {
-    axios
-      .get('https://jsonplaceholder.typicode.com/posts')
-      .then(response => {
-        this.cards = response.data
-      })
-      .catch(error => {
-        console.log(error)
-        this.errorMsg = 'Error recuperando información.'
-      })
+    this.fetchData(this.urls[0])
   }
 }
 </script>
