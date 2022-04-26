@@ -6,10 +6,9 @@
       </div>
     </div>
   </div>
-  <div class="container">
   <div class="container mt-5" id="contenedor-info">
     <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center">
-      <div class="col"> <!-- Do dynamic right-align -->
+      <div class="col">
         <img src="@/assets/d.jpg" class="img-fluid" alt="logo">
       </div>
       <div class="col col-lg-6">
@@ -22,9 +21,9 @@
       </div>
     </div>
   </div>
-    <div class="container mt-4" id="contenedor-info">
+  <div class="container mt-4" id="contenedor-info">
     <div class="row p-4 gx-5 align-items-center">
-      <div class="col"> <!-- Do dynamic right-align -->
+      <div class="col">
         <img src="@/assets/e.jpg" class="img-fluid" alt="logo">
       </div>
       <div class="col col-lg-6">
@@ -33,10 +32,10 @@
         </h2>
         <p class="lead text-muted">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, dolorum, cupiditate a magni soluta unde reiciendis dolore optio facilis animi fuga nisi asperiores exercitationem quasi enim minima voluptatem suscipit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas neque tempora laudantium inventore. Odit tempore corporis quasi porro.
-        </p>
-      <div class="col-4 mx-auto">
-        <router-link class="btn btn-warning" to="/projects">Proyectos</router-link>
-      </div>
+        </p> <!-- Column inside another column? -->
+        <div class="col-4 mx-auto mt-4">
+          <router-link class="btn btn-warning" to="/projects">Proyectos</router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -96,10 +95,6 @@
         </div>
       </div>
     </div>
-  </div>
-  </div>
-  <div class="container">
-
   </div>
 </template>
 
