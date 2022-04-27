@@ -68,7 +68,11 @@ export default {
   methods: {
   }
 }
+// ffc107
 </script>
 
-<style>
+<style scoped>
+  footer {
+    background-color: #ffe597;
+  }
 </style>
