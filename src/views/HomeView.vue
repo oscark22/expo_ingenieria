@@ -4,6 +4,11 @@
       <div class="col py-5">
         <img src="../assets/logo_expo.png" class="img-fluid" width="550" id="logo-expo">
       </div>
+      <div class="text-center">
+        <router-link class="btn btn-warning text-black rounded-pill scrollto py-3 px-5" to="/projects">
+            Proyectos
+        </router-link>
+      </div>
     </div>
   </div>
   <div class="container mt-5" id="contenedor-info">
@@ -34,7 +39,7 @@
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, dolorum, cupiditate a magni soluta unde reiciendis dolore optio facilis animi fuga nisi asperiores exercitationem quasi enim minima voluptatem suscipit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas neque tempora laudantium inventore. Odit tempore corporis quasi porro.
         </p> <!-- Column inside another column? -->
         <div class="col-4 mx-auto mt-4">
-          <router-link class="btn btn-warning" to="/projects">Proyectos</router-link>
+          <router-link class="btn btn-warning rounded-pill" to="/projects">Proyectos</router-link>
         </div>
       </div>
     </div>
@@ -84,19 +89,19 @@
     <div class="container-fluid">
       <div class="row gx-5 px-5 mx-5 justify-content-center">
         <div class="col">
-          <img src="@/assets/logo_campus.png" class="img-fluid" width="175" alt="logo_campus">
+          <img src="@/assets/logo_campus.png" class="img-fluid" width="200" alt="logo_campus">
         </div>
         <div class="col">
-          <img src="@/assets/logo_ceid.png" class="img-fluid" width="175" alt="logo_ceid">
+          <img src="@/assets/logo_ceid.png" class="img-fluid" width="200" alt="logo_ceid">
         </div>
         <div class="col">
-          <img src="@/assets/logo_expo_anio.png" class="img-fluid" width="175" alt="logo_expo">
+          <img src="@/assets/logo_expo_anio.png" class="img-fluid" width="200" alt="logo_expo">
         </div>
         <div class="col">
-          <img src="@/assets/logo_tyva.png" class="img-fluid" width="175" alt="logo_tyva">
+          <img src="@/assets/logo_tyva.png" class="img-fluid" width="200" alt="logo_tyva">
         </div>
         <div class="col">
-          <img src="@/assets/logo_ciap.png" class="img-fluid" width="175" alt="logo_ciap">
+          <img src="@/assets/logo_ciap.png" class="img-fluid" width="200" alt="logo_ciap">
         </div>
       </div>
     </div>
@@ -116,5 +121,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 650px;
+  }
+  .rounded-pill{
+    border-radius: 50rem;
+  }
+  .btn-warning{
+      display: inline-block;
   }
 </style>
