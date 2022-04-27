@@ -1,5 +1,5 @@
 <template>
-  <div class="backround container-fluid py-5" id="inicio">
+  <div class="inicio container-fluid py-5">
     <div class="row py-5" align="center">
       <div class="col py-5">
         <img src="../assets/logo_expo.png" class="img-fluid" width="550" id="logo-expo">
@@ -36,22 +36,6 @@
         <div class="col-4 mx-auto mt-4">
           <router-link class="btn btn-warning" to="/projects">Proyectos</router-link>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="backround container-fluid py-5" id="lugar_logos">
-    <div class="row justify-content-center">
-      <div class="col-sm-2 text-center" id="logos_footer">
-        <img src="../assets/logo_expo_anio.png" class="img-fluid" alt="...">
-      </div>
-      <div class="col-sm-2 text-center" id="logos_footer">
-        <img src="../assets/logo_tyva.png" class="img-fluid" alt="...">
-      </div>
-      <div class="col-sm-2 text-center" id="logos_footer">
-        <img src="../assets/logo_ceid.png" class="img-fluid" alt="...">
-      </div>
-      <div class="col-sm-2 text-center" id="logos_footer">
-        <img src="../assets/logo_ciap.png" class="img-fluid" alt="...">
       </div>
     </div>
   </div>
@@ -96,10 +80,31 @@
       </div>
     </div>
   </div>
+  <footer class="footer pt-5 mt-5 mb-2">
+    <div class="container-fluid">
+      <div class="row gx-5 px-5 mx-5 justify-content-center">
+        <div class="col">
+          <img src="@/assets/logo_campus.png" class="img-fluid" width="175" alt="logo_campus">
+        </div>
+        <div class="col">
+          <img src="@/assets/logo_ceid.png" class="img-fluid" width="175" alt="logo_ceid">
+        </div>
+        <div class="col">
+          <img src="@/assets/logo_expo_anio.png" class="img-fluid" width="175" alt="logo_expo">
+        </div>
+        <div class="col">
+          <img src="@/assets/logo_tyva.png" class="img-fluid" width="175" alt="logo_tyva">
+        </div>
+        <div class="col">
+          <img src="@/assets/logo_ciap.png" class="img-fluid" width="175" alt="logo_ciap">
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style scoped>
-  #inicio{
+  .inicio{
     background:
       linear-gradient(
         rgba(0, 0, 0, 0.7),
@@ -111,18 +116,5 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-  #lugar_logos{
-      margin-top: 4%;
-  }
-  #preguntas{
-    margin-bottom: 5%;
-  }
-  #contenedor-info{
-    border: 4px double rgba(207, 205, 62, 0.7);
-  }
-  #logos_footer{
-    margin-right: 55px;
-    margin-left: 50px;
   }
 </style>
