@@ -5,7 +5,7 @@
         <img src="../assets/logo_expo.png" class="img-fluid" width="550" id="logo-expo">
       </div>
       <div class="text-center">
-        <router-link class="btn btn-warning text-black rounded-pill scrollto py-3 px-5" to="/projects">
+        <router-link class="btn btn-warning text-black rounded-pill scrollto py-2 px-5 fs-4" to="/projects">
             Proyectos
         </router-link>
       </div>
@@ -39,7 +39,7 @@
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, dolorum, cupiditate a magni soluta unde reiciendis dolore optio facilis animi fuga nisi asperiores exercitationem quasi enim minima voluptatem suscipit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas neque tempora laudantium inventore. Odit tempore corporis quasi porro.
         </p> <!-- Column inside another column? -->
         <div class="col-4 mx-auto mt-4">
-          <router-link class="btn btn-warning rounded-pill" to="/projects">Proyectos</router-link>
+          <router-link class="btn btn-warning rounded-pill py-2 px-4" to="/projects">Proyectos</router-link>
         </div>
       </div>
     </div>
