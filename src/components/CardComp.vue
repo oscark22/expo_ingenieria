@@ -5,14 +5,13 @@
       <div class="card-body">
         <h5 class="card-title">{{ nombre_proyecto }}</h5>
         <p class="card-text">{{ descripcion }}</p>
-        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#myModal">Ver proyectos</button>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" :data-bs-target="'#myModal' + card_id">Ver proyectos</button>
       </div>
       <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
       </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" :id="'myModal' + card_id" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
@@ -33,7 +32,7 @@
 
 <script>
 export default {
-  props: ['img_src', 'nombre_proyecto', 'descripcion']
+  props: ['card_id', 'img_src', 'nombre_proyecto', 'descripcion']
 }
 </script>
 
