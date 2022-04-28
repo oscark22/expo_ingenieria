@@ -31,7 +31,9 @@
           ¿Qué es Expoingeniería?
         </h1>
         <p class="lead text-muted lh-lg py-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, nesciunt. Corporis facilis blanditiis modi ratione libero adipisci, ipsam id nostrum quidem aliquid at recusandae delectus eius! Quo voluptatum commodi vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor neque asperiores fugiat provident! Nam praesentium delectus maxime animi voluptate debitis.
+         Es el evento más importante de la Escuela de Ingeniería, donde los alumnos tienen la oportunidad de demostrar los conocimientos que están aprendiendo en el aula a
+         través de en proyectos de aplicación, con innovación y creatividad resolviendo problemas reales, y eso les genera habilidades que van a aplicar cuando egresen
+         y se inserten al campo laboral.
         </p>
       </div>
     </div>
@@ -46,7 +48,9 @@
           Escuela de Ingeniería
         </h1>
         <p class="lead text-muted lh-lg py-4">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, dolorum, cupiditate a magni soluta unde reiciendis dolore optio facilis animi fuga nisi asperiores exercitationem quasi enim minima voluptatem suscipit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas neque tempora laudantium inventore. Odit tempore corporis quasi porro.
+          Los alumnos de CETYS Universidad aplicaran sus conocimientos adquiridos en la escuela de ingenieria,
+          poniendo en practica sus habilidades en distintos proyectos, relacionados a sus respectivas areas profesionales
+          impulsando asi, la innovacion, ingenio y emprendedurismo en la comunidad academica.
         </p> <!-- Column inside another column? -->
       </div>
     </div>
