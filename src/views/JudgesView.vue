@@ -47,7 +47,7 @@
         <textarea class="form-control" id="projectComments" placeholder="Escribe aquí tus comentarios (opcional)." rows="4" required></textarea>
       </div>
       <div class="col-12">
-        <button class="btn btn-primary" type="submit">
+        <button class="btn btn-primary" type="button">
           Confirmar
         </button>
       </div>

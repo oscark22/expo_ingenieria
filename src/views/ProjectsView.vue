@@ -42,10 +42,10 @@
     </template>
     <template v-else-if="activeBtn==='btn4'">
       <div class="btn-group" role="group" aria-label="Basic outlined example">
-        <button @click="fetchData(urls[1])" type="button" class="btn btn-warning">
+        <button @click="fetchData(urls[0])" type="button" class="btn btn-warning">
           Categoría I
         </button>
-        <button @click="fetchData(urls[1])" type="button" class="btn btn-dark">
+        <button @click="fetchData(urls[0])" type="button" class="btn btn-dark">
           Categoría II
         </button>
       </div>
@@ -53,9 +53,11 @@
   </div>
   <div class="container">
     <div class="row row-cols-4 gy-4">
-      <template v-for="card in cards" :key="card.id">
+      <template v-for="card in cards" :key="card.proyecto_id">
         <div class="col">
           <CardComp
+            :card_id="card.proyecto_id"
+            :img_src="card.img_src"
             :nombre_proyecto="card.nombre_proyecto"
             :descripcion="card.descripcion"
           />
@@ -75,8 +77,7 @@ export default {
       cards: [],
       errorMsg: '',
       urls: [
-        'https://expoingenieria.com/rest_api_expo/tablas/proyecto.php',
-        'https://expoingenieria.com/rest_api_expo/tablas/proyecto.php?id=2'
+        'https://expoingenieria.com/rest_api_expo/tablas/proyecto/'
       ],
       activeBtn: ''
     }
