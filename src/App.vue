@@ -1,12 +1,10 @@
 <template>
+<body>
   <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
     <div class="container d-flex align-items-md-center">
       <a class="navbar-brand ms-2">
         <img src="@/assets/logo_cetysn.png" class="img-fluid" width="50" alt="logo">
       </a>
-      <!-- <a class="navbar-brand ms-2">
-        <img src="@/assets/logo_expo.png" class="img-fluid" width="80" alt="logo">
-      </a> -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -57,6 +55,7 @@
     </div>
   </div>
   <router-view/>
+</body>
 </template>
 
 <script>
@@ -68,11 +67,9 @@ export default {
   methods: {
   }
 }
-// ffc107
 </script>
-
-<style scoped>
-  footer {
-    background-color: #ffe597;
+<style>
+  body{
+    font-family:Arial, Helvetica, sans-serif;
   }
 </style>

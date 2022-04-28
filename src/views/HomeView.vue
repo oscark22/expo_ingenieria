@@ -1,13 +1,23 @@
 <template>
   <div class="inicio container-fluid py-5">
-    <div class="row py-5" align="center">
-      <div class="col py-5">
-        <img src="../assets/logo_expo.png" class="img-fluid" width="550" id="logo-expo">
-      </div>
-      <div class="text-center">
-        <router-link class="btn btn-warning text-black rounded-pill scrollto py-2 px-5 fs-4" to="/projects">
-            Proyectos
-        </router-link>
+    <div class="container-fluid" id="contenedor-info">
+      <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center">
+        <div class="col-6 px-5">
+          <img src="@/assets/LogoExpo-web-02.png" class="img-fluid" width="550" alt="logo">
+        </div>
+        <div class="col-4 p-1">
+          <h1 class="text-white" id="titulo">
+            <p>EXPOINGENIERÍA</p>
+            <p>CETYS ENSENADA</p>
+          </h1>
+          <p class="text-white fs-6 lh-2">
+            Descubre los proyectos realizados por los alumnos de
+            la Escuela de Ingeniería de CETYS Universidad Campus Internacional Ensenada, en las distintas categorías de: Multimedia y Software, Producto, Académico y Proceso.
+          </p>
+          <div class="col-4">
+            <router-link class="btn btn-light py-2 px-5" to="/projects">PROYECTOS</router-link>
+        </div>
+        </div>
       </div>
     </div>
   </div>
@@ -17,10 +27,10 @@
         <img src="@/assets/d.jpg" class="img-fluid" alt="logo">
       </div>
       <div class="col col-lg-6">
-        <h2 class="fw-light">
-          ¿Qué es la Expo Ingeniería?
-        </h2>
-        <p class="lead text-muted">
+        <h1 class="fw-bold fs-1">
+          ¿Qué es Expoingeniería?
+        </h1>
+        <p class="lead text-muted lh-lg py-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, nesciunt. Corporis facilis blanditiis modi ratione libero adipisci, ipsam id nostrum quidem aliquid at recusandae delectus eius! Quo voluptatum commodi vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor neque asperiores fugiat provident! Nam praesentium delectus maxime animi voluptate debitis.
         </p>
       </div>
@@ -32,15 +42,12 @@
         <img src="@/assets/e.jpg" class="img-fluid" alt="logo">
       </div>
       <div class="col col-lg-6">
-        <h2 class="fw-light">
-          ¿Una pregunta random?
-        </h2>
-        <p class="lead text-muted">
+        <h1 class="fw-bold fs-1">
+          Escuela de Ingeniería
+        </h1>
+        <p class="lead text-muted lh-lg py-4">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, dolorum, cupiditate a magni soluta unde reiciendis dolore optio facilis animi fuga nisi asperiores exercitationem quasi enim minima voluptatem suscipit necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas neque tempora laudantium inventore. Odit tempore corporis quasi porro.
         </p> <!-- Column inside another column? -->
-        <div class="col-4 mx-auto mt-4">
-          <router-link class="btn btn-warning rounded-pill py-2 px-4" to="/projects">Proyectos</router-link>
-        </div>
       </div>
     </div>
   </div>
@@ -85,7 +92,7 @@
       </div>
     </div>
   </div>
-  <footer class="footer pt-5 mt-5 mb-2">
+  <footer class="footer pt-4 pb-4 mt-5 mb-2">
     <div class="container-fluid">
       <div class="row gx-5 px-5 mx-5 justify-content-center">
         <div class="col">
@@ -108,7 +115,7 @@
   </footer>
 </template>
 
-<style>
+<style scoped>
   .inicio{
     background:
       linear-gradient(
@@ -129,7 +136,7 @@
   .btn-warning{
       display: inline-block;
   }
-  body{
-    font-family: Montserrat;
+  #titulo{
+    font-size: 50px;
   }
 </style>
