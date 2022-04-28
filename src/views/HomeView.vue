@@ -108,7 +108,7 @@
   </footer>
 </template>
 
-<style scoped>
+<style>
   .inicio{
     background:
       linear-gradient(
@@ -128,5 +128,8 @@
   }
   .btn-warning{
       display: inline-block;
+  }
+  body{
+    font-family: Montserrat;
   }
 </style>
