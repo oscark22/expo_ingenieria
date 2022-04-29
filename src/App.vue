@@ -28,7 +28,7 @@
       </div>
     </div>
   </nav> -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+  <nav class="navbar navbar-expand-xxl navbar-light bg-warning sticky-top pb-3 pb-md-2">
     <div class="container d-flex align-items-md-center">
       <a class="navbar-brand">
         <img src="@/assets/logo_cetysn.png" class="img-fluid" width="50" alt="logo">
@@ -37,7 +37,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav flex-row flex-wrap py-2 mx-2 mb-lg-0">
+        <ul class="navbar-nav flex-row flex-wrap pt-2 py-md-0">
           <li class="nav-item col-6 col-md-auto">
             <router-link class="nav-link" aria-current="page" to="/">Inicio</router-link>
           </li>
@@ -51,11 +51,12 @@
             <router-link class="nav-link active" to="/judges" tabindex="-1" aria-disabled="true">Judges</router-link>
           </li>
         </ul>
-        <ul class="navbar-nav " id="mainNav">
+        <hr>
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+          <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            Iniciar Sesión
+          </button>
         </ul>
-        <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-          Iniciar Sesión
-        </button>
       </div>
     </div>
   </nav>
@@ -99,6 +100,7 @@ export default {
   }
 }
 </script>
+
 <style>
   /* body{
     font-family:Arial, Helvetica, sans-serif;
