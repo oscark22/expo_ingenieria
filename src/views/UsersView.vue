@@ -46,9 +46,9 @@ export default {
       url_video: '',
       articleId: 0,
       article: {
-        nombre_equipo: 'noc',
-        nombre_proyecto: 'noc',
-        descripcion: 'noc',
+        nombre_equipo: 'nombre_random',
+        nombre_proyecto: 'un_nombre',
+        descripcion: 'una descripcion',
         url_sala: '',
         url_video: '',
         asesor_id: 1,
@@ -71,9 +71,7 @@ export default {
     // }
     postData () {
       axios
-        .post('https://expoingenieria.com/rest_api_expo/tablas/proyecto/',
-          this.article
-        )
+        .post('https://expoingenieria.com/rest_api_expo/tablas/proyecto/', this.article)
         .then(function (response) {
           console.log(response)
         })

@@ -1,6 +1,6 @@
 <template>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
     <div class="container d-flex align-items-md-center">
       <a class="navbar-brand ms-2">
         <img src="@/assets/logo_cetysn.png" class="img-fluid" width="50" alt="logo">
@@ -25,6 +25,37 @@
             </button>
           </li>
         </ul>
+      </div>
+    </div>
+  </nav> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+    <div class="container d-flex align-items-md-center">
+      <a class="navbar-brand">
+        <img src="@/assets/logo_cetysn.png" class="img-fluid" width="50" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav flex-row flex-wrap py-2 mx-2 mb-lg-0">
+          <li class="nav-item col-6 col-md-auto">
+            <router-link class="nav-link" aria-current="page" to="/">Inicio</router-link>
+          </li>
+          <li class="nav-item col-6 col-md-auto">
+            <router-link class="nav-link active" to="/projects">Proyectos</router-link>
+          </li>
+          <li class="nav-item col-6 col-md-auto">
+            <router-link class="nav-link active" to="/users">Users</router-link>
+          </li>
+          <li class="nav-item col-6 col-md-auto">
+            <router-link class="nav-link active" to="/judges" tabindex="-1" aria-disabled="true">Judges</router-link>
+          </li>
+        </ul>
+        <ul class="navbar-nav " id="mainNav">
+        </ul>
+        <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          Iniciar Sesión
+        </button>
       </div>
     </div>
   </nav>
@@ -69,7 +100,7 @@ export default {
 }
 </script>
 <style>
-  body{
+  /* body{
     font-family:Arial, Helvetica, sans-serif;
-  }
+  } */
 </style>
