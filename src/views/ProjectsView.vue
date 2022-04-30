@@ -15,15 +15,15 @@
         <i class="bi bi-journal-bookmark-fill"></i>
         Académico
       </button>
-      <button @click="fetchData(urls[1]); activeBtn='btn2';" type="button" class="btn btn-secondary">
+      <button @click="fetchData(urls[0]); activeBtn='btn2';" type="button" class="btn btn-secondary">
         <i class="bi bi-cpu"></i>
         Software y multimedia
       </button>
-      <button @click="fetchData(urls[1]); activeBtn='btn3';" type="button" class="btn btn-success">
+      <button @click="fetchData(urls[0]); activeBtn='btn3';" type="button" class="btn btn-success">
         <i class="bi bi-box-seam"></i>
         Producto
       </button>
-      <button @click="fetchData(urls[1]); activeBtn='btn4';" type="button" class="btn btn-danger">
+      <button @click="fetchData(urls[0]); activeBtn='btn4';" type="button" class="btn btn-danger">
         <i class="bi bi-gear-wide-connected"></i>
         Proceso
       </button>
@@ -52,7 +52,7 @@
     </template>
   </div>
   <div class="container">
-    <div class="row row-cols-4 gy-4">
+    <div class="row row-cols-md-4 gy-4">
       <template v-for="card in cards" :key="card.proyecto_id">
         <div class="col">
           <CardComp
