@@ -1,33 +1,5 @@
 <template>
 <body>
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
-    <div class="container d-flex align-items-md-center">
-      <a class="navbar-brand ms-2">
-        <img src="@/assets/logo_cetysn.png" class="img-fluid" width="50" alt="logo">
-      </a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <router-link class="nav-link" aria-current="page" to="/">Inicio</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link active" to="/projects">Proyectos</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link active" to="/users">Users</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link active" to="/judges" tabindex="-1" aria-disabled="true">Judges</router-link>
-          </li>
-          <li>
-            <button class="btn btn-dark ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-              Iniciar Sesión
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
   <nav class="navbar navbar-expand-xxl navbar-light bg-warning sticky-top pb-3 pb-md-2">
     <div class="container d-flex align-items-md-center">
       <a class="navbar-brand">
