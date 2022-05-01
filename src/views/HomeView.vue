@@ -1,22 +1,20 @@
 <template>
   <div class="inicio container-fluid py-5">
-    <div class="container-fluid" id="contenedor-info">
-      <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center">
-        <div class="col-6 px-5">
+    <div class="container-xxl px-5">
+      <div class="row flex-md-row-reverse align-items-center">
+        <div class="col col-12 col-md-6 ms-md-auto mb-5 mb-md-0">
           <img src="@/assets/LogoExpo-web-02.png" class="img-fluid" width="550" alt="logo">
         </div>
-        <div class="col-4 p-1">
-          <h1 class="text-white" id="titulo">
-            <p>EXPOINGENIERÍA</p>
-            <p>CETYS ENSENADA</p>
+        <div class="col col-12 col-md-6 ms-md-auto">
+          <h1 class="text-white text-uppercase lh-1">
+            <p>Expoingeniería CETYS Ensenada</p>
           </h1>
-          <p class="text-white fs-6 lh-2">
-            Descubre los proyectos realizados por los alumnos de
-            la Escuela de Ingeniería de CETYS Universidad Campus Internacional Ensenada, en las distintas categorías de: Multimedia y Software, Producto, Académico y Proceso.
+          <p class="lead text-white">
+            Descubre los proyectos realizados por los alumnos de la Escuela de Ingeniería de CETYS Universidad Campus Internacional Ensenada, en las distintas categorías de: Multimedia y Software, Producto, Académico y Proceso.
           </p>
-          <div class="col-4">
-            <router-link class="btn btn-light py-2 px-5" to="/projects">PROYECTOS</router-link>
-        </div>
+          <button class="btn btn-light px-4" type="button">
+            Proyectos
+          </button>
         </div>
       </div>
     </div>
@@ -132,15 +130,5 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 650px;
-  }
-  .rounded-pill{
-    border-radius: 50rem;
-  }
-  .btn-warning{
-      display: inline-block;
-  }
-  #titulo{
-    font-size: 50px;
   }
 </style>
