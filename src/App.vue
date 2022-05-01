@@ -1,6 +1,6 @@
 <template>
 <body>
-  <nav class="navbar navbar-expand-xxl navbar-light bg-warning sticky-top pb-3 pb-md-2">
+  <nav class="navbar navbar-expand-xxl navbar-light bg-warning sticky-top pb-md-2">
     <div class="container d-flex align-items-md-center">
       <a class="navbar-brand">
         <img src="@/assets/logo_cetysn.png" class="img-fluid" width="50" alt="logo">
