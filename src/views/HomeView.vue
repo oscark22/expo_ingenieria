@@ -19,16 +19,16 @@
       </div>
     </div>
   </div>
-  <div class="container mt-5" id="contenedor-info">
+  <div class="container mt-5 px-4 px-md-3" id="contenedor-info">
     <div class="row flex-md-row-reverse p-md-4 gx-md-5 align-items-center">
-      <div class="col col-lg-6 col-md-4 col-sm-4">
+      <div class="col col-12 col-md-6 ms-md-auto">
         <img src="@/assets/d.jpg" class="img-fluid" alt="logo">
       </div>
-      <div class="col col-lg-6 col-md-8 col-sm-8">
-        <h1 class="fw-bold fs-1">
+      <div class="col col-lg-6 col-md-8 col-sm-8 mt-5">
+        <h1 class="fw-bold fs-1 text-center text-md-start">
           ¿Qué es Expoingeniería?
         </h1>
-        <p class="lead text-muted lh-lg py-4">
+        <p class="lead text-muted lh-lg py-4 ">
          Es el evento más importante de la Escuela de Ingeniería, donde los alumnos tienen la oportunidad de demostrar los conocimientos que están aprendiendo en el aula a
          través de proyectos de aplicación, con innovación y creatividad resolviendo problemas reales, y eso les genera habilidades que van a aplicar cuando egresen
          y se inserten al campo laboral.
@@ -36,16 +36,16 @@
       </div>
     </div>
   </div>
-  <div class="container mt-lg-4 mb-md-3" id="contenedor-info">
+  <div class="container mt-5 px-4 px-md-3" id="contenedor-info">
     <div class="row p-lg-4 gx-lg-5 align-items-center">
-      <div class="col col-lg-6 col-md-4 col-sm-4">
+      <div class="col col-12 col-md-6 ms-md-auto">
         <img src="@/assets/e.jpg" class="img-fluid" alt="logo">
       </div>
-      <div class="col col-lg-6 col-md-8 col-sm-8">
+      <div class="col col-lg-6 col-md-8 col-sm-8 mt-5">
         <h1 class="fw-bold fs-1">
           Escuela de Ingeniería
         </h1>
-        <p class="lead text-muted lh-lg py-lg-4">
+        <p class="lead text-muted lh-lg py-lg-4 mt-4">
           Los alumnos de CETYS Universidad aplicarán sus conocimientos adquiridos en la escuela de ingeniería,
           poniendo en práctica sus habilidades en distintos proyectos, relacionados a sus respectivas áreas profesionales
           impulsando así, la innovación, ingenio y emprendedurismo en la comunidad académica.
