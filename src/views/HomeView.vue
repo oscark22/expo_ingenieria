@@ -54,7 +54,7 @@
     </div>
   </div>
   <div class="container mt-4">
-    <div class="container-fluid text-center text-md-end text-lg-end fs-1 mb-3">
+    <div class="container-fluid text-center text-md-end fs-1 mb-3">
       Preguntas Frecuentes
     </div>
     <div class="accordion" id="preguntas">
