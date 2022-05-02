@@ -1,31 +1,29 @@
 <template>
-  <div class="container text-center pt-5 pt-md-4 mt-md-5">
+  <div class="container-fluid text-white text-center pt-5 pt-md-4 pb-md-4 mt-md-5" id="Proy">
     <div class="row mb-3">
       <div class="col col-md-6 mx-auto">
-        <h1 class="display-5 fw-light">
+        <h1 class="display-5 fw-light fw-bold">
           Proyectos
         </h1>
-        <p class="lead text-muted">
+        <p class="lead">
           Los proyectos se encuentran organizados según su clasificación. Elige de las categorías de proyecto disponibles.
         </p>
       </div>
     </div>
     <div class="btn-group" role="group" aria-label="Basic outlined example">
-      <button @click="fetchData(); activeBtn='btn1'; currCategory='0'" type="button" class="btn btn-primary">
-        <i class="bi bi-journal-bookmark-fill"></i>
-        Académico
+      <div>
+      <button @click="fetchData(); activeBtn='btn1'; currCategory='0'" type="button" class="btn">
+        <img src="../assets/iconos-08.png" width="45" height="50">
       </button>
-      <button @click="activeBtn='btn2'" type="button" class="btn btn-secondary">
-        <i class="bi bi-cpu"></i>
-        Software y multimedia
+      </div>
+      <button @click="activeBtn='btn2'" type="button" class="btn">
+        <img src="../assets/iconos-07.png" width="45" height="50">
       </button>
-      <button @click="fetchData(); activeBtn='btn3'; currCategory='3'" type="button" class="btn btn-success">
-        <i class="bi bi-box-seam"></i>
-        Producto
+      <button @click="fetchData(); activeBtn='btn3'; currCategory='3'" type="button" class="btn">
+        <img src="../assets/iconos-06.png" width="45" height="50">
       </button>
-      <button @click="activeBtn='btn4'" type="button" class="btn btn-danger">
-        <i class="bi bi-gear-wide-connected"></i>
-        Proceso
+      <button @click="activeBtn='btn4'" type="button" class="btn">
+        <img src="../assets/iconos-05.png" width="45" height="50">
       </button>
     </div>
   </div>
@@ -98,3 +96,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+  #Proy{
+    background: #6798C0;
+  }
+</style>
