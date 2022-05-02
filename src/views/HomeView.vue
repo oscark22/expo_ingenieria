@@ -20,15 +20,16 @@
     </div>
   </div>
   <div class="container mt-5 px-4 px-md-3" id="contenedor-info">
-    <div class="row flex-md-row-reverse p-md-4 gx-md-5 align-items-center">
-      <div class="col col-12 col-md-6 ms-md-auto">
+    <div class="row flex-md-row-reverse align-items-center">
+      <div class="col col-12 col-lg-6 ms-md-auto mb-4 mb-lg-0">
         <img src="@/assets/d.jpg" class="img-fluid" alt="logo">
       </div>
-      <div class="col col-12 col-md-6 mt-5">
-        <h1 class="fw-bold fs-1 text-center text-md-start">
+      <div class="col col-12 col-lg-6 ms-md-auto">
+        <h1 class="fw-bold fs-1">
+          <!-- text-center text-md-start -->
           ¿Qué es Expoingeniería?
         </h1>
-        <p class="lead text-muted lh-lg py-4 ">
+        <p class="lead text-muted lh-lg py-2">
          Es el evento más importante de la Escuela de Ingeniería, donde los alumnos tienen la oportunidad de demostrar los conocimientos que están aprendiendo en el aula a
          través de proyectos de aplicación, con innovación y creatividad resolviendo problemas reales, y eso les genera habilidades que van a aplicar cuando egresen
          y se inserten al campo laboral.
@@ -37,15 +38,15 @@
     </div>
   </div>
   <div class="container mt-5 px-4 px-md-3" id="contenedor-info">
-    <div class="row p-lg-4 gx-lg-5 align-items-center">
-      <div class="col col-12 col-md-6 ms-md-auto">
+    <div class="row p-md-4 gx-md-5 align-items-center">
+      <div class="col col-12 col-lg-6 ms-md-auto mb-4 mb-lg-0">
         <img src="@/assets/e.jpg" class="img-fluid" alt="logo">
       </div>
-      <div class="col col-lg-6 col-md-8 col-sm-8 mt-5">
+      <div class="col col-12 col-lg-6 ms-md-auto">
         <h1 class="fw-bold fs-1">
           Escuela de Ingeniería
         </h1>
-        <p class="lead text-muted lh-lg py-lg-4 mt-4">
+        <p class="lead text-muted lh-lg py-2">
           Los alumnos de CETYS Universidad aplicarán sus conocimientos adquiridos en la escuela de ingeniería,
           poniendo en práctica sus habilidades en distintos proyectos, relacionados a sus respectivas áreas profesionales
           impulsando así, la innovación, ingenio y emprendedurismo en la comunidad académica.
@@ -60,7 +61,7 @@
     <div class="accordion" id="preguntas">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             ¿Qué horarios hay de exposición presencial?
           </button>
         </h2>
@@ -72,7 +73,7 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             ¿Qué horarios hay de exposición virtual?
           </button>
         </h2>
@@ -84,7 +85,7 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
             ¿Qué tipos de proyectos puedo ver en cada categoría?
           </button>
         </h2>
@@ -96,7 +97,7 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
             ¿En qué consisten las categorías?
           </button>
         </h2>
@@ -108,7 +109,7 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
             ¿Cómo puedo navegar en el sitio?
           </button>
         </h2>
@@ -120,7 +121,7 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingSix">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
             Si soy juez, ¿cómo puedo evaluar?
           </button>
         </h2>
@@ -132,7 +133,7 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingSeven">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
             ¿Puedo evaluar los proyectos si soy público general?
           </button>
         </h2>
@@ -144,7 +145,7 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingEight">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
             ¿Me tengo que registrar?
           </button>
         </h2>
@@ -156,7 +157,7 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingNine">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
             ¿También tendrán conferencias?
           </button>
         </h2>
@@ -168,7 +169,7 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTen">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
             ¿Tiene costo?
           </button>
         </h2>
@@ -180,7 +181,7 @@
       </div>
             <div class="accordion-item">
         <h2 class="accordion-header" id="headingEleven">
-          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
             ¿Las conferencias serán virtuales?
           </button>
         </h2>

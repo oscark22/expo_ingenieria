@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid text-white text-center pt-5 pt-md-4 pb-md-4 mt-md-5" id="Proy">
+  <div class="container-fluid text-white text-center p-3 mt-0 mt-md-5" id="Proy">
     <div class="row mb-3">
       <div class="col col-md-6 mx-auto">
         <h1 class="display-5 fw-light fw-bold">
