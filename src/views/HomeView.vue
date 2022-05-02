@@ -20,7 +20,7 @@
     </div>
   </div>
   <div class="container mt-5" id="contenedor-info">
-    <div class="row flex-lg-row-reverse flex-md-row-reverse p-lg-4 gx-lg-5 align-items-center">
+    <div class="row flex-md-row-reverse p-md-4 gx-md-5 align-items-center">
       <div class="col col-lg-6 col-md-4 col-sm-4">
         <img src="@/assets/d.jpg" class="img-fluid" alt="logo">
       </div>

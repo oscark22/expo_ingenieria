@@ -1,5 +1,4 @@
 <template>
-<body>
   <nav class="navbar navbar-expand-md navbar-light bg-warning sticky-top pb-md-2">
     <div class="container d-flex align-items-md-center">
       <a class="navbar-brand">
@@ -59,25 +58,24 @@
     </div>
   </div>
   <router-view/>
-</body>
-<footer class="footer pt-4 pb-4 mt-5 mb-2">
-  <div class="container-fluid">
-    <div class="row gx-md-5 px-md-5 mx-md-5 justify-content-center">
-      <div class="col-3">
-        <img src="@/assets/logo_expo_anio.png" class="img-fluid" width="200" alt="logo_expo">
-      </div>
-      <div class="col-3">
-        <img src="@/assets/logo_tyva.png" class="img-fluid" width="200" alt="logo_tyva">
-      </div>
-      <div class="col-3">
-        <img src="@/assets/logo_ceid.png" class="img-fluid" width="200" alt="logo_ceid">
-      </div>
-      <div class="col-3">
-        <img src="@/assets/logo_ciap.png" class="img-fluid" width="200" alt="logo_ciap">
+  <footer class="footer pt-4 pb-4 mt-5 mb-2">
+    <div class="container-fluid">
+      <div class="row gx-md-5 px-md-5 mx-md-5 justify-content-center">
+        <div class="col-3">
+          <img src="@/assets/logo_expo_anio.png" class="img-fluid" width="200" alt="logo_expo">
+        </div>
+        <div class="col-3">
+          <img src="@/assets/logo_tyva.png" class="img-fluid" width="200" alt="logo_tyva">
+        </div>
+        <div class="col-3">
+          <img src="@/assets/logo_ceid.png" class="img-fluid" width="200" alt="logo_ceid">
+        </div>
+        <div class="col-3">
+          <img src="@/assets/logo_ciap.png" class="img-fluid" width="200" alt="logo_ciap">
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </template>
 
 <script>
