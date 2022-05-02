@@ -24,7 +24,7 @@
       <div class="col col-12 col-md-6 ms-md-auto">
         <img src="@/assets/d.jpg" class="img-fluid" alt="logo">
       </div>
-      <div class="col col-lg-6 col-md-8 col-sm-8 mt-5">
+      <div class="col col-12 col-md-6 mt-5">
         <h1 class="fw-bold fs-1 text-center text-md-start">
           ¿Qué es Expoingeniería?
         </h1>
