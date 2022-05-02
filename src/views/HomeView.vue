@@ -20,11 +20,11 @@
     </div>
   </div>
   <div class="container mt-5" id="contenedor-info">
-    <div class="row flex-lg-row-reverse p-4 gx-5 align-items-center">
-      <div class="col">
+    <div class="row flex-lg-row-reverse flex-md-row-reverse p-lg-4 gx-lg-5 align-items-center">
+      <div class="col col-lg-6 col-md-4 col-sm-4">
         <img src="@/assets/d.jpg" class="img-fluid" alt="logo">
       </div>
-      <div class="col col-lg-6">
+      <div class="col col-lg-6 col-md-8 col-sm-8">
         <h1 class="fw-bold fs-1">
           ¿Qué es Expoingeniería?
         </h1>
@@ -36,16 +36,16 @@
       </div>
     </div>
   </div>
-  <div class="container mt-4" id="contenedor-info">
-    <div class="row p-4 gx-5 align-items-center">
-      <div class="col">
+  <div class="container mt-lg-4 mb-md-3" id="contenedor-info">
+    <div class="row p-lg-4 gx-lg-5 align-items-center">
+      <div class="col col-lg-6 col-md-4 col-sm-4">
         <img src="@/assets/e.jpg" class="img-fluid" alt="logo">
       </div>
-      <div class="col col-lg-6">
+      <div class="col col-lg-6 col-md-8 col-sm-8">
         <h1 class="fw-bold fs-1">
           Escuela de Ingeniería
         </h1>
-        <p class="lead text-muted lh-lg py-4">
+        <p class="lead text-muted lh-lg py-lg-4">
           Los alumnos de CETYS Universidad aplicarán sus conocimientos adquiridos en la escuela de ingeniería,
           poniendo en práctica sus habilidades en distintos proyectos, relacionados a sus respectivas áreas profesionales
           impulsando así, la innovación, ingenio y emprendedurismo en la comunidad académica.
@@ -53,11 +53,14 @@
       </div>
     </div>
   </div>
-  <div class="container mt-5">
+  <div class="container mt-4">
+    <div class="container-fluid text-center text-md-end text-lg-end fs-1 mb-3">
+      Preguntas Frecuentes
+    </div>
     <div class="accordion" id="preguntas">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             ¿Qué horario tendrá la Expo-ingeniería 2022?
           </button>
         </h2>
@@ -70,7 +73,7 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             Accordion Item #2
           </button>
         </h2>
@@ -82,7 +85,7 @@
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
             Accordion Item #3
           </button>
         </h2>
@@ -94,27 +97,6 @@
       </div>
     </div>
   </div>
-  <footer class="footer pt-4 pb-4 mt-5 mb-2">
-    <div class="container-fluid">
-      <div class="row gx-5 px-5 mx-5 justify-content-center">
-        <div class="col">
-          <img src="@/assets/logo_campus.png" class="img-fluid" width="200" alt="logo_campus">
-        </div>
-        <div class="col">
-          <img src="@/assets/logo_ceid.png" class="img-fluid" width="200" alt="logo_ceid">
-        </div>
-        <div class="col">
-          <img src="@/assets/logo_expo_anio.png" class="img-fluid" width="200" alt="logo_expo">
-        </div>
-        <div class="col">
-          <img src="@/assets/logo_tyva.png" class="img-fluid" width="200" alt="logo_tyva">
-        </div>
-        <div class="col">
-          <img src="@/assets/logo_ciap.png" class="img-fluid" width="200" alt="logo_ciap">
-        </div>
-      </div>
-    </div>
-  </footer>
 </template>
 
 <style scoped>
