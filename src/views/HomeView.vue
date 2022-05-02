@@ -12,9 +12,9 @@
           <p class="lead text-white">
             Descubre los proyectos realizados por los alumnos de la Escuela de Ingeniería de CETYS Universidad Campus Internacional Ensenada, en las distintas categorías de: Multimedia y Software, Producto, Académico y Proceso.
           </p>
-          <button class="btn btn-light px-4" type="button">
+          <router-link class="btn btn-light px-4" type="button" to="/projects">
             Proyectos
-          </button>
+          </router-link>
         </div>
       </div>
     </div>
