@@ -12,9 +12,9 @@
           <p class="lead text-white">
             Descubre los proyectos realizados por los alumnos de la Escuela de Ingeniería de CETYS Universidad Campus Internacional Ensenada, en las distintas categorías de: Multimedia y Software, Producto, Académico y Proceso.
           </p>
-          <button class="btn btn-light px-4" type="button">
+          <router-link class="btn btn-light px-4" type="button" to="/projects">
             Proyectos
-          </button>
+          </router-link>
         </div>
       </div>
     </div>
@@ -61,37 +61,132 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
           <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            ¿Qué horario tendrá la Expo-ingeniería 2022?
+            ¿Qué horarios hay de exposición presencial?
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
           <div class="accordion-body">
-            La Expo-ingeniería 2022 tendrá un <strong>modelo híbrido;</strong> el día lunes 16 de mayo, los proyectos serán exhibidos 100% presencial dentro del campus, con un horario de 9 a.m. hasta las 7 p.m.
-            Los días 17 y 18 de mayo, los proyectos serán mostrados en línea a través de un link de Google Meet al que se podrá acceder desde el proyecto ubicado en la página.
+            9 a.m. a 1 p.m. y 3 p.m. a 7 p.m. el lunes 16 de mayo.
           </div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwo">
           <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Accordion Item #2
+            ¿Qué horarios hay de exposición virtual?
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
           <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            Martes y miércoles 17 y 18 de mayo de 9 a.m. a 1 p.m. y 3 p.m. a 7 p.m.
           </div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Accordion Item #3
+            ¿Qué tipos de proyectos puedo ver en cada categoría?
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            Proyectos académicos (de primeros semestres), proyectos de asignatura o independientes, proyectos ligados a empresas y proyectos de software y multimedia.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            ¿En qué consisten las categorías?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+          <div class="accordion-body">
+            Categorías de innovación de producto, de proceso, de software y/o multimedia. La categoría 1 es de fase inicial y la categoría 2 es de fase de implementación o prototipo funcional.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            ¿Cómo puedo navegar en el sitio?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+          <div class="accordion-body">
+            <a href="">Vídeo tutorial</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Si soy juez, ¿cómo puedo evaluar?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
+          <div class="accordion-body">
+            <a href="">Vídeo tutorial</a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            ¿Puedo evaluar los proyectos si soy público general?
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
+          <div class="accordion-body">
+            Existirá una categoría de proyecto más votado por el público, la cual se podrá hacer el día lunes presencialmente.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            ¿Me tengo que registrar?
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight">
+          <div class="accordion-body">
+            No, solo el día lunes 16 de mayo que el evento es presencial.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            ¿También tendrán conferencias?
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine">
+          <div class="accordion-body">
+            Sí, en el congreso CIAP el día jueves 19 y viernes 20 de mayo.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTen">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            ¿Tiene costo?
+          </button>
+        </h2>
+        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen">
+          <div class="accordion-body">
+            No, es gratis en ambas modalidades tanto las conferencias como los proyectos.
+          </div>
+        </div>
+      </div>
+            <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEleven">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+            ¿Las conferencias serán virtuales?
+          </button>
+        </h2>
+        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven">
+          <div class="accordion-body">
+            Sí.
           </div>
         </div>
       </div>
