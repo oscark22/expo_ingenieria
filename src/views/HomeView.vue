@@ -24,11 +24,11 @@
       <div class="col col-12 col-md-6 ms-md-auto">
         <img src="@/assets/d.jpg" class="img-fluid" alt="logo">
       </div>
-      <div class="col col-12 col-md-6 mt-5">
+      <div class="col col-12 col-md-6 mt-4 mt-md-0">
         <h1 class="fw-bold fs-1 text-center text-md-start">
           ¿Qué es Expoingeniería?
         </h1>
-        <p class="lead text-muted lh-lg py-4 ">
+        <p class="lead text-muted lh-lg py-4 mt-0">
          Es el evento más importante de la Escuela de Ingeniería, donde los alumnos tienen la oportunidad de demostrar los conocimientos que están aprendiendo en el aula a
          través de proyectos de aplicación, con innovación y creatividad resolviendo problemas reales, y eso les genera habilidades que van a aplicar cuando egresen
          y se inserten al campo laboral.
@@ -41,11 +41,11 @@
       <div class="col col-12 col-md-6 ms-md-auto">
         <img src="@/assets/e.jpg" class="img-fluid" alt="logo">
       </div>
-      <div class="col col-lg-6 col-md-8 col-sm-8 mt-5">
-        <h1 class="fw-bold fs-1">
+      <div class="col col-12 col-md-6 mt-4 mt-md-0">
+        <h1 class="fw-bold fs-1 text-center text-md-start">
           Escuela de Ingeniería
         </h1>
-        <p class="lead text-muted lh-lg py-lg-4 mt-4">
+        <p class="lead text-muted lh-lg py-4 mt-0">
           Los alumnos de CETYS Universidad aplicarán sus conocimientos adquiridos en la escuela de ingeniería,
           poniendo en práctica sus habilidades en distintos proyectos, relacionados a sus respectivas áreas profesionales
           impulsando así, la innovación, ingenio y emprendedurismo en la comunidad académica.
