@@ -80,7 +80,7 @@ export default {
     axiosParams () {
       const params = new URLSearchParams()
       params.append('nombre_equipo', this.team_name)
-      params.append('nombre_proyecto', 'un_nombre')
+      params.append('nombre_proyecto', this.team_name)
       params.append('descripcion', this.desc_project)
       params.append('url_sala', this.url_sala)
       params.append('url_video', this.url_video)
