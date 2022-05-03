@@ -8,7 +8,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav flex-row flex-wrap pt-2 py-md-0">
+        <ul class="navbar-nav flex-wrap pt-2 py-md-0">
           <li class="nav-item col-6 col-md-auto">
             <router-link class="nav-link" aria-current="page" to="/">Inicio</router-link>
           </li>

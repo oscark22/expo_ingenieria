@@ -199,11 +199,11 @@
   .inicio{
     background:
       linear-gradient(
-        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.9),
         rgba(0, 0, 0, 0.7)
-      ),
-      url(../assets/edificio.jpg);
+      );
 
+    background-color: gray;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
