@@ -10,7 +10,7 @@
         </p>
         <br>
         <p class="lead">
-          Para evaluar un proyecto, selecciona la categoría a la que pertenece; sólo aquellos que pertenezcan a esa categoría podrán ser elegidos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet expedita accusamus magnam? Expedita ea error sint dolores reiciendis ad, velit necessitatibus, suscipit fugit sapiente nulla! Commodi minus nihil dolores aspernatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni praesentium modi distinctio iusto eaque quis obcaecati pariatur ab vero incidunt illum, aliquam quaerat a ipsa reprehenderit est ipsam, soluta totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dolor fuga velit facere omnis, accusantium quae perspiciatis reiciendis quasi illo molestiae assumenda quidem at iusto repellendus! Sequi porro aliquid dolor?
+          Para evaluar un proyecto, selecciona la categoría a la que pertenece; sólo aquellos que pertenezcan a esa categoría podrán ser elegidos.
         </p>
       </div>
     </div>
@@ -53,14 +53,22 @@
       </div>
     </form>
   </div>
+  <div class="container">
+    <RubAcadem/>
+  </div>
 </template>
 
 <script>
+import RubAcadem from '@/components/RubAcadem.vue'
+
 export default {
   data () {
     return {
       currGrade: 3
     }
+  },
+  components: {
+    RubAcadem
   }
 }
 </script>
