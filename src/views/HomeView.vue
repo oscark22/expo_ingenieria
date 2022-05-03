@@ -199,8 +199,8 @@
   .inicio{
     background:
       linear-gradient(
-        rgba(0, 0, 0, 0.9),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.9)
       );
 
     background-color: gray;
