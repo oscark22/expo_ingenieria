@@ -15,7 +15,7 @@
     <form @submit.prevent="pData" class="row g-4 mb-5 needs-validation" novalidate>
       <div class="col-md-12">
         <label for="youtubeControl" class="form-label">Nombre del equipo</label>
-        <input v-model="name_team" type="text" class="form-control" id="nombreTeam" placeholder="Nombre de equipo." required>
+        <input v-model="team_name" type="text" class="form-control" id="nombreTeam" placeholder="Nombre de equipo." required>
         <div class="invalid-feedback">
           Asegúrate de insertar un link de Google Meet.
         </div>
@@ -56,8 +56,11 @@ import axios from 'axios'
 export default {
   data () {
     return {
+      team_name: '',
+      desc_project: '',
       url_sala: '',
       url_video: '',
+
       articleId: ''
     }
   },
