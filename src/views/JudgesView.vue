@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-4 py-md-4 my-md-5">
+  <div class="container py-4 py-md-4 my-md-1">
     <div class="row">
       <div class="col">
         <h1 class="fw-light">
@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="container">
-    <form class="row g-4 mb-5 needs-validation" novalidate>
+    <form class="row g-4 mb-5 mb-md-4 needs-validation" novalidate>
       <div class="col-md-6">
         <select class="form-select" aria-label="selectCategory" required>
           <option selected disabled value="">Selecciona una categoría</option>
@@ -38,18 +38,6 @@
         <div class="invalid-feedback">
           Porfavor elige un proyecto.
         </div>
-      </div>
-      <div class="col-md-12">
-        <label for="gradeRange" class="form-label">Calificación otorgada: {{ currGrade }}</label>
-        <input v-model="currGrade" type="range" class="form-range" min="1" max="5" step="1" id="gradeRange">
-      </div>
-      <div class="col-md-12">
-        <textarea class="form-control" id="projectComments" placeholder="Escribe aquí tus comentarios (opcional)." rows="4" required></textarea>
-      </div>
-      <div class="col-12">
-        <button class="btn btn-primary" type="button">
-          Confirmar
-        </button>
       </div>
     </form>
   </div>
