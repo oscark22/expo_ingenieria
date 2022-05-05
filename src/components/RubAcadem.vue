@@ -225,6 +225,6 @@
     </div>
     <div class="form-floating">
         <textarea class="form-control" placeholder="Deje un comentario en este espacio" id="floatingTextarea"></textarea>
-        <label for="floatingTextarea">Comentarios adicionales</label>
+        <label for="floatingTextarea" class="textarea">Comentarios adicionales</label>
     </div>
 </template>
