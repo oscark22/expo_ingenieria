@@ -24,9 +24,16 @@
         </ul>
         <hr>
         <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
-          <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            Iniciar Sesión
-          </button>
+          <!-- <template v-if="!logged_in"> -->
+            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              Iniciar Sesión
+            </button>
+          <!-- </template>
+          <template v-else>
+            <li class="nav-item ms-auto">
+              Bienvenido! 😄
+            </li>
+          </template> -->
         </ul>
       </div>
     </div>
@@ -45,15 +52,15 @@
           <div class="input-group-prepend">
             <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
           </div>
-          <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+          <input v-model="email" type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
         </div>
         <div class="input-group mb-3" id="botonInicioSesion">
           <div class="input-group-prepend">
             <div class="input-group-text"><i class="bi bi-key-fill"></i></div>
           </div>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+          <input v-model="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
         </div>
-        <button type="button" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
+        <button @click="postData" type="button" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
       </form>
     </div>
   </div>
@@ -79,12 +86,51 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data () {
     return {
+      email: '',
+      password: '',
+
+      // response obj
+      response: '',
+      logged_in: false
     }
   },
   methods: {
+    async postData () {
+      const url = 'https://expoingenieria.com/rest_api_expo/tablas/login.php/'
+      const params = this.axiosParams
+      const config = this.axiosConfig
+
+      try {
+        const response = await axios.post(url, params, config)
+        this.response = response.data
+        if (!this.response.error) {
+          this.logged_in = true
+        }
+      } catch (error) {
+        console.log(error)
+      }
+    }
+  },
+  computed: {
+    axiosParams () {
+      const params = new URLSearchParams()
+      params.append('email', this.email)
+      params.append('password', this.password)
+      return params
+    },
+    axiosConfig () {
+      const config = {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        }
+      }
+      return config
+    }
   }
 }
 </script>
