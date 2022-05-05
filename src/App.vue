@@ -24,16 +24,16 @@
         </ul>
         <hr>
         <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
-          <!-- <template v-if="!logged_in"> -->
+          <template v-if="!logged_in">
             <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
               Iniciar Sesión
             </button>
-          <!-- </template>
+          </template>
           <template v-else>
             <li class="nav-item ms-auto">
-              Bienvenido! 😄
+              Bienvenido <i class="bi bi-wrench-adjustable-circle"></i>
             </li>
-          </template> -->
+          </template>
         </ul>
       </div>
     </div>
