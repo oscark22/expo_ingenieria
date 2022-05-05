@@ -8,6 +8,16 @@
         <p class="lead text-muted">
           Este apartado está dedicado a la evaluación de todos los proyectos de la Expo Ingeniería. Todos los proyectos, independientemente de cuál sea su categoría, se encuentran aquí.
         </p>
+        <p class="lead text-muted">
+          <strong>
+          Las calificaciones se dividen en 5 estados: <br>
+          </strong>
+          1. 0  No aplica <br>
+          2. 1-25 Insuficiente <br>
+          3. 26-50 Suficiente <br>
+          4. 51-75 Mejorable <br>
+          5. 76-100 Sobresaliente
+        </p>
         <br>
         <p class="lead">
           Para evaluar un proyecto, selecciona la categoría a la que pertenece; sólo aquellos que pertenezcan a esa categoría podrán ser elegidos.

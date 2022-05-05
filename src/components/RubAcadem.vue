@@ -3,18 +3,19 @@
         <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="correo@correo.com" aria-describedby="emailHelp">
     </div>
-    <div class="row">
+    <div class="row mb-3">
         <div class="col-12 col-md-6">
             <p>
                 <strong>Calificación explicación de contexto general</strong>
             </p>
-            <select class="form-select mb-4" aria-label="Default select example">
-                <option selected>No aplica</option>
-                <option value="1">0-25</option>
-                <option value="2">26-50</option>
-                <option value="3">51-75</option>
-                <option value="4">76-100</option>
-            </select>
+            <div class="col-auto">
+                <input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+                <span id="passwordHelpInline" class="form-text">
+                Must be 8-20 characters long.
+                </span>
+            </div>
         </div>
         <div class="col-12 col-md-6">
             <p>
