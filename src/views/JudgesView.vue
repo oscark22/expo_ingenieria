@@ -52,23 +52,12 @@
     </form>
   </div>
   <div class="container">
-    <RubAcadem/>
+    <RubAcadem />
   </div>
 </template>
 
-<script>
-import RubAcadem from '@/components/RubAcadem.vue'
-
-export default {
-  data () {
-    return {
-      currGrade: 3
-    }
-  },
-  components: {
-    RubAcadem
-  }
-}
+<script setup>
+import RubAcadem from '@/components/RubAcadem'
 </script>
 
 <style>

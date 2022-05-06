@@ -8,7 +8,7 @@ export const loginStore = defineStore ('axios', {
         return {
             config: {
                 headers: {
-                  'Content-Type': 'application/x-www-form-urlencoded'
+                  'content-type': 'application/x-www-form-urlencoded'
                 }
             },
             
@@ -32,7 +32,10 @@ export const loginStore = defineStore ('axios', {
                 const response = await axios.post(url, params, config)
                 if (!response.data.error) {
                   this.logged_in = true
-                  localStorage.setItem('auth', response.data)
+                  localStorage.setItem('token', response.data.hash)
+                  localStorage.setItem('id', response.data.judgeID)
+                  localStorage.setItem('exp', response.data.expiration)
+                  console.log(response.data)
                 }
             } catch (error) {
                 console.log(error)
