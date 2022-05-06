@@ -55,6 +55,12 @@
   <div class="container">
     <RubAcadem />
   </div>
+  <!--Falta modificar que confirme el submit en este botón--->
+  <div class="container col-12 mt-3">
+  <button @click="project.ProjectInfo" class="btn btn-warning" type="submit">
+    Confirmar
+  </button>
+</div>
 </template>
 
 <script setup>
