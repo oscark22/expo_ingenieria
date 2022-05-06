@@ -15,34 +15,34 @@
     <form @submit.prevent="pData" class="row g-4 mb-5 needs-validation" novalidate>
       <div class="col-md-12">
         <label for="youtubeControl" class="form-label">Nombre del equipo</label>
-        <input v-model="team_name" type="text" class="form-control" id="nombreTeam" placeholder="Nombre de equipo." required>
+        <input v-model="project.team_name" type="text" class="form-control" id="nombreTeam" placeholder="Nombre de equipo." required>
         <div class="invalid-feedback">
           Asegúrate de insertar un link de Google Meet.
         </div>
       </div>
       <div class="col-md-12">
         <label for="youtubeControl" class="form-label">Descripción del proyecto</label>
-        <input v-model="desc_project" type="text" class="form-control" id="descriptionProject" placeholder="Descripción." required>
+        <input v-model="project.desc_project" type="text" class="form-control" id="descriptionProject" placeholder="Descripción." required>
         <div class="invalid-feedback">
           Asegúrate de insertar un link de Google Meet.
         </div>
       </div>
       <div class="col-md-12">
         <label for="youtubeControl" class="form-label">Link de la sesión de Google Meet</label>
-        <input v-model="url_sala" type="text" class="form-control" id="youtubeControl" placeholder="Link de Meet." required>
+        <input v-model="project.url_sala" type="text" class="form-control" id="youtubeControl" placeholder="Link de Meet." required>
         <div class="invalid-feedback">
           Asegúrate de insertar un link de Google Meet.
         </div>
       </div>
       <div class="col-md-12">
         <label for="meetControl" class="form-label">Link del video de Youtube</label>
-        <input v-model="url_video" type="text" class="form-control" id="meetControl" placeholder="Link de Youtube." required>
+        <input v-model="project.url_video" type="text" class="form-control" id="meetControl" placeholder="Link de Youtube." required>
         <div class="invalid-feedback">
           Asegúrate de insertar un link de Youtube.
         </div>
       </div>
       <div class="col-12">
-        <button @click="postData" class="btn btn-primary" type="button">
+        <button @click="project.ProjectInfo" class="btn btn-primary" type="button">
           Confirmar
         </button>
       </div>
@@ -50,63 +50,8 @@
   </div>
 </template>
 
-<script>
-import axios from 'axios'
+<script setup>
+import { projectStore } from '@/stores/projectStore'
 
-export default {
-  data () {
-    return {
-      team_name: '',
-      desc_project: '',
-      url_sala: '',
-      url_video: '',
-
-      articleId: ''
-    }
-  },
-  methods: {
-    async postData () {
-      const url = 'https://expoingenieria.com/rest_api_expo/tablas/proyecto/'
-      const params = this.axiosParams
-      const config = this.axiosConfig
-
-      try {
-        const response = await axios.post(url, params, config)
-        // this.articleId = response.data.id
-        console.log(response)
-      } catch (error) {
-        console.log(error)
-      }
-    }
-  },
-  computed: {
-    axiosParams () {
-      const params = new URLSearchParams()
-      params.append('nombre_equipo', this.team_name)
-      params.append('nombre_proyecto', this.team_name)
-      params.append('descripcion', this.desc_project)
-      params.append('url_sala', this.url_sala)
-      params.append('url_video', this.url_video)
-      params.append('categoria_id', 1)
-      params.append('asesor_id', 1)
-      params.append('lineaInvestigacion_id', 1)
-      params.append('tipoProyecto_id', 1)
-      params.append('nivel_id', 1)
-      params.append('asignatura_id', 1)
-      return params
-    },
-    axiosConfig () {
-      const config = {
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        }
-      }
-      return config
-    }
-  }
-}
+const project = projectStore()
 </script>
-
-<style>
-
-</style>
