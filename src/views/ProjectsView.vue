@@ -82,7 +82,7 @@ projectCard.fetchData()
 </script>
 
 <style scoped>
-  #Proy{
+  #Proy {
     background: #6798C0;
   }
 </style>
