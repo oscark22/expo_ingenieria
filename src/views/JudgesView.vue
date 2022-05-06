@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-4 py-md-4 my-md-1">
+  <div class="container py-4 py-md-4 my-md-5">
     <div class="row">
       <div class="col">
         <h1 class="fw-light">
@@ -54,9 +54,8 @@
   <div class="container">
     <RubAcadem />
   </div>
-  <!--Falta modificar que confirme el submit en este botón--->
   <div class="container col-12 mt-3">
-  <button @click="project.ProjectInfo" class="btn btn-warning" type="submit">
+  <button @click="project.ProjectInfo" class="btn btn-warning" type="button">
     Confirmar
   </button>
 </div>
@@ -65,7 +64,3 @@
 <script setup>
 import RubAcadem from '@/components/RubAcadem'
 </script>
-
-<style>
-
-</style>
