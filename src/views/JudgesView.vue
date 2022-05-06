@@ -21,6 +21,7 @@
         <br>
         <p class="lead">
           Para evaluar un proyecto, selecciona la categoría a la que pertenece; sólo aquellos que pertenezcan a esa categoría podrán ser elegidos.
+          {{ currCategory }}
         </p>
       </div>
     </div>
@@ -30,7 +31,7 @@
       <div class="col-md-6">
         <select class="form-select" aria-label="selectCategory" required>
           <option selected disabled value="">Selecciona una categoría</option>
-          <option value="1">One</option>
+          <option :currCategory="1" value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
         </select>
@@ -57,7 +58,10 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import RubAcadem from '@/components/RubAcadem'
+
+const currCategory = ref('')
 </script>
 
 <style>
