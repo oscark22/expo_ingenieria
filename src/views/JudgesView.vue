@@ -21,7 +21,6 @@
         <br>
         <p class="lead">
           Para evaluar un proyecto, selecciona la categoría a la que pertenece; sólo aquellos que pertenezcan a esa categoría podrán ser elegidos.
-          {{ currCategory }}
         </p>
       </div>
     </div>
@@ -64,10 +63,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import RubAcadem from '@/components/RubAcadem'
-
-const currCategory = ref('')
 </script>
 
 <style>

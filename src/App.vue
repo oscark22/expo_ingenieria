@@ -10,21 +10,33 @@
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav flex-wrap pt-2 py-md-0">
           <li class="nav-item col-6 col-md-auto">
-            <router-link class="nav-link" aria-current="page" to="/">Inicio</router-link>
+            <router-link class="nav-link" aria-current="page" to="/">
+              Inicio
+            </router-link>
           </li>
           <li class="nav-item col-6 col-md-auto">
-            <router-link class="nav-link active" to="/projects">Proyectos</router-link>
+            <router-link class="nav-link active" to="/projects">
+              Proyectos
+            </router-link>
           </li>
-          <li class="nav-item col-6 col-md-auto">
-            <router-link class="nav-link active" to="/users">Users</router-link>
-          </li>
-          <li class="nav-item col-6 col-md-auto">
-            <router-link class="nav-link active" to="/judges" tabindex="-1" aria-disabled="true">Judges</router-link>
-          </li>
+          <!-- <template v-if="user.type === 'u'"> -->
+            <li class="nav-item col-6 col-md-auto">
+              <router-link class="nav-link active" to="/users">
+                Datos de mi proyecto <i class="bi bi-journals"></i>
+              </router-link>
+            </li>
+          <!-- </template>
+          <template v-else-if="user.type === 'j'"> -->
+            <li class="nav-item col-6 col-md-auto">
+              <router-link class="nav-link active" to="/judges" tabindex="-1" aria-disabled="true">
+                Calificar proyectos <i class="bi bi-clipboard-data"></i>
+              </router-link>
+            </li>
+          <!-- </template> -->
         </ul>
         <hr>
         <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
-          <template v-if="!login.logged_in">
+          <template v-if="!user.logged_in">
             <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
               Iniciar Sesión
             </button>
@@ -52,15 +64,15 @@
           <div class="input-group-prepend">
             <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
           </div>
-          <input v-model="login.email" type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+          <input v-model="user.email" type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
         </div>
         <div class="input-group mb-3" id="botonInicioSesion">
           <div class="input-group-prepend">
             <div class="input-group-text"><i class="bi bi-key-fill"></i></div>
           </div>
-          <input v-model="login.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+          <input v-model="user.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
         </div>
-        <button @click="login.LoginAuth(email, password)" type="button" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
+        <button @click="user.LoginAuth(email, password)" type="button" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
       </form>
     </div>
   </div>
@@ -86,7 +98,7 @@
 </template>
 
 <script setup>
-import { loginStore } from '@/stores/loginStore'
+import { userStore } from '@/stores/userStore'
 
-const login = loginStore()
+const user = userStore()
 </script>
