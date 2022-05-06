@@ -30,20 +30,20 @@
   <div class="container text-center mb-md-5 mb-5 pb-md-4 pb-3 mt-2">
     <template v-if="activeBtn === 'btn2'">
       <div class="btn-group" role="group" aria-label="Basic outlined example">
-        <button @click="projectCard.fetchData; currCategory='1'" type="button" class="btn btn-warning">
+        <button @click="projectCard.fetchData; currCategory='1'" type="button" class="btn btn-outline-dark">
           Categoría I
         </button>
-        <button @click="projectCard.fetchData; currCategory='2'" type="button" class="btn btn-dark">
+        <button @click="projectCard.fetchData; currCategory='2'" type="button" class="btn btn-outline-dark">
           Categoría II
         </button>
       </div>
     </template>
     <template v-else-if="activeBtn === 'btn4'">
       <div class="btn-group" role="group" aria-label="Basic outlined example">
-        <button @click="projectCard.fetchData; currCategory='4'" type="button" class="btn btn-warning">
+        <button @click="projectCard.fetchData; currCategory='4'" type="button" class="btn btn-outline-dark">
           Categoría I
         </button>
-        <button @click="projectCard.fetchData; currCategory='5'" type="button" class="btn btn-dark">
+        <button @click="projectCard.fetchData; currCategory='5'" type="button" class="btn btn-outline-dark">
           Categoría II
         </button>
       </div>
@@ -66,16 +66,14 @@
 </template>
 
 <script setup>
-// Script SETUP documentation
-// https://vuejs.org/api/sfc-script-setup.html#basic-syntax
-
+import { ref } from 'vue'
 import { cardStore } from '@/stores/cardStore'
 import CardComp from '@/components/CardComp.vue'
 
 const projectCard = cardStore()
 
-const activeBtn = ''
-const currCategory = '0'
+const activeBtn = ref('')
+const currCategory = ref('0')
 
 // fetch card data
 projectCard.fetchData()

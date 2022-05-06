@@ -3,7 +3,7 @@
 import { defineStore } from 'pinia'
 import axios from 'axios'
 
-export const loginStore = defineStore ('axios', {
+export const userStore = defineStore ('axios', {
     state: () => {
         return {
             config: {
@@ -11,9 +11,9 @@ export const loginStore = defineStore ('axios', {
                   'content-type': 'application/x-www-form-urlencoded'
                 }
             },
-            
             //logged state
             logged_in: false,
+            type: '',
 
             email: '',
             password: ''
