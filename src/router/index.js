@@ -8,22 +8,26 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: Home,
+    meta: { access: true }
   },
   {
     path: '/projects',
     name: 'projects',
-    component: Projects
+    component: Projects,
+    meta: { access: true }
   },
   {
     path: '/users',
     name: 'users',
-    component: Users
+    component: Users,
+    meta: { access: false }
   },
   {
     path: '/judges',
     name: 'judges',
-    component: Judges
+    component: Judges,
+    meta: { access: false }
   }
 ]
 
@@ -31,6 +35,13 @@ const router = createRouter({
   mode: history,
   history: createWebHashHistory(),
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  const auth = localStorage.getItem('auth')
+  if (to.meta.access && auth) {
+    next()
+  }
 })
 
 export default router

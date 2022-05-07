@@ -12,7 +12,7 @@ export const userStore = defineStore ('axios', {
                 }
             },
             //logged state
-            logged_in: false,
+            auth: false,
             type: '',
 
             email: '',
@@ -32,6 +32,7 @@ export const userStore = defineStore ('axios', {
                 const response = await axios.post(url, params, config)
                 if (!response.data.error) {
                   this.logged_in = true
+                  localStorage.setItem('auth', true)
                   localStorage.setItem('token', response.data.hash)
                   localStorage.setItem('id', response.data.judgeID)
                   localStorage.setItem('exp', response.data.expiration)
@@ -41,5 +42,8 @@ export const userStore = defineStore ('axios', {
                 console.log(error)
             }
         }
+    },
+    getters: {
+        auth: () => localStorage.getItem('auth')
     }
 });

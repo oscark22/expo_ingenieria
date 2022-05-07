@@ -182,6 +182,15 @@
 export default {
   data () {
     return {
+      // use this insted?
+      // change spacing to 2 instead of 4
+      currGrades: {
+        1: 0,
+        2: 0,
+        3: 0,
+        4: 0
+      },
+
       currGrade1: 0,
       currGrade2: 0,
       currGrade3: 0,
