@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-4 py-md-4 my-md-1">
+  <div class="container py-4 py-md-4 my-md-5">
     <div class="row">
       <div class="col">
         <h1 class="fw-light">
