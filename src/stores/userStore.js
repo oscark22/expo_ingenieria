@@ -29,6 +29,7 @@ export const userStore = defineStore ('axios', {
 
             try {
                 const response = await axios.post(url, params, config)
+
                 if (!response.data.error) {
                   this.logged_in = true
 
