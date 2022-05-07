@@ -60,7 +60,7 @@ const project = projectStore()
 (function () {
   'use strict'
 
-  const forms = document.querySelectorAll('.needs-validation')
+  var forms = document.querySelectorAll('.needs-validation')
 
   Array.prototype.slice.call(forms)
     .forEach(function (form) {
