@@ -11,9 +11,8 @@ export const userStore = defineStore ('axios', {
                   'content-type': 'application/x-www-form-urlencoded'
                 }
             },
-            //logged state
+
             logged_in: false,
-            type: '',
 
             email: '',
             password: ''
@@ -32,10 +31,12 @@ export const userStore = defineStore ('axios', {
                 const response = await axios.post(url, params, config)
                 if (!response.data.error) {
                   this.logged_in = true
+
+                  localStorage.setItem('logged_in', true)
+                  // localStorage.setItem('type', response.data)
                   localStorage.setItem('token', response.data.hash)
                   localStorage.setItem('id', response.data.judgeID)
                   localStorage.setItem('exp', response.data.expiration)
-                  console.log(response.data)
                 }
             } catch (error) {
                 console.log(error)

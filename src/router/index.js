@@ -19,11 +19,25 @@ const routes = [
     path: '/users',
     name: 'users',
     component: Users
+    // beforeEnter: (next) => {
+    //   const type = localStorage.getItem('type')
+    //   if (type === 'u') {
+    //     return true
+    //   }
+    //   return false
+    // }
   },
   {
     path: '/judges',
     name: 'judges',
     component: Judges
+    // beforeEnter: (next) => {
+    //   const type = localStorage.getItem('type')
+    //   if (type === 'j') {
+    //     return true
+    //   }
+    //   return false
+    // }
   }
 ]
 
