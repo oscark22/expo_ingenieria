@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-4 py-md-4 my-md-5">
+  <div class="container py-4 py-md-1 my-md-3">
     <div class="row">
       <div class="col">
         <h1 class="fw-light">
@@ -27,18 +27,20 @@
   </div>
   <div class="container">
     <form class="row g-4 mb-5 mb-md-4 needs-validation" novalidate>
-      <div class="col-md-6">
-        <select class="form-select" aria-label="selectCategory" required>
-          <option selected disabled value="">Selecciona una categoría</option>
-          <option :currCategory="1" value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+      <div class="col-12">
+        <div class="btn col-12" role="group" aria-label="Basic outlined example">
+          <button @click="activeBoton='btn1'" type="button" class="btn btn-outline-primary m-2">Académico</button>
+          <button @click="activeBoton='btn2'" type="button" class="btn btn-outline-primary m-2">Industria</button>
+          <button @click="activeBoton='btn3'" type="button" class="btn btn-outline-primary m-2">Proceso y Producto 1</button>
+          <button @click="activeBoton='btn4'" type="button" class="btn btn-outline-primary m-2">Proceso y Producto 2</button>
+          <button @click="activeBoton='btn5'" type="button" class="btn btn-outline-primary m-2">Software y Multimedia 1</button>
+          <button @click="activeBoton='btn6'" type="button" class="btn btn-outline-primary m-2">Software y Multimedia 2</button>
+        </div>
         <div class="invalid-feedback">
           Porfavor selecciona una categoría.
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-12">
         <select class="form-select" aria-label="selectProyect" required>
           <option selected disabled value="">Elige un proyecto</option>
           <option value="1">One</option>
@@ -51,16 +53,37 @@
       </div>
     </form>
   </div>
-  <div class="container">
-    <RubAcadem />
+  <div class="container mt-md-2">
+    <template v-if="activeBoton === 'btn1'">
+      <RubAcadem/>
+    </template>
+    <template v-if="activeBoton === 'btn2'">
+      <RubIndustria/>
+    </template>
+    <template v-if="activeBoton === 'btn3'">
+      <RubProcProd1/>
+    </template>
+    <template v-if="activeBoton === 'btn4'">
+      <RubProcProd2/>
+    </template>
+    <template v-if="activeBoton === 'btn5'">
+      <RubSWM1/>
+    </template>
+    <template v-if="activeBoton === 'btn6'">
+      <RubSWM2/>
+    </template>
   </div>
-  <div class="container col-12 mt-3">
-  <button @click="project.ProjectInfo" class="btn btn-warning" type="button">
-    Confirmar
-  </button>
-</div>
 </template>
 
 <script setup>
-import RubAcadem from '@/components/RubAcadem'
+import { ref } from 'vue'
+import RubAcadem from '../components/RubAcadem.vue'
+import RubIndustria from '@/components/RubIndustria.vue'
+import RubProcProd1 from '@/components/RubProcProd-1.vue'
+import RubProcProd2 from '@/components/RubProcProd-2.vue'
+import RubSWM1 from '@/components/RubSWM-1.vue'
+import RubSWM2 from '@/components/RubSWM-2.vue'
+
+const activeBoton = ref('')
+
 </script>

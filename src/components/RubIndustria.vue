@@ -1,4 +1,9 @@
 <template>
+    <div class="container text-center">
+        <h2>
+            <strong>Rúbrica de categoría Industrial</strong>
+        </h2>
+    </div>
     <div class="mb-4">
         <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="correo@correo.com" aria-describedby="emailHelp">
@@ -172,7 +177,7 @@
             <input v-model="currGrade[17]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
     </div>
-    <div class="form-floating">
+    <div class="form-floating mt-3">
         <textarea class="form-control" placeholder="Deje un comentario en este espacio" id="floatingTextarea" style="height: 100px"></textarea>
         <label for="floatingTextarea">Comentarios adicionales</label>
     </div>

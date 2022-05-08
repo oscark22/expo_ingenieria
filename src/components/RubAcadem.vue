@@ -1,4 +1,9 @@
 <template>
+    <div class="container text-center">
+        <h2>
+            <strong>Rúbrica de categoría Acadméica</strong>
+        </h2>
+    </div>
     <div class="mb-4">
         <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="correo@correo.com" aria-describedby="emailHelp">
