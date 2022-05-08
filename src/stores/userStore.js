@@ -13,6 +13,7 @@ export const userStore = defineStore ('axios', {
             },
 
             logged_in: false,
+            type: '',
 
             email: '',
             password: ''
@@ -32,9 +33,11 @@ export const userStore = defineStore ('axios', {
 
                 if (!response.data.error) {
                   this.logged_in = true
+                  this.type = response.data.judgeID.charAt(0)
 
-                  localStorage.setItem('logged_in', true)
-                  // localStorage.setItem('type', response.data)
+                  localStorage.setItem('logged_in', this.logged_in)
+                  localStorage.setItem('type', this.type)
+
                   localStorage.setItem('token', response.data.hash)
                   localStorage.setItem('id', response.data.judgeID)
                   localStorage.setItem('exp', response.data.expiration)
@@ -45,6 +48,7 @@ export const userStore = defineStore ('axios', {
         }
     },
     getters: {
-        auth: () => localStorage.getItem('auth')
+        logged_in: () => localStorage.getItem('logged_in'),
+        type: () => localStorage.getItem('type')
     }
 });
