@@ -44,9 +44,10 @@ export const userStore = defineStore ('axios', {
             } catch (error) {
                 console.log(error)
             }
+        },
+        initComponents () {
+            this.logged_in = localStorage.getItem('logged_in')
+            this.type = localStorage.getItem('type')
         }
-    },
-    getters: {
-        auth: () => localStorage.getItem('auth')
     }
 });

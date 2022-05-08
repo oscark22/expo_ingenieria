@@ -101,4 +101,6 @@
 import { userStore } from '@/stores/userStore'
 
 const user = userStore()
+
+user.initComponents()
 </script>
