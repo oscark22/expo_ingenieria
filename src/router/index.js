@@ -48,12 +48,4 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes
 })
-
-router.beforeEach((to, from, next) => {
-  const auth = localStorage.getItem('auth')
-  if (to.meta.access && auth) {
-    next()
-  }
-})
-
 export default router
