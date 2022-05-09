@@ -51,7 +51,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación calidad de exposición verbal</strong>
+                <strong>Calificación fluidez en la presentación</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[5] }}</label>
@@ -100,7 +100,7 @@
         </div>
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación de la funcionalidad</strong>
+                <strong>Calificación de la funcionalidad del proyecto</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[10] }}</label>
@@ -160,7 +160,7 @@
         </div>
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación del diseño de la interfaz</strong>
+                <strong>Calificación del diseño de la interfaz del proyecto</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[16] }}</label>

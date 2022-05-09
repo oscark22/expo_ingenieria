@@ -31,7 +31,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación presentación presencial (si aplica)</strong>
+                <strong>Calificación de la calidad narrativa y distracciones</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[3] }}</label>
@@ -51,7 +51,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación calidad de exposición verbal</strong>
+                <strong>Calificación fluidez en la presentación</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[5] }}</label>
@@ -80,7 +80,7 @@
         </div>
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación del desarrollo de sistemas propios</strong>
+                <strong>Calificación de originalidad del proyecto</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[8] }}</label>
@@ -91,7 +91,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación de originalidad del proyecto</strong>
+                <strong>Calificación de la funcionalidad del proyecto</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[9] }}</label>
@@ -100,11 +100,11 @@
         </div>
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación de la funcionalidad</strong>
+                <strong>Calificación de vídeo del proyecto</strong>
             </p>
         <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[10] }}</label>
-            <input v-model="currGrade[10]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
+            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[15] }}</label>
+            <input v-model="currGrade[15]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
         </div>
     </div>
@@ -116,55 +116,6 @@
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[11] }}</label>
             <input v-model="currGrade[11]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
-        </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <p>
-                <strong>Calificación de tiempo de respuesta</strong>
-            </p>
-        <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[12] }}</label>
-            <input v-model="currGrade[12]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
-        </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>
-                <strong>Calificación del concepto de la comunicación visual (si aplica)</strong>
-            </p>
-        <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[13] }}</label>
-            <input v-model="currGrade[13]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
-        </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <p>
-                <strong>Calificación del diseño del proyecto</strong>
-            </p>
-        <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[14] }}</label>
-            <input v-model="currGrade[14]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
-        </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>
-                <strong>Calificación de la organización de los elementos</strong>
-            </p>
-        <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[15] }}</label>
-            <input v-model="currGrade[15]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
-        </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <p>
-                <strong>Calificación del diseño de la interfaz</strong>
-            </p>
-        <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[16] }}</label>
-            <input v-model="currGrade[16]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
         </div>
     </div>

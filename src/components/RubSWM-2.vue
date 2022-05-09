@@ -51,7 +51,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación calidad de exposición verbal</strong>
+                <strong>Calificación calidad de fluidez en la presentación</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[5] }}</label>
@@ -111,7 +111,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación de relación entre concepto físico y explicación teórica</strong>
+                <strong>Calificación de la calidad Narrativa y Distracciones</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[11] }}</label>
@@ -120,7 +120,7 @@
         </div>
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación de tiempo de respuesta</strong>
+                <strong>Calificación de la calidad del vídeo del proyecto</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[12] }}</label>

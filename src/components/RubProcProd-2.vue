@@ -8,7 +8,7 @@
         <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="correo@correo.com" aria-describedby="emailHelp">
     </div>
-    <div class="row mb-3">
+<div class="row mb-3">
         <div class="col-12 col-md-6">
             <p>
                 <strong>Calificación explicación de contexto general</strong>
@@ -51,7 +51,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación calidad de exposición verbal</strong>
+                <strong>Calificación fluidez en la presentación</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[5] }}</label>
@@ -60,7 +60,7 @@
         </div>
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación de la participación</strong>
+                <strong>Calificación de la participación en la presentación</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[6] }}</label>
@@ -80,7 +80,7 @@
         </div>
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación del desarrollo de sistemas propios</strong>
+                <strong>Calificación del desarrollo de sistemas propios del proyecto</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[8] }}</label>
@@ -100,7 +100,7 @@
         </div>
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación de la funcionalidad</strong>
+                <strong>Calificación de la funcionalidad del proyecto</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[10] }}</label>
@@ -111,7 +111,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación de relación entre concepto físico y explicación teórica</strong>
+                <strong>Calificación calidad del vídeo del proyecto</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[11] }}</label>
@@ -131,40 +131,11 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación del concepto de la comunicación visual (si aplica)</strong>
+                <strong>Calificación calidad narrativa y distracciones de la presentación</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ currGrade[13] }}</label>
             <input v-model="currGrade[13]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
-        </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <p>
-                <strong>Calificación del diseño del proyecto</strong>
-            </p>
-        <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[14] }}</label>
-            <input v-model="currGrade[14]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
-        </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>
-                <strong>Calificación de la organización de los elementos</strong>
-            </p>
-        <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[15] }}</label>
-            <input v-model="currGrade[15]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
-        </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <p>
-                <strong>Calificación del diseño de la interfaz</strong>
-            </p>
-        <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[16] }}</label>
-            <input v-model="currGrade[16]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
         </div>
     </div>
