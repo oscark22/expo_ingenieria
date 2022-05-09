@@ -57,7 +57,7 @@
     </div>
     <div class="offcanvas-body" id="iniciarsesion">
       <p class="lead text-muted">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Ingresa los datos para iniciar sesión.
       </p>
       <form>
         <div class="input-group mb-2">
