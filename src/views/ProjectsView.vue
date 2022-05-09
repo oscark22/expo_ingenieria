@@ -6,7 +6,7 @@
           Proyectos
         </h1>
         <p class="lead">
-          Los proyectos se encuentran organizados según su clasificación. Elige de las categorías de proyecto disponibles.
+          Los proyectos se encuentran organizados según su clasificación. Elige una de las categorías de proyecto disponibles.
         </p>
       </div>
     </div>
