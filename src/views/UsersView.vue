@@ -6,7 +6,8 @@
           Datos de Proyecto
         </h1>
         <p class="lead text-muted">
-          Este apartado está dedicado a la agregación de los links de la sala Meet de Google donde se presentará el proyecto, así como un enlace al video de dicho proyecto.
+          Este apartado está dedicado a la agregación de la información del proyecto, datos como son: nombre del equipo, nombre del proyecto, una breve descripción de este,
+          link del vídeo del proyecto y link de la sala de Google Meet.
         </p>
       </div>
     </div>
@@ -17,14 +18,21 @@
         <label for="nombreTeam" class="form-label">Nombre del equipo</label>
         <input v-model="project.team_name" type="text" class="form-control" id="nombreTeam" placeholder="Nombre de equipo." required>
         <div class="invalid-feedback">
-          Asegúrate de insertar un link de Google Meet.
+          Asegúrate de insertar el nombre del equipo.
+        </div>
+      </div>
+      <div class="col-md-12">
+        <label for="nombreProject" class="form-label">Nombre del proyecto</label>
+        <input v-model="project.project_name" type="text" class="form-control" id="nombreTeam" placeholder="Nombre del proyecto." required>
+        <div class="invalid-feedback">
+          Asegúrate de insertar el nombre del proyecto.
         </div>
       </div>
       <div class="col-md-12">
         <label for="descriptionProject" class="form-label">Descripción del proyecto</label>
         <input v-model="project.desc_project" type="text" class="form-control" id="descriptionProject" placeholder="Descripción." required>
         <div class="invalid-feedback">
-          Asegúrate de insertar un link de Google Meet.
+          Asegúrate de insertar una breve descripción.
         </div>
       </div>
       <div class="col-md-12">

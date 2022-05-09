@@ -81,13 +81,13 @@
     <div class="container">
       <div class="row flex-row text-center p-4 p-md-0">
         <div class="col col-6 col-md-3">
-          <img src="@/assets/logo_ceid.png" class="img-fluid" width="200" alt="logo_ceid">
+          <img src="@/assets/logo_expo_anio.png" class="img-fluid" width="200" alt="logo_ceid">
         </div>
         <div class="col col-6 col-md-3">
-          <img src="@/assets/logo_expo_anio.png" class="img-fluid" width="200" alt="logo_expo">
+          <img src="@/assets/logo_tyva.png" class="img-fluid" width="200" alt="logo_expo">
         </div>
         <div class="col col-6 col-md-3">
-          <img src="@/assets/logo_tyva.png" class="img-fluid" width="200" alt="logo_tyva">
+          <img src="@/assets/logo_ceid.png" class="img-fluid" width="200" alt="logo_tyva">
         </div>
         <div class="col col-6 col-md-3">
           <img src="@/assets/logo_ciap.png" class="img-fluid" width="200" alt="logo_ciap">
