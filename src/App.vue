@@ -42,7 +42,7 @@
             </button>
           </template>
           <template v-else>
-            <button @click="user.logout" class="btn btn-dark" type="button">
+            <button @click="user.logout(); user.logged_in=false; user.type=''" class="btn btn-dark" type="button">
               Cerrar Sesión
             </button>
           </template>
@@ -72,7 +72,7 @@
           </div>
           <input v-model="user.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
         </div>
-        <button @click="user.LoginAuth" type="button" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
+        <button @click="user.LoginAuth()" type="button" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
       </form>
     </div>
   </div>

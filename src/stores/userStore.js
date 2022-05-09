@@ -51,8 +51,6 @@ export const userStore = defineStore ('axios', {
         },
         logout () {
             localStorage.clear()
-            this.logged_in = false
-            this.type = ''
         }
     }
 });
