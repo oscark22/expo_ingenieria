@@ -90,7 +90,7 @@
           <img src="@/assets/logo_ceid.png" class="img-fluid" width="200" alt="logo_tyva">
         </div>
         <div class="col col-6 col-md-3">
-          <img src="@/assets/logo_ciap.png" class="img-fluid" width="200" alt="logo_ciap">
+          <img src="@/assets/LOGO_CIAP_1.png" class="img-fluid" id="logo_ciap" width="165" alt="logo_ciap">
         </div>
       </div>
     </div>
