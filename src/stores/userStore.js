@@ -48,6 +48,11 @@ export const userStore = defineStore ('axios', {
         initComponents () {
             this.logged_in = localStorage.getItem('logged_in')
             this.type = localStorage.getItem('type')
+        },
+        logout () {
+            localStorage.clear()
+            this.logged_in = false
+            this.type = ''
         }
     }
 });

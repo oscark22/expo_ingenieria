@@ -42,9 +42,9 @@
             </button>
           </template>
           <template v-else>
-            <li class="nav-item ms-auto">
-              Bienvenido <i class="bi bi-wrench-adjustable-circle"></i>
-            </li>
+            <button @click="user.logout" class="btn btn-dark" type="button">
+              Cerrar Sesión
+            </button>
           </template>
         </ul>
       </div>
@@ -77,7 +77,7 @@
     </div>
   </div>
   <router-view/>
-<footer class="footer mt-5 mb-2">
+  <footer class="footer mt-5 mb-2">
     <div class="container">
       <div class="row flex-row text-center p-4 p-md-0">
         <div class="col col-6 col-md-3">
