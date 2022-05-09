@@ -1,5 +1,5 @@
 <template>
-    <div class="container text-center">
+    <div class="container text-center mt-5">
         <h2>
             <strong>Rúbrica de categoría Académica</strong>
         </h2>
