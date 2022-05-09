@@ -4,11 +4,7 @@
             <strong>Rúbrica de categoría Aplicación en Industria</strong>
         </h2>
     </div>
-    <div class="mb-4">
-        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="correo@correo.com" aria-describedby="emailHelp">
-    </div>
-    <div class="row mb-3">
+    <div class="row mb-3 mt-4">
         <div class="col-12 col-md-6">
             <p>
                 <strong>Calificación explicación de contexto general</strong>
