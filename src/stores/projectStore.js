@@ -15,6 +15,7 @@ export const projectStore = defineStore ('project', {
                 }
             },
             
+            project_name: '',
             team_name: '',
             desc_project: '',
             url_sala: '',
@@ -28,7 +29,7 @@ export const projectStore = defineStore ('project', {
 
             const params = new URLSearchParams()
             params.append('nombre_equipo', this.team_name)
-            params.append('nombre_proyecto', this.team_name)
+            params.append('nombre_proyecto', this.project_name)
             params.append('descripcion', this.desc_project)
             params.append('url_sala', this.url_sala)
             params.append('url_video', this.url_video)

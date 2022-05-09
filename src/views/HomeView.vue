@@ -10,7 +10,8 @@
             <p>Expoingeniería CETYS Ensenada</p>
           </h1>
           <p class="lead text-white">
-            Descubre los proyectos realizados por los alumnos de la Escuela de Ingeniería de CETYS Universidad Campus Internacional Ensenada, en las distintas categorías de: Multimedia y Software, Producto, Académico y Proceso.
+            Descubre los proyectos realizados por los alumnos de la Escuela de Ingeniería de CETYS Universidad Campus Internacional Ensenada, en las distintas categorías de:
+            Software y Multimedia, Proceso y Producto, y Aplicación en la Industria.
           </p>
           <router-link class="btn btn-light px-4" type="button" to="/projects">
             Proyectos
