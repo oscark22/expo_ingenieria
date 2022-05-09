@@ -11,27 +11,27 @@
       </div>
     </div>
     <div class="row btn-group" role="group" aria-label="Basic outlined example">
-      <button @click="projectCard.fetchData(); activeBtn='btn1'; currCategory='0'" type="button" class="btn col-6 col-md-3">
+      <button @click="projectCard.fetchData(); activeBtn='btn1'; currCategory='Proyecto académico'" type="button" class="btn col-6 col-md-3">
         <img src="../assets/iconos-08.png" width="45" height="50">
-        <p class="text-white fw-bold">
+        <p class="text-white">
           Académico
         </p>
       </button>
       <button @click="activeBtn='btn2'" type="button" class="btn col-6 col-md-3">
         <img src="../assets/iconos-07.png" width="45" height="50">
-        <p class="text-white fw-bold">
+        <p class="text-white">
           Producto y Proceso
         </p>
       </button>
       <button @click="activeBtn='btn4'" type="button" class="btn col-6 col-md-3">
         <img src="../assets/iconos-06.png" width="45" height="50">
-        <p class="text-white fw-bold">
+        <p class="text-white">
           Software y Multimedia
         </p>
       </button>
-      <button @click="projectCard.fetchData(); activeBtn='btn3'; currCategory='3'" type="button" class="btn col-6 col-md-3">
+      <button @click="projectCard.fetchData(); activeBtn='btn3'; currCategory='Categoría 2- Producto/proceso-Aplicación industria'" type="button" class="btn col-6 col-md-3">
         <img src="../assets/iconos-05.png" width="45" height="50">
-        <p class="text-white fw-bold">
+        <p class="text-white">
           Aplicación Industria
         </p>
       </button>
@@ -40,20 +40,20 @@
   <div class="container text-center mb-md-5 mb-5 pb-md-4 pb-3 mt-2">
     <template v-if="activeBtn === 'btn2'">
       <div class="btn-group" role="group" aria-label="Basic outlined example">
-        <button @click="projectCard.fetchData(); currCategory='1'" type="button" class="btn btn-outline-dark">
+        <button @click="projectCard.fetchData(); currCategory='Categoría 1 - Producto/proceso- Asignatura/independiente'" type="button" class="btn btn-outline-dark">
           Categoría I
         </button>
-        <button @click="projectCard.fetchData(); currCategory='2'" type="button" class="btn btn-outline-dark">
+        <button @click="projectCard.fetchData(); currCategory='Categoría 2-  Producto/proceso- Asignatura/independiente'" type="button" class="btn btn-outline-dark">
           Categoría II
         </button>
       </div>
     </template>
     <template v-else-if="activeBtn === 'btn4'">
       <div class="btn-group" role="group" aria-label="Basic outlined example">
-        <button @click="projectCard.fetchData(); currCategory='4'" type="button" class="btn btn-outline-dark">
+        <button @click="projectCard.fetchData(); currCategory='Categoría 1- Software y multmedia-  Aplicación  Industria/asignatura'" type="button" class="btn btn-outline-dark">
           Categoría I
         </button>
-        <button @click="projectCard.fetchData(); currCategory='5'" type="button" class="btn btn-outline-dark">
+        <button @click="projectCard.fetchData(); currCategory='Categoría 2- Software y multmedia-  Aplicación Industria/asignatura'" type="button" class="btn btn-outline-dark">
           Categoría II
         </button>
       </div>
@@ -62,14 +62,14 @@
   <div class="container mb-4">
     <div class="row row-cols-md-4 gy-4">
       <template v-for="card in projectCard.cards" :key="card.proyecto_id">
-        <div v-if="card.proyecto_id === this.currCategory" class="col">
+        <template v-if="card.categoria === this.currCategory" class="col">
           <CardComp
             :card_id="card.proyecto_id"
             :img_src="card.img_src"
             :nombre_proyecto="card.nombre_proyecto"
             :descripcion="card.descripcion"
           />
-        </div>
+        </template>
       </template>
     </div>
   </div>
