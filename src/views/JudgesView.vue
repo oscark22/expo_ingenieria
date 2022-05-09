@@ -30,9 +30,9 @@
       <div class="col-12">
         <div class="btn col-12" role="group" aria-label="Basic outlined example">
           <button @click="activeBoton='btn1'" type="button" class="btn btn-outline-primary m-2">Académico</button>
-          <button @click="activeBoton='btn2'" type="button" class="btn btn-outline-primary m-2">Industria</button>
-          <button @click="activeBoton='btn3'" type="button" class="btn btn-outline-primary m-2">Proceso y Producto 1</button>
-          <button @click="activeBoton='btn4'" type="button" class="btn btn-outline-primary m-2">Proceso y Producto 2</button>
+          <button @click="activeBoton='btn2'" type="button" class="btn btn-outline-primary m-2">Aplicación Industria</button>
+          <button @click="activeBoton='btn3'" type="button" class="btn btn-outline-primary m-2">Producto y Proceso 1</button>
+          <button @click="activeBoton='btn4'" type="button" class="btn btn-outline-primary m-2">Producto y Proceso 2</button>
           <button @click="activeBoton='btn5'" type="button" class="btn btn-outline-primary m-2">Software y Multimedia 1</button>
           <button @click="activeBoton='btn6'" type="button" class="btn btn-outline-primary m-2">Software y Multimedia 2</button>
         </div>

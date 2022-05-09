@@ -10,20 +10,30 @@
         </p>
       </div>
     </div>
-    <div class="btn-group" role="group" aria-label="Basic outlined example">
-      <div>
-      <button @click="projectCard.fetchData; activeBtn='btn1'; currCategory='0'" type="button" class="btn">
+    <div class="row btn-group" role="group" aria-label="Basic outlined example">
+      <button @click="projectCard.fetchData; activeBtn='btn1'; currCategory='0'" type="button" class="btn col-3">
         <img src="../assets/iconos-08.png" width="45" height="50">
+        <p class="text-white fw-bold">
+          Académico
+        </p>
       </button>
-      </div>
-      <button @click="activeBtn='btn2'" type="button" class="btn">
+      <button @click="activeBtn='btn2'" type="button" class="btn col-3">
         <img src="../assets/iconos-07.png" width="45" height="50">
+        <p class="text-white fw-bold">
+          Producto y Proceso
+        </p>
       </button>
-      <button @click="projectCard.fetchData; activeBtn='btn3'; currCategory='3'" type="button" class="btn">
+      <button @click="activeBtn='btn4'" type="button" class="btn col-3">
         <img src="../assets/iconos-06.png" width="45" height="50">
+        <p class="text-white fw-bold">
+          Software y Multimedia
+        </p>
       </button>
-      <button @click="activeBtn='btn4'" type="button" class="btn">
+      <button @click="projectCard.fetchData; activeBtn='btn3'; currCategory='3'" type="button" class="btn col-3">
         <img src="../assets/iconos-05.png" width="45" height="50">
+        <p class="text-white fw-bold">
+          Aplicación Industria
+        </p>
       </button>
     </div>
   </div>
