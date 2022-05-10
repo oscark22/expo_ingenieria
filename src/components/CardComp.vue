@@ -23,13 +23,12 @@
             <p class="text">
               {{ descripcion }}
             </p>
-            <p>
-              <a href="https://google.com" target="_blank" class="btn btn-danger col-3 col-md-1 mb-2">
-                  Vídeo
+            <p class="mt-4">
+              <a href="https://google.com" target="_blank" class="btn btn-danger me-2">
+                  Youtube <i class="bi bi-youtube"></i>
               </a>
-              <br>
-              <a href="https://google.com" target="_blank" class="btn btn-primary col-6 col-md-2">
-                  Sala de Zoom
+              <a href="https://google.com" target="_blank" class="btn btn-primary">
+                  Zoom <i class="bi bi-camera-video-fill"></i>
               </a>
             </p>
           </div>
