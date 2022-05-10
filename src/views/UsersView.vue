@@ -15,36 +15,15 @@
   <div class="container">
     <form @submit.prevent="pData" class="row g-4 mb-5 needs-validation">
       <div class="col-md-12">
-        <label for="nombreTeam" class="form-label">Nombre del equipo</label>
-        <input v-model="project.team_name" type="text" class="form-control" id="nombreTeam" placeholder="Nombre de equipo." required>
+        <label for="zoomControl" class="form-label">Link de la sala de Zoom</label>
+        <input v-model="project.url_sala" type="text" class="form-control" id="zoomControl" placeholder="Link de Zoom." required>
         <div class="invalid-feedback">
-          Asegúrate de insertar el nombre del equipo.
+          Asegúrate de insertar un link de Zoom.
         </div>
       </div>
       <div class="col-md-12">
-        <label for="nombreProject" class="form-label">Nombre del proyecto</label>
-        <input v-model="project.project_name" type="text" class="form-control" id="nombreTeam" placeholder="Nombre del proyecto." required>
-        <div class="invalid-feedback">
-          Asegúrate de insertar el nombre del proyecto.
-        </div>
-      </div>
-      <div class="col-md-12">
-        <label for="descriptionProject" class="form-label">Descripción del proyecto</label>
-        <input v-model="project.desc_project" type="text" class="form-control" id="descriptionProject" placeholder="Descripción." required>
-        <div class="invalid-feedback">
-          Asegúrate de insertar una breve descripción.
-        </div>
-      </div>
-      <div class="col-md-12">
-        <label for="youtubeControl" class="form-label">Link de la sesión de Google Meet</label>
-        <input v-model="project.url_sala" type="text" class="form-control" id="youtubeControl" placeholder="Link de Meet." required>
-        <div class="invalid-feedback">
-          Asegúrate de insertar un link de Google Meet.
-        </div>
-      </div>
-      <div class="col-md-12">
-        <label for="meetControl" class="form-label">Link del video de Youtube</label>
-        <input v-model="project.url_video" type="text" class="form-control" id="meetControl" placeholder="Link de Youtube." required>
+        <label for="youtubeControl" class="form-label">Link del video de Youtube</label>
+        <input v-model="project.url_video" type="text" class="form-control" id="youtubeControl" placeholder="Link de Youtube." required>
         <div class="invalid-feedback">
           Asegúrate de insertar un link de Youtube.
         </div>
