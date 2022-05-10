@@ -139,8 +139,8 @@
                 <strong>Calificación del diseño de la interfaz</strong>
             </p>
         <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[16] }}</label>
-            <input v-model="currGrade[16]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
+            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[14] }}</label>
+            <input v-model="currGrade[14]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
         </div>
     </div>
@@ -149,8 +149,8 @@
             <strong>Calificación general</strong>
         </p>
         <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[17] }}</label>
-            <input v-model="currGrade[17]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
+            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[15] }}</label>
+            <input v-model="currGrade[15]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
     </div>
     <div class="form-floating">
@@ -179,9 +179,7 @@ export default {
         12: 0,
         13: 0,
         14: 0,
-        15: 0,
-        16: 0,
-        17: 0
+        15: 0
       }
     }
   }

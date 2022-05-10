@@ -15,7 +15,6 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="myModalLabel">{{ nombre_proyecto }}</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <p class="text">
@@ -23,6 +22,15 @@
             </p>
             <p class="text">
               {{ descripcion }}
+            </p>
+            <p>
+              <a href="https://google.com" target="_blank" class="btn btn-danger col-3 col-md-1 mb-2">
+                  Vídeo
+              </a>
+              <br>
+              <a href="https://google.com" target="_blank" class="btn btn-primary col-6 col-md-2">
+                  Sala de Zoom
+              </a>
             </p>
           </div>
           <div class="modal-footer">

@@ -99,8 +99,8 @@
                 <strong>Calificación de vídeo del proyecto</strong>
             </p>
         <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[15] }}</label>
-            <input v-model="currGrade[15]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
+            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[10] }}</label>
+            <input v-model="currGrade[10]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
         </div>
     </div>
@@ -120,8 +120,8 @@
             <strong>Calificación general</strong>
         </p>
         <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[17] }}</label>
-            <input v-model="currGrade[17]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
+            <label for="gradeRange" class="form-label">Calificación: {{ currGrade[12] }}</label>
+            <input v-model="currGrade[12]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
     </div>
     <div class="form-floating">
@@ -147,12 +147,7 @@ export default {
         9: 0,
         10: 0,
         11: 0,
-        12: 0,
-        13: 0,
-        14: 0,
-        15: 0,
-        16: 0,
-        17: 0
+        12: 0
       }
     }
   }
