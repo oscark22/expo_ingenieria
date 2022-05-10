@@ -41,7 +41,7 @@ export const projectStore = defineStore ('project', {
             params.append('asignatura_id', 1)
 
             try {
-                const response = await axios.post(url, params, config)
+                const response = await axios.put(url, params, config)
                 console.log(response)
             } catch (error) {
                 console.log(error)

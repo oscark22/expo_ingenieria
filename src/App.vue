@@ -19,7 +19,7 @@
               Proyectos
             </router-link>
           </li>
-          <template v-if="user.type === 'u'">
+          <template v-if="user.type === 'e'">
             <li class="nav-item col-6 col-md-auto">
               <router-link class="nav-link active" to="/users">
                 Datos de mi proyecto <i class="bi bi-journals"></i>
