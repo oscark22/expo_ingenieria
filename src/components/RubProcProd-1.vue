@@ -14,7 +14,7 @@
             <input v-model="currGrade[1]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mt-3 mt-md-0">
             <p>
                 <strong>Calificación explicación de concepto</strong>
             </p>
@@ -24,7 +24,7 @@
         </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-3 mt-4">
         <div class="col-12 col-md-6">
             <p>
                 <strong>Calificación de la calidad narrativa y distracciones</strong>
@@ -34,7 +34,7 @@
             <input v-model="currGrade[3]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mt-3 mt-md-0">
             <p>
                 <strong>Calificación aspectos audiovisuales de la presentación</strong>
             </p>
@@ -44,7 +44,7 @@
         </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-3 mt-4">
         <div class="col-12 col-md-6">
             <p>
                 <strong>Calificación fluidez en la presentación</strong>
@@ -54,7 +54,7 @@
             <input v-model="currGrade[5]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mt-3 mt-md-0">
             <p>
                 <strong>Calificación de la participación</strong>
             </p>
@@ -64,7 +64,7 @@
         </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-3 mt-4">
         <div class="col-12 col-md-6">
             <p>
                 <strong>Calificación de tiempo de la exposición</strong>
@@ -74,7 +74,7 @@
             <input v-model="currGrade[7]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mt-3 mt-md-0">
             <p>
                 <strong>Calificación de originalidad del proyecto</strong>
             </p>
@@ -84,7 +84,7 @@
         </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-3 mt-4">
         <div class="col-12 col-md-6">
             <p>
                 <strong>Calificación de la funcionalidad del proyecto</strong>
@@ -94,7 +94,7 @@
             <input v-model="currGrade[9]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mt-3 mt-md-0">
             <p>
                 <strong>Calificación de vídeo del proyecto</strong>
             </p>
@@ -104,7 +104,7 @@
         </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-3 mt-4">
         <div class="col-12 col-md-6">
             <p>
                 <strong>Calificación de relación entre concepto físico y explicación teórica</strong>
