@@ -24,15 +24,17 @@ export const projectStore = defineStore ('project', {
             const url = 'https://expoingenieria.com/rest_api_expo/tablas/proyecto/'
             const config = this.config
 
-            console.log(email, this.url_sala, this.url_video)
+            const email = localStorage.getItem('email')
 
             const params = new URLSearchParams()
-            // params.append('nombre_equipo', email)
+            params.append('correo', email)
             params.append('url_sala', this.url_sala)
             params.append('url_video', this.url_video)
 
+            console.log(email, this.url_sala, this.url_video)
+
             try {
-                const response = await axios.post(url, params, config)
+                const response = await axios.put(url, params, config)
                 console.log(response)
             } catch (error) {
                 console.log(error)

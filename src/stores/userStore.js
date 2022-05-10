@@ -40,6 +40,7 @@ export const userStore = defineStore ('axios', {
                   localStorage.setItem('token', response.data.hash)
                   localStorage.setItem('id', response.data.judgeID)
                   localStorage.setItem('exp', response.data.expiration)
+                  localStorage.setItem('email', this.email)
                 }
             } catch (error) {
                 console.log(error)

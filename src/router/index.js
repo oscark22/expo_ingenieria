@@ -41,6 +41,11 @@ const routes = [
       return false
     }
   }
+  // {
+  //   path: '/:pathMatch(.*)*',
+  //   name: 'not-found',
+  //   component: NotFound,
+  // }
 ]
 
 const router = createRouter({
