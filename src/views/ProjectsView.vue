@@ -29,7 +29,7 @@
           Software y Multimedia
         </p>
       </button>
-      <button @click="projectCard.fetchData(); activeBtn='btn3'; currCategory='Categoría 2- Producto/proceso-Aplicación industria'" type="button" class="btn col-6 col-md-3">
+      <button @click="projectCard.fetchData(); activeBtn='btn3'; currCategory='Producto/proceso-Aplicación industria'" type="button" class="btn col-6 col-md-3">
         <img src="../assets/iconos-05.png" width="45" height="50">
         <p class="text-white">
           Aplicación Industria
