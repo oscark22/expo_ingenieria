@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="col-12">
-        <button @click="project.ProjectInfo()" class="btn btn-warning" type="submit">
+        <button @click="project.AddLinks()" class="btn btn-warning" type="submit">
           Confirmar
         </button>
       </div>
