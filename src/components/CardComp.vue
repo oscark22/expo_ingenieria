@@ -4,22 +4,26 @@
       <img :src="img_src" class="card-img-top">
       <div class="card-body">
         <h5 class="card-title">{{ nombre_proyecto }}</h5>
-        <p class="card-text">{{ descripcion }}</p>
+        <p class="card-text">No. Proyecto: {{ card_id }}</p>
         <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" :data-bs-target="'#myModal' + card_id">Ver proyectos</button>
       </div>
       <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
       </div>
     </div>
     <div class="modal fade" :id="'myModal' + card_id" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="myModalLabel">{{ nombre_proyecto }}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            {{ descripcion }}
+            <p class="text">
+              Descripción del proyecto:
+            </p>
+            <p class="text">
+              {{ descripcion }}
+            </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
