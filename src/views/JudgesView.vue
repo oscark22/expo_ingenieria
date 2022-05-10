@@ -45,13 +45,9 @@
           <option selected disabled value="">Elige un proyecto</option>
           <template v-for="project in projectCard.cards" :key="project.proyecto_id">
             <option value="{{ project.proyecto_id }}">
-              hola
               {{ project.proyecto_id }} - {{ project.nombre_proyecto }}
             </option>
           </template>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
         </select>
         <div class="invalid-feedback">
           Porfavor elige un proyecto.

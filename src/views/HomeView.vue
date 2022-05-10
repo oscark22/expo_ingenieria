@@ -27,7 +27,6 @@
       </div>
       <div class="col col-12 col-lg-6 ms-md-auto">
         <h1 class="fw-bold fs-1">
-          <!-- text-center text-md-start -->
           ¿Qué es Expoingeniería?
         </h1>
         <p class="lead text-muted lh-lg pt-2">
@@ -68,7 +67,7 @@
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
           <div class="accordion-body">
-            9 a.m. a 1 p.m. y 3 p.m. a 7 p.m. el lunes 16 de mayo.
+            De 9 a.m. a 1 p.m. y 3 p.m. a 7 p.m. el lunes 16 de mayo.
           </div>
         </div>
       </div>
@@ -80,7 +79,7 @@
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
           <div class="accordion-body">
-            Martes y miércoles 17 y 18 de mayo de 9 a.m. a 1 p.m. y 3 p.m. a 7 p.m.
+            Martes y miércoles, 17 y 18 de mayo de 9 a.m. a 1 p.m. y 3 p.m. a 7 p.m.
           </div>
         </div>
       </div>
@@ -188,7 +187,7 @@
         </h2>
         <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven">
           <div class="accordion-body">
-            Sí.
+            Así es, las conferencias del congreso CIAP serán de manera virtual.
           </div>
         </div>
       </div>
