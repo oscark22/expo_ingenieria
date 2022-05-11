@@ -62,7 +62,7 @@
   <div class="container mb-4">
     <div class="row row-cols-md-4 gy-4">
       <template v-for="card in projectCard.cards" :key="card.proyecto_id">
-        <template v-if="card.categoria === currCategory" class="col">
+        <template v-if="card.categoria === currCategory">
           <CardComp
             :img_url="getImgUrl(currCategory)"
             :nombre_equipo="card.nombre_equipo"
