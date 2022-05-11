@@ -56,7 +56,7 @@
     </form>
   </div>
   <div class="container mt-md-2">
-    <template v-if="actibeBoton === 'btn1'">
+    <template v-if="activeBoton === 'btn1'">
       <RubAcadem/>
     </template>
     <template v-if="activeBoton === 'btn2'">
