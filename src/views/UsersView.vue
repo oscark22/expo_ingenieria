@@ -13,20 +13,14 @@
     </div>
   </div>
   <div class="container">
-    <form @submit.prevent="pData" class="row g-4 mb-5 needs-validation">
+    <form @submit.prevent class="row g-4 needs-validation">
       <div class="col-md-12">
         <label for="zoomControl" class="form-label">Link de la sala de Zoom</label>
         <input v-model="project.url_sala" type="text" class="form-control" id="zoomControl" placeholder="Link de Zoom." required>
-        <div class="invalid-feedback">
-          Asegúrate de insertar un link de Zoom.
-        </div>
       </div>
       <div class="col-md-12">
         <label for="youtubeControl" class="form-label">Link del video de Youtube</label>
         <input v-model="project.url_video" type="text" class="form-control" id="youtubeControl" placeholder="Link de Youtube." required>
-        <div class="invalid-feedback">
-          Asegúrate de insertar un link de Youtube.
-        </div>
       </div>
       <div class="col-12">
         <button @click="project.AddLinks()" class="btn btn-warning" type="submit">
@@ -41,24 +35,4 @@
 import { projectStore } from '@/stores/projectStore'
 
 const project = projectStore()
-</script>
-
-<script>
-(function () {
-  'use strict'
-
-  const forms = document.querySelectorAll('.needs-validation')
-
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
 </script>
