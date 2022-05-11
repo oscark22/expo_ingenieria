@@ -177,6 +177,9 @@
         <textarea class="form-control" placeholder="Deje un comentario en este espacio" id="floatingTextarea" style="height: 100px"></textarea>
         <label for="floatingTextarea">Comentarios adicionales</label>
     </div>
+    <div class="btn btn-warning btn-lg mt-4">
+        Enviar
+    </div>
 </template>
 
 <script>
