@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="card h-100">
-      <img :src="img_src" class="card-img-top">
+      <img :src="getImgUrl(curr_category)" :alt="card_id" class="card-img-top">
       <div class="card-body">
         <h5 class="card-title">{{ nombre_proyecto }}</h5>
         <p class="card-text">No. Proyecto: {{ card_id }}</p>
@@ -52,7 +52,24 @@
 
 <script>
 export default {
-  props: ['card_id', 'img_src', 'nombre_proyecto', 'descripcion', 'url_sala', 'url_video']
+  props: ['curr_category', 'card_id', 'nombre_proyecto', 'descripcion', 'url_sala', 'url_video'],
+  data () {
+    return {
+      imageSrc: {
+        'Proyecto académico': 'categoria-1.png',
+        'Categoría 1 - Producto/proceso- Asignatura/independiente': 'categoria-3.png',
+        'Categoría 2-  Producto/proceso- Asignatura/independiente': 'categoria-4.png',
+        'Categoría 1- Software y multmedia-  Aplicación  Industria/asignatura': 'categoria-5.png',
+        'Categoría 2- Software y multmedia-  Aplicación Industria/asignatura': 'categoria-6.png',
+        'Producto/proceso-Aplicación industria': 'categoria-7.png'
+      }
+    }
+  },
+  methods: {
+    getImgUrl (currCategory) {
+      return require('@/assets/' + this.imageSrc[currCategory])
+    }
+  }
 }
 </script>
 

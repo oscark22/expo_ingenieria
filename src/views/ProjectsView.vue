@@ -62,10 +62,10 @@
   <div class="container mb-4">
     <div class="row row-cols-md-4 gy-4">
       <template v-for="card in projectCard.cards" :key="card.proyecto_id">
-        <template v-if="card.categoria === this.currCategory" class="col">
+        <template v-if="card.categoria === currCategory" class="col">
           <CardComp
+            :curr_category="currCategory"
             :card_id="card.num_proyecto"
-            :img_src="card.img_src"
             :nombre_proyecto="card.nombre_proyecto"
             :descripcion="card.descripcion"
             :url_sala="card.url_sala"
