@@ -197,5 +197,4 @@ export const cardStore = defineStore ('evaluation', {
             console.log(error)
         }
     }
-}
-)
+})
