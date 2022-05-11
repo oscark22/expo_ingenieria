@@ -23,7 +23,7 @@
   <div class="container mt-5 px-4 px-md-3" id="contenedor-info">
     <div class="row flex-md-row-reverse align-items-center">
       <div class="col col-12 col-lg-6 ms-md-auto mb-4 mb-lg-0">
-        <img src="@/assets/d.jpg" class="img-fluid" alt="logo">
+        <img src="@/assets/stock_1.png" class="img-fluid" alt="logo">
       </div>
       <div class="col col-12 col-lg-6 ms-md-auto">
         <h1 class="fw-bold fs-1">
@@ -40,7 +40,7 @@
   <div class="container mt-5 px-4 px-md-3" id="contenedor-info">
     <div class="row p-md-4 gx-md-5 align-items-center">
       <div class="col col-12 col-lg-6 ms-md-auto mb-4 mb-lg-0">
-        <img src="@/assets/e.jpg" class="img-fluid" alt="logo">
+        <img src="@/assets/stock_2.jpg" class="img-fluid" alt="logo">
       </div>
       <div class="col col-12 col-lg-6 ms-md-auto">
         <h1 class="fw-bold fs-1">
