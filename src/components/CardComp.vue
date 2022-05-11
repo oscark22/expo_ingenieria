@@ -5,7 +5,9 @@
       <div class="card-body">
         <h5 class="card-title">{{ nombre_proyecto }}</h5>
         <p class="card-text">No. Proyecto: {{ card_id }}</p>
-        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" :data-bs-target="'#myModal' + card_id">Ver proyectos</button>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" :data-bs-target="'#myModal' + card_id">
+          Ver proyecto
+        </button>
       </div>
       <div class="card-footer">
       </div>
@@ -23,14 +25,21 @@
             <p class="text">
               {{ descripcion }}
             </p>
-            <p class="mt-4">
-              <a href="https://google.com" target="_blank" class="btn btn-danger me-2">
-                  Youtube <i class="bi bi-youtube"></i>
-              </a>
-              <a href="https://google.com" target="_blank" class="btn btn-primary">
-                  Skype <i class="bi bi-skype"></i>
-              </a>
-            </p>
+            <template v-if="url_video !== 'por determinar' && url_sala !== 'por determinar'">
+              <p class="mt-4">
+                <a @onclick="url_video" target="_blank" class="btn btn-danger me-2">
+                    Youtube <i class="bi bi-youtube"></i>
+                </a>
+                <a @onclick="url_sala" target="_blank" class="btn btn-primary">
+                    Skype <i class="bi bi-skype"></i>
+                </a>
+              </p>
+            </template>
+            <template v-else>
+              <p class="mt-4">
+                Los links correspondientes no han sido añadidos por el equipo.
+              </p>
+            </template>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -43,7 +52,7 @@
 
 <script>
 export default {
-  props: ['card_id', 'img_src', 'nombre_proyecto', 'descripcion']
+  props: ['card_id', 'img_src', 'nombre_proyecto', 'descripcion', 'url_sala', 'url_video']
 }
 </script>
 

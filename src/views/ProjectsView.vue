@@ -64,10 +64,12 @@
       <template v-for="card in projectCard.cards" :key="card.proyecto_id">
         <template v-if="card.categoria === this.currCategory" class="col">
           <CardComp
-            :card_id="card.proyecto_id"
+            :card_id="card.num_proyecto"
             :img_src="card.img_src"
             :nombre_proyecto="card.nombre_proyecto"
             :descripcion="card.descripcion"
+            :url_sala="card.url_sala"
+            :url_video="card.url_video"
           />
         </template>
       </template>
