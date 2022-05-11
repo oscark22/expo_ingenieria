@@ -44,7 +44,7 @@
         <select class="form-select" aria-label="selectProyect" required>
           <option selected disabled value="">Elige un proyecto</option>
             <template v-for="project in projectCard.cards" :key="project.proyecto_id">
-              <option value="{{ project.num_proyecto }}">
+              <option value="{{ project.categoria }}">
                 {{ project.num_proyecto }} - {{ project.nombre_proyecto }}
               </option>
             </template>
@@ -56,7 +56,7 @@
     </form>
   </div>
   <div class="container mt-md-2">
-    <template v-if="activeBoton === 'btn1'">
+    <template v-if="actibeBoton === 'btn1'">
       <RubAcadem/>
     </template>
     <template v-if="activeBoton === 'btn2'">
