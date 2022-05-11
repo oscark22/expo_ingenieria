@@ -13,8 +13,7 @@ export const AcadStore = defineStore('axios', {
                 }
             },
             
-            url_sala: '',
-            url_video: ''
+            Grades: []
         }
     },
     actions: {
