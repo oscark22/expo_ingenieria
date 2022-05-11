@@ -28,10 +28,10 @@
             <template v-if="url_video !== 'por determinar' && url_sala !== 'por determinar'">
               <p class="mt-4">
                 <a :href="url_video" class="btn btn-danger me-2">
-                    Youtube <i class="bi bi-youtube"></i>
+                    Ver video <i class="bi bi-youtube"></i>
                 </a>
                 <a :href="url_sala" class="btn btn-primary">
-                    Skype <i class="bi bi-skype"></i>
+                    Sesión en vivo <i class="bi bi-camera-video-fill"></i>
                 </a>
               </p>
             </template>

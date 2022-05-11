@@ -14,8 +14,8 @@
   <div class="container">
     <form class="row g-4 needs-validation">
       <div class="col-md-12">
-        <label for="skypeControl" class="form-label">Link de la sala de Skype</label>
-        <input v-model="project.url_sala" type="text" class="form-control" id="skypeControl" placeholder="Link de Skype." required>
+        <label for="meet" class="form-label">Link de la sala de Meet</label>
+        <input v-model="project.url_sala" type="text" class="form-control" id="meetControl" placeholder="Link de Meet." required>
       </div>
       <div class="col-md-12">
         <label for="youtubeControl" class="form-label">Link del video de Youtube</label>
@@ -38,10 +38,10 @@
               <p>
                 La información correspondiente a los links de Youtube y Meet ha sido guardada exitosamente. Estos son los links que has ingresado:
               </p>
-              <p>Skype: {{ project.url_sala }}</p>
+              <p>Meet: {{ project.url_sala }}</p>
               <p>Youtube: {{ project.url_video }}</p>
               <p>
-                En el caso que los links que hayas ingresado sean incorrectos o desees actualizar los links por otros nuevos, puedes volver a este apartado en cualquier momento y cambiar la ruta tanto de Youtube como de Skype de tu proyecto asociado.
+                En el caso que los links que hayas ingresado sean incorrectos o desees actualizar los links por otros nuevos, puedes volver a este apartado en cualquier momento y cambiar la ruta tanto de Youtube como de Meet de tu proyecto asociado.
               </p>
             </template>
             <template v-else>
