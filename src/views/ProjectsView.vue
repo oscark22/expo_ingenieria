@@ -64,7 +64,7 @@
       <template v-for="card in projectCard.cards" :key="card.proyecto_id">
         <template v-if="card.categoria === currCategory" class="col">
           <CardComp
-            :curr_category="currCategory"
+            :img_url="getImgUrl(currCategory)"
             :nombre_equipo="card.nombre_equipo"
             :card_id="card.num_proyecto"
             :nombre_proyecto="card.nombre_proyecto"
@@ -87,6 +87,19 @@ const projectCard = cardStore()
 
 const activeBtn = ref('')
 const currCategory = ref('0')
+
+const imageSrc = {
+  'Proyecto académico': 'categoria-1.png',
+  'Categoría 1 - Producto/proceso- Asignatura/independiente': 'categoria-3.png',
+  'Categoría 2-  Producto/proceso- Asignatura/independiente': 'categoria-4.png',
+  'Categoría 1- Software y multmedia-  Aplicación  Industria/asignatura': 'categoria-5.png',
+  'Categoría 2- Software y multmedia-  Aplicación Industria/asignatura': 'categoria-6.png',
+  'Producto/proceso-Aplicación industria': 'categoria-7.png'
+}
+
+const getImgUrl = (currCategory) => {
+  return require('@/assets/' + imageSrc[currCategory])
+}
 
 // fetch card data
 projectCard.fetchData()
