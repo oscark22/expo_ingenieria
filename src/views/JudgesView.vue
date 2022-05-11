@@ -92,4 +92,6 @@ const projectCard = cardStore()
 
 const activeBoton = ref('')
 
+projectCard.fetchData()
+
 </script>
