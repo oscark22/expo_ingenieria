@@ -20,17 +20,17 @@
           </div>
           <div class="modal-body">
             <p class="text">
-              Descripción del proyecto:
+              Equipo asociado: {{ nombre_equipo }}
             </p>
             <p class="text">
               {{ descripcion }}
             </p>
             <template v-if="url_video !== 'por determinar' && url_sala !== 'por determinar'">
               <p class="mt-4">
-                <a @onclick="url_video" target="_blank" class="btn btn-danger me-2">
+                <a :href="url_video" class="btn btn-danger me-2">
                     Youtube <i class="bi bi-youtube"></i>
                 </a>
-                <a @onclick="url_sala" target="_blank" class="btn btn-primary">
+                <a :href="url_sala" class="btn btn-primary">
                     Skype <i class="bi bi-skype"></i>
                 </a>
               </p>
@@ -52,7 +52,7 @@
 
 <script>
 export default {
-  props: ['curr_category', 'card_id', 'nombre_proyecto', 'descripcion', 'url_sala', 'url_video'],
+  props: ['curr_category', 'nombre_equipo', 'card_id', 'nombre_proyecto', 'descripcion', 'url_sala', 'url_video'],
   data () {
     return {
       imageSrc: {

@@ -65,6 +65,7 @@
         <template v-if="card.categoria === currCategory" class="col">
           <CardComp
             :curr_category="currCategory"
+            :nombre_equipo="card.nombre_equipo"
             :card_id="card.num_proyecto"
             :nombre_proyecto="card.nombre_proyecto"
             :descripcion="card.descripcion"
