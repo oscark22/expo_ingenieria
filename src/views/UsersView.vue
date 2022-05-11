@@ -12,21 +12,50 @@
     </div>
   </div>
   <div class="container">
-    <form @submit.prevent class="row g-4 needs-validation">
+    <form class="row g-4 needs-validation">
       <div class="col-md-12">
-        <label for="zoomControl" class="form-label">Link de la sala de Zoom</label>
-        <input v-model="project.url_sala" type="text" class="form-control" id="zoomControl" placeholder="Link de Zoom." required>
+        <label for="skypeControl" class="form-label">Link de la sala de Skype</label>
+        <input v-model="project.url_sala" type="text" class="form-control" id="skypeControl" placeholder="Link de Skype." required>
       </div>
       <div class="col-md-12">
         <label for="youtubeControl" class="form-label">Link del video de Youtube</label>
         <input v-model="project.url_video" type="text" class="form-control" id="youtubeControl" placeholder="Link de Youtube." required>
       </div>
       <div class="col-12">
-        <button @click="project.AddLinks()" class="btn btn-warning" type="submit">
+        <button @click="project.AddLinks()" class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#projectModal">
           Confirmar
         </button>
       </div>
     </form>
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModalLabel">Acerca de los links del proyecto</h5>
+          </div>
+          <div class="modal-body">
+            <template v-if="project.modalState">
+              <p>
+                La información correspondiente a los links de Youtube y Meet ha sido guardada exitosamente. Estos son los links que has ingresado:
+              </p>
+              <p>Skype: {{ project.url_sala }}</p>
+              <p>Youtube: {{ project.url_video }}</p>
+              <p>
+                En el caso que los links que hayas ingresado sean incorrectos o desees actualizar los links por otros nuevos, puedes volver a este apartado en cualquier momento y cambiar la ruta tanto de Youtube como de Skype de tu proyecto asociado.
+              </p>
+            </template>
+            <template v-else>
+              <p>
+                La información asociada a tus links no se pudo guardar exitosamente. Vuelve a intentarlo. Si eso no funciona, prueba con salir de la sesión y entrar nuevamente.
+              </p>
+            </template>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

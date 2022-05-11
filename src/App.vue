@@ -22,14 +22,14 @@
           <template v-if="user.type === 'e'">
             <li class="nav-item col-6 col-md-auto">
               <router-link class="nav-link active" to="/users">
-                Datos de mi proyecto <i class="bi bi-journals"></i>
+                Mi proyecto <i class="bi bi-journals"></i>
               </router-link>
             </li>
           </template>
           <template v-else-if="user.type === 'j'">
             <li class="nav-item col-6 col-md-auto">
               <router-link class="nav-link active" to="/judges" tabindex="-1" aria-disabled="true">
-                Calificar proyectos <i class="bi bi-clipboard-data"></i>
+                Evaluaciones <i class="bi bi-clipboard-data"></i>
               </router-link>
             </li>
           </template>
