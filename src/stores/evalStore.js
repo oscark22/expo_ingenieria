@@ -10,7 +10,10 @@ export const cardStore = defineStore ('evaluation', {
                 headers: {
                   'content-type': 'application/x-www-form-urlencoded'
                 }
-            }
+            },
+
+            proyecto_id: '',
+            juez_id: localStorage.getItem('id')
         }
     },
     actions: {

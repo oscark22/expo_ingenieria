@@ -26,8 +26,8 @@
     </div>
   </div>
   <div class="container">
-    <form class="row g-4 mb-5 mb-md-4 needs-validation" novalidate>
-      <div class="col-12">
+    <form class="row mb-5 mb-md-4 needs-validation" novalidate>
+      <div class="col-12 mb-3">
         <div class="btn col-12" role="group" aria-label="Basic outlined example">
           <button @click="activeBoton='btn1'; currCategory='Proyecto académico'" type="button" class="btn btn-outline-primary m-2">Académico</button>
           <button @click="activeBoton='btn2'; currCategory='Producto/proceso-Aplicación industria'" type="button" class="btn btn-outline-primary m-2">Aplicación Industria</button>
@@ -41,15 +41,18 @@
         </div>
       </div>
       <div class="col-12">
-        <select class="form-select" aria-label="selectProyect" required>
+        <p>Porfavor, selecciona un proyecto.</p>
+      </div>
+      <div class="col-12">
+        <select v-model="projectCard.proyecto_id" class="form-select" aria-label="selectProyect" required>
           <option selected disabled value="">Elige un proyecto</option>
-            <template v-for="card in projectCard.cards" :key="card.proyecto_id">
-              <template v-if="card.categoria === currCategory">
-                <option value="{{ card.num_proyecto }}">
-                  {{ card.num_proyecto }} - {{ card.nombre_proyecto }}
-                </option>
-              </template>
+          <template v-for="card in projectCard.cards" :key="card.proyecto_id">
+            <template v-if="card.categoria === currCategory">
+              <option :value="card.proyecto_id">
+                {{ card.num_proyecto }} - {{ card.nombre_proyecto }}
+              </option>
             </template>
+          </template>
         </select>
         <div class="invalid-feedback">
           Por favor, elige un proyecto.
