@@ -8,15 +8,14 @@ export const projectStore = defineStore ('project', {
         return {
             config: {
                 headers: {
-                  'content-type': 'application/x-www-form-urlencoded',
-                  'x_hash': localStorage.getItem('token'),
-                  'x_uid': localStorage.getItem('id'),
-                  'x_timestamp': localStorage.getItem('exp')
+                  'content-type': 'application/x-www-form-urlencoded'
                 }
             },
             
             url_sala: '',
-            url_video: ''
+            url_video: '',
+
+            modalState: false
         }
     },
     actions: {
@@ -31,11 +30,11 @@ export const projectStore = defineStore ('project', {
             params.append('url_sala', this.url_sala)
             params.append('url_video', this.url_video)
 
-            console.log(email, this.url_sala, this.url_video)
-
             try {
                 const response = await axios.put(url, params, config)
-                console.log(response)
+                if (response.data.error == false) {
+                    this.modalState = true
+                }
             } catch (error) {
                 console.log(error)
             }
