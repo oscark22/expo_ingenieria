@@ -28,7 +28,7 @@
                   Youtube <i class="bi bi-youtube"></i>
               </a>
               <a href="https://google.com" target="_blank" class="btn btn-primary">
-                  Zoom <i class="bi bi-camera-video-fill"></i>
+                  Skype <i class="bi bi-skype"></i>
               </a>
             </p>
           </div>
