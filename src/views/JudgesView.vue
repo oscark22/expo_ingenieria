@@ -45,8 +45,8 @@
           <option selected disabled value="">Elige un proyecto</option>
           <template v-for="project in projectCard.cards" :key="project.proyecto_id">
             <template v-if="project.categoria === currCategory">
-              <option value="{{ project.proyecto_id }}">
-                {{ project.proyecto_id }} - {{ project.nombre_proyecto }}
+              <option value="{{ project.num_proyecto }}">
+                {{ project.num_proyecto }} - {{ project.nombre_proyecto }}
               </option>
             </template>
           </template>
@@ -93,5 +93,6 @@ import { cardStore } from '@/stores/cardStore'
 const projectCard = cardStore()
 
 const activeBoton = ref('')
-const currCategory = ref('0')
+const currCategory = ref('')
+
 </script>
