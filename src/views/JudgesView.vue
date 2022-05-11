@@ -43,13 +43,11 @@
       <div class="col-12">
         <select class="form-select" aria-label="selectProyect" required>
           <option selected disabled value="">Elige un proyecto</option>
-          <template v-for="project in projectCard.cards" :key="project.proyecto_id">
-            <template v-if="project.categoria === currCategory">
+            <template v-for="project in projectCard.cards" :key="project.proyecto_id">
               <option value="{{ project.num_proyecto }}">
                 {{ project.num_proyecto }} - {{ project.nombre_proyecto }}
               </option>
             </template>
-          </template>
         </select>
         <div class="invalid-feedback">
           Por favor, elige un proyecto.
@@ -93,6 +91,5 @@ import { cardStore } from '@/stores/cardStore'
 const projectCard = cardStore()
 
 const activeBoton = ref('')
-const currCategory = ref('')
 
 </script>
