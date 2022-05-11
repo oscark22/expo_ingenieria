@@ -6,8 +6,7 @@
           Datos de Proyecto
         </h1>
         <p class="lead text-muted">
-          Este apartado está dedicado a la agregación de la información del proyecto, datos como son: nombre del equipo, nombre del proyecto, una breve descripción de este,
-          link del vídeo del proyecto y link de la sala de Google Meet.
+          Este apartado está dedicado a la agregación de los links del proyecto como lo son: link del vídeo del proyecto y link de la sala virtual.
         </p>
       </div>
     </div>
