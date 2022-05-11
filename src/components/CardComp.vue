@@ -27,10 +27,10 @@
             </p>
             <template v-if="url_video !== 'por determinar' && url_sala !== 'por determinar'">
               <p class="mt-4">
-                <a :href="url_video" class="btn btn-danger me-2">
+                <a :href="url_video" target="_blank" class="btn btn-danger me-2">
                     Ver video <i class="bi bi-youtube"></i>
                 </a>
-                <a :href="url_sala" class="btn btn-primary">
+                <a :href="url_sala" target="_blank" class="btn btn-primary">
                     Sesión en vivo <i class="bi bi-camera-video-fill"></i>
                 </a>
               </p>
