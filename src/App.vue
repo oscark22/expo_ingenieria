@@ -59,20 +59,29 @@
       <p class="lead text-muted">
         Ingresa tus datos para iniciar sesión.
       </p>
-      <form>
+      <form @submit.prevent class="needs-validation">
         <div class="input-group mb-2">
           <div class="input-group-prepend">
             <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
           </div>
-          <input v-model="user.email" type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+          <input v-model="user.email" type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" required>
         </div>
         <div class="input-group mb-3" id="botonInicioSesion">
           <div class="input-group-prepend">
             <div class="input-group-text"><i class="bi bi-key-fill"></i></div>
           </div>
-          <input v-model="user.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+          <input v-model="user.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" required>
         </div>
-        <button @click="user.LoginAuth()" type="button" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
+        <button @click="user.LoginAuth()" type="submit" class="btn btn-warning" id="botoniniciosesion">Iniciar Sesión</button>
+        <template v-if="user.logged_in">
+          <div class="container mt-5">
+            <div class="row">
+              <p class="border rounded border-3 p-2">
+                Usuario logueado 👽
+              </p>
+            </div>
+          </div>
+        </template>
       </form>
     </div>
   </div>
