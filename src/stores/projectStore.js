@@ -32,7 +32,7 @@ export const projectStore = defineStore ('project', {
 
             try {
                 const response = await axios.put(url, params, config)
-                if (response.data.error == false) {
+                if (response.data.error === false) {
                     this.modalState = true
                 }
             } catch (error) {
