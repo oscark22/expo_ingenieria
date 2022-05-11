@@ -29,12 +29,12 @@
     <form class="row g-4 mb-5 mb-md-4 needs-validation" novalidate>
       <div class="col-12">
         <div class="btn col-12" role="group" aria-label="Basic outlined example">
-          <button @click="activeBoton='btn1'" currCategory='Proyecto académico' type="button" class="btn btn-outline-primary m-2">Académico</button>
-          <button @click="activeBoton='btn2'" currCategory='Producto/proceso-Aplicación industria' type="button" class="btn btn-outline-primary m-2">Aplicación Industria</button>
-          <button @click="activeBoton='btn3'" currCategory='Categoría 1 - Producto/proceso- Asignatura/independiente' type="button" class="btn btn-outline-primary m-2">Producto y Proceso 1</button>
-          <button @click="activeBoton='btn4'" currCategory='Categoría 2-  Producto/proceso- Asignatura/independiente' type="button" class="btn btn-outline-primary m-2">Producto y Proceso 2</button>
-          <button @click="activeBoton='btn5'" currCategory='Categoría 1- Software y multmedia-  Aplicación  Industria/asignatura' type="button" class="btn btn-outline-primary m-2">Software y Multimedia 1</button>
-          <button @click="activeBoton='btn6'" currCategory="Categoría 2- Software y multmedia-  Aplicación Industria/asignatura" type="button" class="btn btn-outline-primary m-2">Software y Multimedia 2</button>
+          <button @click="activeBoton='btn1'; currCategory='Proyecto académico'" type="button" class="btn btn-outline-primary m-2">Académico</button>
+          <button @click="activeBoton='btn2'; currCategory='Producto/proceso-Aplicación industria'" type="button" class="btn btn-outline-primary m-2">Aplicación Industria</button>
+          <button @click="activeBoton='btn3'; currCategory='Categoría 1 - Producto/proceso- Asignatura/independiente'" type="button" class="btn btn-outline-primary m-2">Producto y Proceso 1</button>
+          <button @click="activeBoton='btn4'; currCategory='Categoría 2-  Producto/proceso- Asignatura/independiente'" type="button" class="btn btn-outline-primary m-2">Producto y Proceso 2</button>
+          <button @click="activeBoton='btn5'; currCategory='Categoría 1- Software y multmedia-  Aplicación  Industria/asignatura'" type="button" class="btn btn-outline-primary m-2">Software y Multimedia 1</button>
+          <button @click="activeBoton='btn6'; currCategory='Categoría 2- Software y multmedia-  Aplicación Industria/asignatura'" type="button" class="btn btn-outline-primary m-2">Software y Multimedia 2</button>
         </div>
         <div class="invalid-feedback">
           Por favor, selecciona una categoría.
@@ -43,10 +43,12 @@
       <div class="col-12">
         <select class="form-select" aria-label="selectProyect" required>
           <option selected disabled value="">Elige un proyecto</option>
-            <template v-for="project in projectCard.cards" :key="project.proyecto_id">
-              <option value="{{ project.categoria }}">
-                {{ project.num_proyecto }} - {{ project.nombre_proyecto }}
-              </option>
+            <template v-for="card in projectCard.cards" :key="card.proyecto_id">
+              <template v-if="card.categoria === currCategory">
+                <option value="{{ card.num_proyecto }}">
+                  {{ card.num_proyecto }} - {{ card.nombre_proyecto }}
+                </option>
+              </template>
             </template>
         </select>
         <div class="invalid-feedback">
@@ -91,7 +93,7 @@ import { cardStore } from '@/stores/cardStore'
 const projectCard = cardStore()
 
 const activeBoton = ref('')
+const currCategory = ref('')
 
 projectCard.fetchData()
-
 </script>
