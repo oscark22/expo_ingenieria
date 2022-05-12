@@ -66,6 +66,7 @@
           <CardComp
             :img_url="getImgUrl(currCategory)"
             :nombre_equipo="card.nombre_equipo"
+            :proyecto_id="card.proyecto_id"
             :card_id="card.num_proyecto"
             :nombre_proyecto="card.nombre_proyecto"
             :descripcion="card.descripcion"

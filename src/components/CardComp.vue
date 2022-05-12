@@ -25,6 +25,14 @@
             <p class="text">
               {{ descripcion }}
             </p>
+            <p class="text">
+              Objetivos de la ONU:
+            </p>
+            <template v-for="(obj, i) in onuObjectives" :key="i">
+              <p class="text lh-1">
+                - {{ obj.nombre }}
+              </p>
+            </template>
             <template v-if="url_video !== 'por determinar' && url_sala !== 'por determinar'">
               <p class="mt-4">
                 <a :href="url_video" target="_blank" class="btn btn-danger me-2">
@@ -51,8 +59,25 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
-  props: ['img_url', 'curr_category', 'nombre_equipo', 'card_id', 'nombre_proyecto', 'descripcion', 'url_sala', 'url_video']
+  props: ['img_url', 'curr_category', 'nombre_equipo', 'proyecto_id', 'card_id', 'nombre_proyecto', 'descripcion', 'url_sala', 'url_video'],
+  data () {
+    return {
+      onuObjectives: []
+    }
+  },
+  async created () {
+    const url = 'https://expoingenieria.com/rest_api_expo/tablas/objetivos/' + this.proyecto_id
+
+    try {
+      const response = await axios.get(url)
+      this.onuObjectives = response.data
+    } catch (error) {
+      console.error(error)
+    }
+  }
 }
 </script>
 
