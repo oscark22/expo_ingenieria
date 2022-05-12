@@ -13,6 +13,7 @@ export const evalStore = defineStore ('evaluation', {
             },
 
             proyecto_id: '',
+            EstadoModal: false,
             juez_id: localStorage.getItem('id'),
             desc: '',
             grade: {
@@ -65,6 +66,9 @@ export const evalStore = defineStore ('evaluation', {
 
             try {
                 const response = await axios.post(url, params, config)
+                if (response.data.error === false) {
+                    this.EstadoModal = true
+                }
             } catch (error) {
                 console.log(error)
             }
@@ -95,8 +99,7 @@ export const evalStore = defineStore ('evaluation', {
             } catch (error) {
                 console.log(error)
             }
-        }
-    },
+        },
     async postIndustria () {
         const url = 'https://expoingenieria.com/rest_api_expo/tablas/rubrica_aplicacionIndustria.php/'
         const config = this.config
@@ -216,5 +219,6 @@ export const evalStore = defineStore ('evaluation', {
         } catch (error) {
             console.log(error)
         }
+    }
     }
 })

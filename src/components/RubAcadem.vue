@@ -1,4 +1,5 @@
 <template>
+<div>
     <div class="container text-center mt-5">
         <h2>
             <strong>Rúbrica de categoría Académica</strong>
@@ -177,9 +178,34 @@
         <textarea v-model="grades.desc" class="form-control" placeholder="Deje un comentario en este espacio" id="floatingTextarea" style="height: 100px"></textarea>
         <label for="floatingTextarea">Comentarios adicionales</label>
     </div>
-    <button @click="grades.postAcademic()" class="btn btn-warning btn-lg mt-4" type="button">
+    <button @click="grades.postAcademic()" class="btn btn-warning btn-lg mt-4" type="submit">
         Enviar
     </button>
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModalLabel">Acerca de los links del proyecto</h5>
+          </div>
+          <div class="modal-body">
+            <template v-if="grades.EstadoModal">
+              <p>
+                La información correspondiente a los links de Youtube y Meet ha sido guardada exitosamente. Estos son los links que has ingresado:
+              </p>
+            </template>
+            <template v-else>
+              <p>
+                La información asociada a tus links no se pudo guardar exitosamente. Vuelve a intentarlo. Si eso no funciona, prueba con salir de la sesión y entrar nuevamente.
+              </p>
+            </template>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 </template>
 
 <script setup>
