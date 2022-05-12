@@ -19,17 +19,6 @@ export const cardStore = defineStore ('card', {
             } catch (error) {
                 console.error(error)
             }
-        },
-        async getObjectives (idProyecto) {
-            const url = 'https://expoingenieria.com/rest_api_expo/tablas/objetivos/' + idProyecto
-            console.log(idProyecto)
-
-            try {
-                const response = await axios.get(url)
-                // this.currObj = response.data
-            } catch (error) {
-                console.error(error)
-            }
         }
     }
 })
