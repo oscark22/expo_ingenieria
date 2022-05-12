@@ -215,9 +215,3 @@ import { evalStore } from '@/stores/evalStore'
 const grades = evalStore()
 
 </script>
-
-<script>
-export default {
-  props: ['img_url', 'curr_category', 'nombre_equipo', 'card_id', 'nombre_proyecto', 'descripcion', 'url_sala', 'url_video']
-}
-</script>

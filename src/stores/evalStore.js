@@ -17,23 +17,23 @@ export const evalStore = defineStore ('evaluation', {
             juez_id: localStorage.getItem('id'),
             desc: '',
             grade: {
-                1: '0',
-                2: '0',
-                3: '0',
-                4: '0',
-                5: '0',
-                6: '0',
-                7: '0',
-                8: '0',
-                9: '0',
-                10: '0',
-                11: '0',
-                12: '0',
-                13: '0',
-                14: '0',
-                15: '0',
-                16: '0',
-                17: '0'
+                1: 0,
+                2: 0,
+                3: 0,
+                4: 0,
+                5: 0,
+                6: 0,
+                7: 0,
+                8: 0,
+                9: 0,
+                10: 0,
+                11: 0,
+                12: 0,
+                13: 0,
+                14: 0,
+                15: 0,
+                16: 0,
+                17: 0
               }
         }
     },
@@ -44,7 +44,7 @@ export const evalStore = defineStore ('evaluation', {
 
             const params = new URLSearchParams()
             params.append('proyecto_id', this.proyecto_id)
-            params.append('juez_id', this.juez_id)
+            params.append('juez_id', this.juez_id.slice(1))
             params.append('calificacion', this.grade[1])
             params.append('observacion', this.desc)
             params.append('calificacion_contextoGeneral', this.grade[2])
