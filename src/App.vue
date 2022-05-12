@@ -64,7 +64,7 @@
           <div class="input-group-prepend">
             <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
           </div>
-          <input v-model="user.email" type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" required>
+          <input v-model="user.email" type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" required>
         </div>
         <div class="input-group mb-3" id="botonInicioSesion">
           <div class="input-group-prepend">
