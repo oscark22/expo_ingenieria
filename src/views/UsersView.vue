@@ -6,7 +6,8 @@
           Datos de Proyecto
         </h1>
         <p class="lead text-muted">
-          Este apartado está dedicado a la agregación de los links del proyecto como lo son: link del vídeo del proyecto y link de la sala virtual.
+          Este apartado está dedicado a la agregación de los links del proyecto como lo son: link del vídeo del proyecto y link de la sala virtual. Para agregar el link de la sala virtual,
+          es necesario que lo generen a través de una cuenta institucional con terminación @cetys.edu.mx para así obtener un link adecuado.
         </p>
       </div>
     </div>

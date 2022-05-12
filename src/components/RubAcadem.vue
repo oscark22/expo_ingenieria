@@ -178,7 +178,7 @@
         <textarea v-model="grades.desc" class="form-control" placeholder="Deje un comentario en este espacio" id="floatingTextarea" style="height: 100px"></textarea>
         <label for="floatingTextarea">Comentarios adicionales</label>
     </div>
-    <button @click="grades.postAcademic()" class="btn btn-warning btn-lg mt-4" type="submit">
+    <button @click="grades.postAcademic()" class="btn btn-warning btn-lg mt-4" type="submit" data-bs-toggle="modal" data-bs-target="#projectModal">
         Enviar
     </button>
     <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">

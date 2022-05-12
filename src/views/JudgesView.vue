@@ -7,6 +7,11 @@
         </h1>
         <p class="lead text-muted">
           Este apartado está dedicado a la evaluación de todos los proyectos de la Expo Ingeniería. Todos los proyectos, independientemente de cuál sea su categoría, se encuentran aquí.
+          Para calificar un proyecto, es necesario primero seleccionar la categoría a la que pertenece. Una vez hecho esto, podrá seleccionar 1 proyecto entre los que se encuentran en dicha categoría.
+          Una vez seleccionado un proyecto, estarán las calificaciones con una barra debajo; dicha barra podrá deslizarse para seleccionar una calificación, la cual se mostrará siempre encima de la sección.
+          Una vez habiendo colocado todas las calificaciones, se podrán agregar comentarios adicionales del proyecto; si no se tienen comentarios adicionales, no se requieren mandar.
+          Para finalizar, habrá un botón al final de la rúbrica con la leyenda "Enviar", el cual deberá presionarse una vez que se tengan todas las calificaciones (y comentarios, en caso de haber agregado)
+          para enviarlas. Una vez hecho esto, habrá finalizado el procedimiento de calificar proyecto.
         </p>
         <p class="lead text-muted">
           <strong>
