@@ -42,7 +42,7 @@ export const evalStore = defineStore ('evaluation', {
             const config = this.config
 
             const params = new URLSearchParams()
-            params.append('proyecto_id', )
+            params.append('proyecto_id', this.proyecto_id)
             params.append('juez_id', this.juez_id)
             params.append('calificacion', this.grade[1])
             params.append('observacion', this.desc)
@@ -74,7 +74,7 @@ export const evalStore = defineStore ('evaluation', {
             const config = this.config
 
             const params = new URLSearchParams()
-            params.append('proyecto_id', )
+            params.append('proyecto_id', this.proyecto_id)
             params.append('juez_id', this.juez_id)
             params.append('calificacion', )
             params.append('observacion', this.desc)
@@ -102,7 +102,7 @@ export const evalStore = defineStore ('evaluation', {
         const config = this.config
 
         const params = new URLSearchParams()
-        params.append('proyecto_id', )
+        params.append('proyecto_id', this.proyecto_id)
         params.append('juez_id', this.juez_id)
         params.append('calificacion', )
         params.append('observacion', this.desc)
@@ -131,7 +131,7 @@ export const evalStore = defineStore ('evaluation', {
         const config = this.config
 
         const params = new URLSearchParams()
-        params.append('proyecto_id', )
+        params.append('proyecto_id', this.proyecto_id)
         params.append('juez_id', this.juez_id)
         params.append('calificacion', )
         params.append('observacion', this.desc)
@@ -161,7 +161,7 @@ export const evalStore = defineStore ('evaluation', {
         const config = this.config
 
         const params = new URLSearchParams()
-        params.append('proyecto_id', )
+        params.append('proyecto_id', this.proyecto_id)
         params.append('juez_id', this.juez_id)
         params.append('calificacion', )
         params.append('observacion', this.desc)
@@ -193,7 +193,7 @@ export const evalStore = defineStore ('evaluation', {
         const config = this.config
 
         const params = new URLSearchParams()
-        params.append('proyecto_id', )
+        params.append('proyecto_id', this.proyecto_id)
         params.append('juez_id', this.juez_id)
         params.append('calificacion', )
         params.append('observacion', this.desc)

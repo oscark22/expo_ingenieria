@@ -44,7 +44,7 @@
         <p>Porfavor, selecciona un proyecto.</p>
       </div>
       <div class="col-12">
-        <select v-model="projectCard.proyecto_id" class="form-select" aria-label="selectProyect" required>
+        <select v-model="proyecto.proyecto_id" class="form-select" aria-label="selectProyect" required>
           <option selected disabled value="">Elige un proyecto</option>
           <template v-for="card in projectCard.cards" :key="card.proyecto_id">
             <template v-if="card.categoria === currCategory">
@@ -92,8 +92,10 @@ import RubSWM1 from '@/components/RubSWM-1.vue'
 import RubSWM2 from '@/components/RubSWM-2.vue'
 
 import { cardStore } from '@/stores/cardStore'
+import { evalStore } from '@/stores/evalStore'
 
 const projectCard = cardStore()
+const proyecto = evalStore()
 
 const activeBoton = ref('')
 const currCategory = ref('')

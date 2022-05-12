@@ -177,9 +177,9 @@
         <textarea v-model="grades.desc" class="form-control" placeholder="Deje un comentario en este espacio" id="floatingTextarea" style="height: 100px"></textarea>
         <label for="floatingTextarea">Comentarios adicionales</label>
     </div>
-    <div class="btn btn-warning btn-lg mt-4">
+    <button @click="grades.postAcademic()" class="btn btn-warning btn-lg mt-4" type="button">
         Enviar
-    </div>
+    </button>
 </template>
 
 <script setup>
@@ -192,6 +192,9 @@ const grades = evalStore()
 
 <script>
 export default {
+
+  props: ['img_url', 'curr_category', 'nombre_equipo', 'card_id', 'nombre_proyecto', 'descripcion', 'url_sala', 'url_video'],
+
   data () {
     return {
       currGrade: {
