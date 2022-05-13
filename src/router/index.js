@@ -3,6 +3,7 @@ import Home from '../views/HomeView.vue'
 import Projects from '../views/ProjectsView.vue'
 import Users from '../views/UsersView.vue'
 import Judges from '../views/JudgesView.vue'
+import NotFound from '../views/NotFound.vue'
 
 const routes = [
   {
@@ -40,12 +41,12 @@ const routes = [
       }
       return false
     }
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'not-found',
+    component: NotFound
   }
-  // {
-  //   path: '/:pathMatch(.*)*',
-  //   name: 'not-found',
-  //   component: NotFound,
-  // }
 ]
 
 const router = createRouter({
