@@ -69,7 +69,6 @@ export const evalStore = defineStore ('evaluation', {
 
             try {
                 const response = await axios.post(url, params, config)
-                console.log(response)
                 if (response.data.error === false) {
                     this.EstadoModal = true
                 }
