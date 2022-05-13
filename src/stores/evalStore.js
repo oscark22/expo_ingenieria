@@ -8,7 +8,10 @@ export const evalStore = defineStore ('evaluation', {
         return {
             config: {
                 headers: {
-                  'content-type': 'application/x-www-form-urlencoded'
+                  'content-type': 'application/x-www-form-urlencoded',
+                  'x_hash': localStorage.getItem('token'),
+                  'x_timestamp': localStorage.getItem('exp'),
+                  'x_uid': localStorage.getItem('id')
                 }
             },
 
@@ -17,23 +20,23 @@ export const evalStore = defineStore ('evaluation', {
             juez_id: localStorage.getItem('id'),
             desc: '',
             grade: {
-                1: 0,
-                2: 0,
-                3: 0,
-                4: 0,
-                5: 0,
-                6: 0,
-                7: 0,
-                8: 0,
-                9: 0,
-                10: 0,
-                11: 0,
-                12: 0,
-                13: 0,
-                14: 0,
-                15: 0,
-                16: 0,
-                17: 0
+                '1': '0',
+                '2': '0',
+                '3': '0',
+                '4': '0',
+                '5': '0',
+                '6': '0',
+                '7': '0',
+                '8': '0',
+                '9': '0',
+                '10': '0',
+                '11': '0',
+                '12': '0',
+                '13': '0',
+                '14': '0',
+                '15': '0',
+                '16': '0',
+                '17': '0'
               }
         }
     },
@@ -68,7 +71,6 @@ export const evalStore = defineStore ('evaluation', {
                 const response = await axios.post(url, params, config)
                 console.log(response)
                 if (response.data.error === false) {
-                    console.log(response)
                     this.EstadoModal = true
                 }
             } catch (error) {
