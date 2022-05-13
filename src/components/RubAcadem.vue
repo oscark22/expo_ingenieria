@@ -209,9 +209,7 @@
 </template>
 
 <script setup>
-
 import { evalStore } from '@/stores/evalStore'
 
 const grades = evalStore()
-
 </script>
