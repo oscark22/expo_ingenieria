@@ -115,7 +115,7 @@
         </h2>
         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
           <div class="accordion-body">
-            <a href="">Vídeo tutorial</a>
+            <a href="" target="_blank">Vídeo tutorial</a>
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@
         </h2>
         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
           <div class="accordion-body">
-            <a href="">Vídeo tutorial</a>
+            <a href="https://drive.google.com/file/d/1V51dlaEwAA738mcTsipyv0bak6fiXo3y/view" target="_blank">Vídeo tutorial</a>
           </div>
         </div>
       </div>
