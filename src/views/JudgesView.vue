@@ -35,11 +35,11 @@
       <div class="col-12 mb-3">
         <div class="btn col-12" role="group" aria-label="Basic outlined example">
           <button @click="activeBoton='btn1'; currCategory='Proyecto académico'" type="button" class="btn btn-outline-primary m-2">Académico</button>
-          <button @click="activeBoton='btn2'; currCategory='Producto/proceso-Aplicación industria'" type="button" class="btn btn-outline-primary m-2">Aplicación Industria</button>
-          <button @click="activeBoton='btn3'; currCategory='Categoría 1 - Producto/proceso- Asignatura/independiente'" type="button" class="btn btn-outline-primary m-2">Producto y Proceso 1</button>
-          <button @click="activeBoton='btn4'; currCategory='Categoría 2-  Producto/proceso- Asignatura/independiente'" type="button" class="btn btn-outline-primary m-2">Producto y Proceso 2</button>
-          <button @click="activeBoton='btn5'; currCategory='Categoría 1- Software y multmedia-  Aplicación  Industria/asignatura'" type="button" class="btn btn-outline-primary m-2">Software y Multimedia 1</button>
-          <button @click="activeBoton='btn6'; currCategory='Categoría 2- Software y multmedia-  Aplicación Industria/asignatura'" type="button" class="btn btn-outline-primary m-2">Software y Multimedia 2</button>
+          <button @click="activeBoton='btn2'; currCategory='Producto/proceso-Aplicación industria'" type="button" class="btn btn-outline-primary m-2">Aplicación Industria Categoría 2</button>
+          <button @click="activeBoton='btn3'; currCategory='Categoría 1 - Producto/proceso- Asignatura/independiente'" type="button" class="btn btn-outline-primary m-2">Producto y Proceso Categoría 1</button>
+          <button @click="activeBoton='btn4'; currCategory='Categoría 2-  Producto/proceso- Asignatura/independiente'" type="button" class="btn btn-outline-primary m-2">Producto y Proceso Categoría 2</button>
+          <button @click="activeBoton='btn5'; currCategory='Categoría 1- Software y multmedia-  Aplicación  Industria/asignatura'" type="button" class="btn btn-outline-primary m-2">Software y Multimedia Categoría 1</button>
+          <button @click="activeBoton='btn6'; currCategory='Categoría 2- Software y multmedia-  Aplicación Industria/asignatura'" type="button" class="btn btn-outline-primary m-2">Software y Multimedia Categoría 2</button>
         </div>
         <div class="invalid-feedback">
           Por favor, selecciona una categoría.

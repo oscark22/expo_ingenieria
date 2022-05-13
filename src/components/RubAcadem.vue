@@ -117,7 +117,7 @@
         </div>
         <div class="col-12 col-md-6 mt-3 mt-md-0">
             <p>
-                <strong>Calificación de tiempo de respuesta</strong>
+                <strong>Calificación de tiempo de respuesta (si aplica)</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ grades.grade[13] }}</label>
@@ -137,7 +137,7 @@
         </div>
         <div class="col-12 col-md-6 mt-3 mt-md-0">
             <p>
-                <strong>Calificación del diseño del proyecto</strong>
+                <strong>Calificación del diseño del proyecto (si aplica)</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ grades.grade[15] }}</label>
@@ -148,7 +148,7 @@
     <div class="row mb-3 mt-4">
         <div class="col-12 col-md-6">
             <p>
-                <strong>Calificación de la organización de los elementos</strong>
+                <strong>Calificación de la organización de los elementos (si aplica)</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ grades.grade[16] }}</label>
@@ -157,7 +157,7 @@
         </div>
         <div class="col-12 col-md-6 mt-3 mt-md-0">
             <p>
-                <strong>Calificación del diseño de la interfaz del proyecto</strong>
+                <strong>Calificación del diseño de la interfaz del proyecto (si aplica)</strong>
             </p>
         <div>
             <label for="gradeRange" class="form-label">Calificación: {{ grades.grade[17] }}</label>

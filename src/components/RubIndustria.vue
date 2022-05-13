@@ -1,7 +1,7 @@
 <template>
     <div class="container text-center mt-5">
         <h2>
-            <strong>Rúbrica de categoría Aplicación en Industria</strong>
+            <strong>Rúbrica de categoría 2 Aplicación en Industria</strong>
         </h2>
     </div>
     <div class="row mb-3 mt-4">
