@@ -11,7 +11,7 @@
                 <strong>Calificación explicación de contexto general</strong>
             </p>
         <div>
-            <label for="gradeRange" class="form-label">Calificación: {{ grades.grade[2] }}</label>
+            <label for="gradeRange" class="form-label">Calificación: {{ grades.grade[2] }} ({{ grades.checkState(2) }})</label>
             <input v-model="grades.grade[2]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
         </div>
         </div>

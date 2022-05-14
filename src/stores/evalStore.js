@@ -37,7 +37,7 @@ export const evalStore = defineStore ('evaluation', {
                 '15': '0',
                 '16': '0',
                 '17': '0'
-              }
+            }
         }
     },
     actions: {
@@ -106,9 +106,9 @@ export const evalStore = defineStore ('evaluation', {
                 console.log(error)
             }
         },
-    async postIndustria () {
-        const url = 'https://expoingenieria.com/rest_api_expo/tablas/rubrica_aplicacionIndustria.php/'
-        const config = this.config
+        async postIndustria () {
+            const url = 'https://expoingenieria.com/rest_api_expo/tablas/rubrica_aplicacionIndustria.php/'
+            const config = this.config
 
         const params = new URLSearchParams()
         params.append('proyecto_id', this.proyecto_id)
@@ -129,15 +129,15 @@ export const evalStore = defineStore ('evaluation', {
         params.append('calificacion_tiempoRespuesta', this.grade[13])
         params.append('calificacion_desarrolloSistPropios', this.grade[14])
 
-        try {
-            const response = await axios.post(url, params, config)
-        } catch (error) {
-            console.log(error)
-        }
-    },
-    async postSWM1 () {
-        const url = 'https://expoingenieria.com/rest_api_expo/tablas/rubrica_c1_innovacionProceso_SWMultimedia.php/'
-        const config = this.config
+            try {
+                const response = await axios.post(url, params, config)
+            } catch (error) {
+                console.log(error)
+            }
+        },
+        async postSWM1 () {
+            const url = 'https://expoingenieria.com/rest_api_expo/tablas/rubrica_c1_innovacionProceso_SWMultimedia.php/'
+            const config = this.config
 
         const params = new URLSearchParams()
         params.append('proyecto_id', this.proyecto_id)
@@ -159,15 +159,15 @@ export const evalStore = defineStore ('evaluation', {
         params.append('calificacion_conceptoComunicacionVisualMensaje', this.grade[14])
         params.append('calificacion_disenoInterfaz', this.grade[15])
 
-        try {
-            const response = await axios.post(url, params, config)
-        } catch (error) {
-            console.log(error)
-        }
-    },
-    async postSWM2 () {
-        const url = 'https://expoingenieria.com/rest_api_expo/tablas/rubrica_c2_innovacionProceso_SWMultimedia.php/'
-        const config = this.config
+            try {
+                const response = await axios.post(url, params, config)
+            } catch (error) {
+                console.log(error)
+            }
+        },
+        async postSWM2 () {
+            const url = 'https://expoingenieria.com/rest_api_expo/tablas/rubrica_c2_innovacionProceso_SWMultimedia.php/'
+            const config = this.config
 
         const params = new URLSearchParams()
         params.append('proyecto_id', this.proyecto_id)
@@ -191,15 +191,15 @@ export const evalStore = defineStore ('evaluation', {
         params.append('calificacion_calidadNarrativaDistracciones', this.grade[16])
         params.append('calificacion_calidadVideo', this.grade[17])
 
-        try {
-            const response = await axios.post(url, params, config)
-        } catch (error) {
-            console.log(error)
-        }
-    },
-    async postProd2 () {
-        const url = 'https://expoingenieria.com/rest_api_expo/tablas/rubrica_c2_innovacionProcesoProducto.php/'
-        const config = this.config
+            try {
+                const response = await axios.post(url, params, config)
+            } catch (error) {
+                console.log(error)
+            }
+        },
+        async postProd2 () {
+            const url = 'https://expoingenieria.com/rest_api_expo/tablas/rubrica_c2_innovacionProcesoProducto.php/'
+            const config = this.config
 
         const params = new URLSearchParams()
         params.append('proyecto_id', this.proyecto_id)
@@ -220,11 +220,26 @@ export const evalStore = defineStore ('evaluation', {
         params.append('calificacion_tiempoRespuesta', this.grade[13])
         params.append('calificacion_desarrolloSistPropios', this.grade[14])
 
-        try {
-            const response = await axios.post(url, params, config)
-        } catch (error) {
-            console.log(error)
+            try {
+                const response = await axios.post(url, params, config)
+            } catch (error) {
+                console.log(error)
+            }
+        },
+        checkState (key) {
+            const val = this.grade[key]
+            
+            if (val === '0') {
+              return 'No aplica'
+            } else if (val <= 25) {
+              return 'Insuficiente'
+            } else if (val <= 50) {
+              return 'Suficiente'
+            } else if (val <= 75) {
+              return 'Mejorable'
+            } else if (val <= 100) {
+              return 'Sobresaliente'
+            }
         }
-    }
     }
 })
