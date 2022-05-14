@@ -12,7 +12,7 @@
     </div>
     <div class="row btn-group" role="group" aria-label="Basic outlined example">
       <button @click="projectCard.fetchData(); activeBtn='btn1'; currCategory='Proyecto académico'" type="button" class="btn col-6 col-md-3">
-        <img src="../assets/iconos-08.png" width="45" height="50">
+        <img src="../assets/iconos-08.png" width="45" height="60">
         <p class="text-white">
           Académico
         </p>

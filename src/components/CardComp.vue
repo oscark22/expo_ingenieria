@@ -4,7 +4,7 @@
       <img :src="img_url" :alt="card_id" class="card-img-top">
       <div class="card-body">
         <h5 class="card-title">{{ nombre_proyecto }}</h5>
-        <p class="card-text">No. Proyecto: {{ card_id }}</p>
+        <p class="card-text">Equipo #{{ card_id }}</p>
         <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" :data-bs-target="'#myModal' + card_id">
           Ver proyecto
         </button>
