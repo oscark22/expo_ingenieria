@@ -48,7 +48,7 @@
       <div class="col-12">
         <p>Porfavor, selecciona un proyecto.</p>
       </div>
-      <div class="col-12">
+      <div class="col-12 mb-5">
         <select v-model="proyecto.proyecto_id" class="form-select" aria-label="selectProyect" required>
           <option selected disabled value="">Elige un proyecto</option>
           <template v-for="card in projectCard.cards" :key="card.proyecto_id">

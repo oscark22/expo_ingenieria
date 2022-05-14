@@ -69,7 +69,7 @@ export const evalStore = defineStore ('evaluation', {
 
             try {
                 const response = await axios.post(url, params, config)
-                if (response.data.error === false) {
+                if (response.data.error !== 'No autorizado. Para cualquier duda contacte a soporte') {
                     this.estadoModal = true
                 }
             } catch (error) {
@@ -99,7 +99,7 @@ export const evalStore = defineStore ('evaluation', {
 
             try {
                 const response = await axios.post(url, params, config)
-                if (response.data.error === false) {
+                if (response.data.error !== 'No autorizado. Para cualquier duda contacte a soporte') {
                     this.estadoModal = true
                 }
             } catch (error) {
@@ -131,6 +131,9 @@ export const evalStore = defineStore ('evaluation', {
 
             try {
                 const response = await axios.post(url, params, config)
+                if (response.data.error !== 'No autorizado. Para cualquier duda contacte a soporte') {
+                    this.estadoModal = true
+                }
             } catch (error) {
                 console.log(error)
             }
@@ -161,6 +164,9 @@ export const evalStore = defineStore ('evaluation', {
 
             try {
                 const response = await axios.post(url, params, config)
+                if (response.data.error !== 'No autorizado. Para cualquier duda contacte a soporte') {
+                    this.estadoModal = true
+                }
             } catch (error) {
                 console.log(error)
             }
@@ -193,6 +199,9 @@ export const evalStore = defineStore ('evaluation', {
 
             try {
                 const response = await axios.post(url, params, config)
+                if (response.data.error !== 'No autorizado. Para cualquier duda contacte a soporte') {
+                    this.estadoModal = true
+                }
             } catch (error) {
                 console.log(error)
             }
@@ -222,6 +231,9 @@ export const evalStore = defineStore ('evaluation', {
 
             try {
                 const response = await axios.post(url, params, config)
+                if (response.data.error !== 'No autorizado. Para cualquier duda contacte a soporte') {
+                    this.estadoModal = true
+                }
             } catch (error) {
                 console.log(error)
             }

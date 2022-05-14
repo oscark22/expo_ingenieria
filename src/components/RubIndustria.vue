@@ -1,5 +1,5 @@
 <template>
-    <div class="container text-center mt-5">
+    <div class="container text-center my-5">
         <h2>
             <strong>Rúbrica de categoría 2 Aplicación en Industria</strong>
         </h2>
@@ -152,7 +152,7 @@
         Enviar
     </button>
     <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-md">
+      <div class="modal-dialog modal-xs">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="projectModalLabel">Acerca de los links del proyecto</h5>
@@ -160,12 +160,12 @@
           <div class="modal-body">
             <template v-if="grades.estadoModal">
               <p>
-                La información correspondiente a los links de Youtube y Meet ha sido guardada exitosamente. Estos son los links que has ingresado:
+                La evaluación del proyecto ha sido guardada exitosamente.
               </p>
             </template>
             <template v-else>
               <p>
-                La información asociada a tus links no se pudo guardar exitosamente. Vuelve a intentarlo. Si eso no funciona, prueba con salir de la sesión y entrar nuevamente.
+                La evaluación del proyecto actual no ha sido guardada de manera exitosa. Recuerda que sólo es posible calificar una vez el mismo proyecto.
               </p>
             </template>
           </div>
