@@ -22,10 +22,10 @@
   </div>
   <div class="container mt-5 px-4 px-md-3" id="contenedor-info">
     <div class="row flex-md-row-reverse align-items-center">
-      <div class="col col-12 col-lg-6 ms-md-auto mb-4 mb-lg-0">
+      <div class="col col-12 col-lg-4 ms-md-auto mb-4 mb-lg-0">
         <img src="@/assets/stock_1.png" class="img-fluid" alt="logo">
       </div>
-      <div class="col col-12 col-lg-6 ms-md-auto">
+      <div class="col col-12 col-lg-8 ms-md-auto">
         <h1 class="fw-bold fs-1">
           ¿Qué es Expoingeniería?
         </h1>
