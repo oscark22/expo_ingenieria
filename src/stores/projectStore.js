@@ -36,6 +36,7 @@ export const projectStore = defineStore ('project', {
                     this.modalState = true
                 }
             } catch (error) {
+                this.modalState = false
                 console.log(error)
             }
         }
