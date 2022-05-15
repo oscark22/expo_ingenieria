@@ -42,7 +42,7 @@
             </button>
           </template>
           <template v-else>
-            <button @click="user.logout(); user.logged_in=false; user.type=''" class="btn btn-dark" type="button">
+            <button @click="user.logout(); reloadPage(); user.logged_in=false; user.type=''" class="btn btn-dark" type="button">
               Cerrar Sesión
             </button>
           </template>
@@ -108,8 +108,17 @@
 
 <script setup>
 import { userStore } from '@/stores/userStore'
+import { useRouter } from 'vue-router'
 
 const user = userStore()
+
+const router = useRouter()
+
+const reloadPage = () => {
+  router.push({
+    name: 'home'
+  })
+}
 
 user.initComponents()
 </script>
