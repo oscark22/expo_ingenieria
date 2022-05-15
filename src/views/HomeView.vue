@@ -108,18 +108,6 @@
         </div>
       </div>
       <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            ¿Cómo puedo navegar en el sitio?
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
-          <div class="accordion-body">
-            <a href="" target="_blank">Vídeo tutorial</a>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
         <h2 class="accordion-header" id="headingSix">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
             Si soy juez, ¿cómo puedo evaluar?
