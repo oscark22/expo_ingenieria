@@ -2,14 +2,12 @@
   <div>
     <div class="card h-100">
       <img :src="img_url" :alt="card_id" class="card-img-top">
-      <div class="card-body">
+      <div class="card-body text-white text-center">
         <h5 class="card-title">{{ nombre_proyecto }}</h5>
         <p class="card-text">Equipo #{{ card_id }}</p>
-        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" :data-bs-target="'#myModal' + card_id">
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" :data-bs-target="'#myModal' + card_id">
           Ver proyecto
         </button>
-      </div>
-      <div class="card-footer">
       </div>
     </div>
     <div class="modal fade" :id="'myModal' + card_id" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -89,5 +87,8 @@ export default {
   .card:hover{
     transform: scale(1.03);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+  .card-body{
+    background: #6798C0;
   }
 </style>
