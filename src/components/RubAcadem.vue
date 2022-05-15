@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container text-center mt-5">
+    <div class="container text-center my-5">
       <h2>
         <strong>Rúbrica de categoría Académica</strong>
       </h2>
@@ -174,7 +174,7 @@
         <input v-model="grades.grade[1]" type="range" class="form-range" min="0" max="100" step="1" id="gradeRange">
       </div>
     </div>
-    <div class="form-floating">
+    <div class="form-floating mt-3">
       <textarea v-model="grades.desc" class="form-control" placeholder="Deje un comentario en este espacio" id="floatingTextarea" style="height: 100px"></textarea>
       <label for="floatingTextarea">Comentarios adicionales</label>
     </div>
@@ -182,7 +182,7 @@
       Enviar
     </button>
     <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-md">
+      <div class="modal-dialog modal-xs">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="projectModalLabel">Acerca de los links del proyecto</h5>
@@ -190,12 +190,12 @@
           <div class="modal-body">
             <template v-if="grades.estadoModal">
               <p>
-                La información correspondiente a los links de Youtube y Meet ha sido guardada exitosamente. Estos son los links que has ingresado:
+                La evaluación del proyecto ha sido guardada exitosamente.
               </p>
             </template>
             <template v-else>
               <p>
-                La información asociada a tus links no se pudo guardar exitosamente. Vuelve a intentarlo. Si eso no funciona, prueba con salir de la sesión y entrar nuevamente.
+                La evaluación del proyecto actual no ha sido guardada de manera exitosa. Recuerda que sólo es posible calificar una vez el mismo proyecto.
               </p>
             </template>
           </div>
