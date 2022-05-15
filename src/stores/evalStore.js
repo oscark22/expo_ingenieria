@@ -73,6 +73,7 @@ export const evalStore = defineStore ('evaluation', {
                     this.estadoModal = true
                 }
             } catch (error) {
+                this.estadoModal = false
                 console.log(error)
             }
         },
@@ -103,6 +104,7 @@ export const evalStore = defineStore ('evaluation', {
                     this.estadoModal = true
                 }
             } catch (error) {
+                this.estadoModal = false
                 console.log(error)
             }
         },
@@ -135,6 +137,7 @@ export const evalStore = defineStore ('evaluation', {
                     this.estadoModal = true
                 }
             } catch (error) {
+                this.estadoModal = false
                 console.log(error)
             }
         },
@@ -168,6 +171,7 @@ export const evalStore = defineStore ('evaluation', {
                     this.estadoModal = true
                 }
             } catch (error) {
+                this.estadoModal = false
                 console.log(error)
             }
         },
@@ -203,6 +207,7 @@ export const evalStore = defineStore ('evaluation', {
                     this.estadoModal = true
                 }
             } catch (error) {
+                this.estadoModal = false
                 console.log(error)
             }
         },
@@ -235,6 +240,7 @@ export const evalStore = defineStore ('evaluation', {
                     this.estadoModal = true
                 }
             } catch (error) {
+                this.estadoModal = false
                 console.log(error)
             }
         },
