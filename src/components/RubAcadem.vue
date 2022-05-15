@@ -185,7 +185,7 @@
       <div class="modal-dialog modal-xs">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="projectModalLabel">Acerca de los links del proyecto</h5>
+            <h5 class="modal-title" id="projectModalLabel">Calificaciones del proyecto</h5>
           </div>
           <div class="modal-body">
             <template v-if="grades.estadoModal">
