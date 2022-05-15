@@ -2,19 +2,21 @@
   <div>
     <div class="card h-100">
       <img :src="img_url" :alt="card_id" class="card-img-top">
-      <div class="card-body text-white text-center">
-        <h5 class="card-title fs-3">{{ nombre_proyecto }}</h5>
-        <p class="card-text fs-5">Equipo #{{ card_id }}</p>
-        <button type="button" class="btn btn-light px-5 py-2" data-bs-toggle="modal" :data-bs-target="'#myModal' + card_id">
+      <div class="card-body">
+        <h5 class="card-title">{{ nombre_proyecto }}</h5>
+        <p class="card-text">Equipo #{{ card_id }}</p>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" :data-bs-target="'#myModal' + card_id">
           Ver proyecto
         </button>
+      </div>
+      <div class="card-footer">
       </div>
     </div>
     <div class="modal fade" :id="'myModal' + card_id" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title text-center" id="myModalLabel">{{ nombre_proyecto }}</h5>
+            <h5 class="modal-title" id="myModalLabel">{{ nombre_proyecto }}</h5>
           </div>
           <div class="modal-body">
             <p class="text">
@@ -87,8 +89,5 @@ export default {
   .card:hover{
     transform: scale(1.03);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-  }
-  .card-body{
-    background: #6798C0;
   }
 </style>
